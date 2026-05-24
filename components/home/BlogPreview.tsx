@@ -4,7 +4,7 @@ import { ArrowRight, Clock, User } from 'lucide-react';
 const POSTS = [
   {
     tag: 'Blockchain',
-    tagColor: '#0066FF',
+    tagColor: '#0099E6',
     title: 'The State of DeFi in 2025: Institutional Adoption and What It Means for Enterprises',
     excerpt: 'Institutional DeFi adoption is accelerating. We analyze the key protocols, compliance frameworks, and infrastructure requirements for enterprise-grade DeFi.',
     author: 'Shivacha Research',
@@ -74,7 +74,7 @@ export default function BlogPreview() {
                   <Clock size={11} />{post.readTime}
                 </div>
               </div>
-              <h3 className="text-[16px] font-bold text-white mb-3 leading-snug group-hover:text-[#60A5FA] transition-colors line-clamp-2">
+              <h3 className="text-[16px] font-bold text-white mb-3 leading-snug group-hover:text-[#33B5E5] transition-colors line-clamp-2">
                 {post.title}
               </h3>
               <p className="text-[13px] text-[#7A8FA6] leading-relaxed mb-4 flex-1 line-clamp-3">
@@ -84,7 +84,7 @@ export default function BlogPreview() {
                 <div className="flex items-center gap-2 text-[12px] text-[#3D5470]">
                   <User size={12} />{post.author} · {post.date}
                 </div>
-                <div className="flex items-center gap-1 text-[13px] text-[#60A5FA] font-medium">
+                <div className="flex items-center gap-1 text-[13px] text-[#33B5E5] font-medium">
                   Read <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>

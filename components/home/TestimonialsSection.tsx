@@ -7,7 +7,7 @@ const TESTIMONIALS = [
     rating: 5,
     text: 'Shivacha delivered our crypto exchange infrastructure in record time. The matching engine handles 100K+ TPS with zero downtime. Their engineering team\'s depth of blockchain knowledge is genuinely unmatched in the industry.',
     metric: '100K TPS delivered',
-    color: '#0066FF',
+    color: '#0099E6',
   },
   {
     name: 'Priya Nair',

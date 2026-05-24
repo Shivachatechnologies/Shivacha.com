@@ -49,7 +49,7 @@ const CHECKLIST = [
 export default function WhyUs() {
   return (
     <section className="section bg-[#000008] relative overflow-hidden" id="why-shivacha">
-      <div className="orb w-[500px] h-[500px] bg-[#0066FF] opacity-[0.05] right-0 top-1/4" />
+      <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.05] right-0 top-1/4" />
 
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -70,8 +70,8 @@ export default function WhyUs() {
             <div className="space-y-3">
               {CHECKLIST.map((item) => (
                 <div key={item} className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-[#0066FF]/15 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle size={12} className="text-[#60A5FA]" />
+                  <div className="w-5 h-5 rounded-full bg-[#0099E6]/15 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle size={12} className="text-[#33B5E5]" />
                   </div>
                   <span className="text-[14px] text-[#7A8FA6]">{item}</span>
                 </div>
@@ -86,7 +86,7 @@ export default function WhyUs() {
                 className="card rounded-2xl p-5 border border-[#0E1E34] hover:border-[#1E3A5A] group">
                 <div className="text-3xl mb-3">{p.icon}</div>
                 <div className="badge badge-blue text-[10px] mb-3">{p.metric}</div>
-                <h3 className="text-[14px] font-bold text-white mb-2 group-hover:text-[#60A5FA] transition-colors">
+                <h3 className="text-[14px] font-bold text-white mb-2 group-hover:text-[#33B5E5] transition-colors">
                   {p.title}
                 </h3>
                 <p className="text-[12px] text-[#3D5470] leading-relaxed">{p.desc}</p>

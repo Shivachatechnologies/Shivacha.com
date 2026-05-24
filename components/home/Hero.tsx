@@ -85,7 +85,7 @@ export default function Hero() {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(0,102,255,${p.opacity})`;
+        ctx.fillStyle = `rgba(0,153,230,${p.opacity})`;
         ctx.fill();
       });
       /* Draw connecting lines */
@@ -98,7 +98,7 @@ export default function Hero() {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(0,102,255,${0.08 * (1 - dist / 120)})`;
+            ctx.strokeStyle = `rgba(0,153,230,${0.08 * (1 - dist / 120)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
@@ -124,7 +124,7 @@ export default function Hero() {
       <div className="absolute inset-0 grid-bg opacity-60" />
 
       {/* Glow orbs */}
-      <div className="orb w-[700px] h-[700px] bg-[#0066FF] opacity-[0.06] -top-60 -left-40" />
+      <div className="orb w-[700px] h-[700px] bg-[#0099E6] opacity-[0.06] -top-60 -left-40" />
       <div className="orb w-[600px] h-[600px] bg-[#00D4FF] opacity-[0.04] top-1/2 -right-60" />
       <div className="orb w-[500px] h-[500px] bg-[#6644FF] opacity-[0.04] bottom-0 left-1/3" />
 
@@ -137,7 +137,7 @@ export default function Hero() {
           <div>
             {/* Badge */}
             <div className="badge badge-blue mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#60A5FA] animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[#33B5E5] animate-pulse" />
               Enterprise Infrastructure Company
             </div>
 
@@ -153,9 +153,9 @@ export default function Hero() {
             {/* Subheadline with typewriter */}
             <div className="text-xl text-[#7A8FA6] mb-3 h-8 flex items-center gap-2">
               <span>We power</span>
-              <span className="text-[#60A5FA] font-semibold min-w-[260px]">
+              <span className="text-[#33B5E5] font-semibold min-w-[260px]">
                 {displayed}
-                <span className="border-r-2 border-[#60A5FA] ml-0.5 animate-pulse">&nbsp;</span>
+                <span className="border-r-2 border-[#33B5E5] ml-0.5 animate-pulse">&nbsp;</span>
               </span>
             </div>
 
@@ -185,7 +185,7 @@ export default function Hero() {
               </Link>
               <button onClick={() => setVideoOpen(true)}
                 className="btn btn-secondary group">
-                <div className="w-7 h-7 rounded-full bg-[#0066FF] flex items-center justify-center">
+                <div className="w-7 h-7 rounded-full bg-[#0099E6] flex items-center justify-center">
                   <Play size={12} fill="white" className="ml-0.5" />
                 </div>
                 Watch Demo
@@ -263,7 +263,7 @@ export default function Hero() {
                   <div className="flex items-end gap-1 h-12">
                     {[40, 65, 45, 80, 60, 90, 75].map((h, i) => (
                       <div key={i} className="flex-1 rounded-sm transition-all"
-                        style={{ height: `${h}%`, background: `linear-gradient(180deg, #0066FF ${100 - h}%, #00D4FF 100%)`, opacity: 0.7 + (i * 0.04) }} />
+                        style={{ height: `${h}%`, background: `linear-gradient(180deg, #0099E6 ${100 - h}%, #00D4FF 100%)`, opacity: 0.7 + (i * 0.04) }} />
                     ))}
                   </div>
                 </div>
@@ -308,7 +308,7 @@ export default function Hero() {
           ].map((pill) => (
             <div key={pill.text}
               className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#060E1C] border border-[#0E1E34] text-[13px] text-[#7A8FA6]">
-              <span className="text-[#60A5FA]">{pill.icon}</span>
+              <span className="text-[#33B5E5]">{pill.icon}</span>
               {pill.text}
             </div>
           ))}
@@ -317,7 +317,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#3D5470] text-[11px] tracking-wider uppercase">
-        <div className="w-px h-10 bg-gradient-to-b from-transparent to-[#0066FF] opacity-60" />
+        <div className="w-px h-10 bg-gradient-to-b from-transparent to-[#0099E6] opacity-60" />
         <span>Scroll</span>
       </div>
 

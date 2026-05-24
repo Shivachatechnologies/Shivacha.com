@@ -58,17 +58,17 @@ export default function ProcessSection() {
             <div key={step.n}
               className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#1E3A5A] group relative overflow-hidden">
               {/* Step number bg */}
-              <div className="absolute -right-4 -top-4 text-[80px] font-black opacity-[0.04] text-[#0066FF] leading-none select-none">
+              <div className="absolute -right-4 -top-4 text-[80px] font-black opacity-[0.04] text-[#0099E6] leading-none select-none">
                 {step.n}
               </div>
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#0066FF]/10 border border-[#0066FF]/20 flex items-center justify-center text-[14px] font-black text-[#60A5FA]">
+                  <div className="w-10 h-10 rounded-xl bg-[#0099E6]/10 border border-[#0099E6]/20 flex items-center justify-center text-[14px] font-black text-[#33B5E5]">
                     {step.n}
                   </div>
                   <span className="badge badge-blue text-[11px]">{step.duration}</span>
                 </div>
-                <h3 className="text-[16px] font-bold text-white mb-2 group-hover:text-[#60A5FA] transition-colors">
+                <h3 className="text-[16px] font-bold text-white mb-2 group-hover:text-[#33B5E5] transition-colors">
                   {step.title}
                 </h3>
                 <p className="text-[13px] text-[#7A8FA6] leading-relaxed mb-4">
@@ -77,7 +77,7 @@ export default function ProcessSection() {
                 <div className="space-y-1.5">
                   {step.deliverables.map((d) => (
                     <div key={d} className="flex items-center gap-2 text-[12px] text-[#3D5470]">
-                      <div className="w-1 h-1 rounded-full bg-[#0066FF]" />
+                      <div className="w-1 h-1 rounded-full bg-[#0099E6]" />
                       {d}
                     </div>
                   ))}

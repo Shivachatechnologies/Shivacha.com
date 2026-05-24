@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const SERVICES = [
   {
-    icon: '⛓️', title: 'Blockchain Development', href: '/services/blockchain-development', color: '#0066FF',
+    icon: '⛓️', title: 'Blockchain Development', href: '/services/blockchain-development', color: '#0099E6',
     desc: 'Custom Layer 1/2 solutions, consensus design, cross-chain bridges, enterprise private blockchains, and protocol development.',
     features: ['Custom blockchain architecture', 'Layer 2 scaling solutions', 'Cross-chain bridges', 'Consensus mechanism design', 'Enterprise private chains', 'Blockchain migration'],
     time: '8–16 weeks', team: '5–15 engineers',
@@ -75,7 +75,7 @@ export default function ServicesPage() {
   return (
     <div className="bg-[#000008]">
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-96 h-96 bg-[#0066FF] opacity-[0.06] -left-20 top-0" />
+        <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.06] -left-20 top-0" />
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Development Services</div>
@@ -96,7 +96,7 @@ export default function ServicesPage() {
                 <div className="flex items-start gap-4 mb-4">
                   <div className="text-4xl flex-shrink-0">{s.icon}</div>
                   <div>
-                    <h2 className="text-[18px] font-bold text-white group-hover:text-[#60A5FA] transition-colors mb-1">{s.title}</h2>
+                    <h2 className="text-[18px] font-bold text-white group-hover:text-[#33B5E5] transition-colors mb-1">{s.title}</h2>
                     <div className="flex items-center gap-3">
                       <span className="badge badge-blue text-[11px]">⏱ {s.time}</span>
                       <span className="badge text-[11px] bg-[#6644FF]/10 border-[#6644FF]/25 text-[#A78BFA]">👥 {s.team}</span>

@@ -33,7 +33,7 @@ export default function AboutPage() {
     <div className="bg-[#000008]">
       {/* Page Hero */}
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-[500px] h-[500px] bg-[#0066FF] opacity-[0.07] -left-40 top-0" />
+        <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.07] -left-40 top-0" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">About Shivacha</div>
@@ -140,13 +140,13 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {TEAM.map((member) => (
               <div key={member.name} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#1E3A5A] group">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0066FF] to-[#00D4FF] flex items-center justify-center text-2xl font-black text-white mb-4">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0099E6] to-[#00D4FF] flex items-center justify-center text-2xl font-black text-white mb-4">
                   {member.img}
                 </div>
                 <h3 className="text-[16px] font-bold text-white mb-0.5">{member.name}</h3>
-                <p className="text-[13px] text-[#60A5FA] mb-3">{member.role}</p>
+                <p className="text-[13px] text-[#33B5E5] mb-3">{member.role}</p>
                 <p className="text-[13px] text-[#7A8FA6] leading-relaxed mb-4">{member.bio}</p>
-                <a href={member.linkedin} className="text-[12px] text-[#3D5470] hover:text-[#60A5FA] transition-colors">
+                <a href={member.linkedin} className="text-[12px] text-[#3D5470] hover:text-[#33B5E5] transition-colors">
                   LinkedIn →
                 </a>
               </div>

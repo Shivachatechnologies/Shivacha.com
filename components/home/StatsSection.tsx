@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { TrendingUp } from 'lucide-react';
 
 const METRICS = [
-  { value: 500,  suffix: '+',  label: 'Projects Delivered',     sub: 'Across all verticals',        icon: '🚀', color: '#0066FF' },
+  { value: 500,  suffix: '+',  label: 'Projects Delivered',     sub: 'Across all verticals',        icon: '🚀', color: '#0099E6' },
   { value: 200,  suffix: '+',  label: 'Enterprise Engineers',   sub: 'Blockchain, AI & DevOps',     icon: '👨‍💻', color: '#00D4FF' },
   { value: 50,   suffix: '+',  label: 'Countries Served',       sub: 'Global delivery footprint',   icon: '🌍', color: '#00FF87' },
   { value: 2400, suffix: 'M+', label: 'USD Value Managed',      sub: 'Infrastructure TVL',          icon: '💰', color: '#FFB800' },
@@ -50,7 +50,7 @@ function AnimatedNumber({ end, suffix, color }: { end: number; suffix: string; c
 export default function StatsSection() {
   return (
     <section className="section-sm bg-[#020B18] border-y border-[#0E1E34] relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0066FF]/3 via-transparent to-[#00D4FF]/3" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0099E6]/3 via-transparent to-[#00D4FF]/3" />
 
       <div className="container relative z-10">
         {/* Header */}

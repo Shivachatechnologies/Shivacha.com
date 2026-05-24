@@ -6,7 +6,7 @@ const SERVICES = [
     icon: '⛓️', title: 'Blockchain Development', href: '/services/blockchain-development',
     desc: 'Custom Layer 1/2 solutions, consensus mechanism design, cross-chain bridges, and enterprise private blockchains.',
     tags: ['Ethereum', 'Solana', 'Hyperledger', 'Polygon'],
-    color: '#0066FF',
+    color: '#0099E6',
   },
   {
     icon: '🧠', title: 'AI & ML Development', href: '/services/ai-development',
@@ -91,7 +91,7 @@ export default function ServicesSection() {
 
               <div className="relative z-10">
                 <div className="text-4xl mb-4">{s.icon}</div>
-                <h3 className="text-[16px] font-bold text-white mb-2 group-hover:text-[#60A5FA] transition-colors">
+                <h3 className="text-[16px] font-bold text-white mb-2 group-hover:text-[#33B5E5] transition-colors">
                   {s.title}
                 </h3>
                 <p className="text-[13px] text-[#7A8FA6] leading-relaxed mb-4 line-clamp-3">

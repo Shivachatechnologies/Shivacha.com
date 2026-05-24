@@ -8,7 +8,7 @@ export default function CTASection() {
     <section className="section bg-[#020B18] relative overflow-hidden border-t border-[#0E1E34]">
       {/* Background effects */}
       <div className="absolute inset-0 grid-bg-sm opacity-40" />
-      <div className="orb w-[600px] h-[600px] bg-[#0066FF] opacity-[0.08] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2" />
+      <div className="orb w-[600px] h-[600px] bg-[#0099E6] opacity-[0.08] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2" />
 
       <div className="container relative z-10 text-center">
         {/* Main CTA block */}
@@ -40,12 +40,12 @@ export default function CTASection() {
           {/* 3 contact options */}
           <div className="grid md:grid-cols-3 gap-4">
             <div className="glass rounded-2xl p-6 border border-[#0E1E34] hover:border-[#1E3A5A] transition-colors group">
-              <div className="w-12 h-12 rounded-xl bg-[#0066FF]/10 flex items-center justify-center mx-auto mb-4">
-                <Calendar size={20} className="text-[#60A5FA]" />
+              <div className="w-12 h-12 rounded-xl bg-[#0099E6]/10 flex items-center justify-center mx-auto mb-4">
+                <Calendar size={20} className="text-[#33B5E5]" />
               </div>
               <h3 className="text-[15px] font-bold text-white mb-2">Schedule a Call</h3>
               <p className="text-[13px] text-[#3D5470] mb-4">Book a 30-min discovery call with our enterprise team</p>
-              <Link href="/contact#schedule" className="text-[13px] text-[#60A5FA] font-medium flex items-center gap-1 justify-center hover:gap-2 transition-all">
+              <Link href="/contact#schedule" className="text-[13px] text-[#33B5E5] font-medium flex items-center gap-1 justify-center hover:gap-2 transition-all">
                 Schedule Now <ArrowRight size={13} />
               </Link>
             </div>
@@ -88,8 +88,8 @@ export default function CTASection() {
                 <span className="text-[15px] font-bold text-white">{o.country}</span>
               </div>
               <p className="text-[13px] text-[#3D5470] whitespace-pre-line mb-2">{o.address}</p>
-              <a href={`tel:${o.phone.replace(/\s/g,'')}`} className="text-[13px] text-[#60A5FA] hover:text-white transition-colors block">{o.phone}</a>
-              <a href={`mailto:${o.email}`} className="text-[13px] text-[#3D5470] hover:text-[#60A5FA] transition-colors block">{o.email}</a>
+              <a href={`tel:${o.phone.replace(/\s/g,'')}`} className="text-[13px] text-[#33B5E5] hover:text-white transition-colors block">{o.phone}</a>
+              <a href={`mailto:${o.email}`} className="text-[13px] text-[#3D5470] hover:text-[#33B5E5] transition-colors block">{o.email}</a>
             </div>
           ))}
         </div>

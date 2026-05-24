@@ -13,8 +13,8 @@ const PRODUCTS = [
     desc: 'White-label centralized (CEX) and decentralized (DEX) exchange infrastructure with matching engine, liquidity management, multi-asset support, and institutional-grade security.',
     href: '/products/crypto-exchange',
     badge: 'Most Popular',
-    badgeColor: '#0066FF',
-    color: '#0066FF',
+    badgeColor: '#0099E6',
+    color: '#0099E6',
     features: [
       '100K+ TPS matching engine',
       'Multi-chain asset support',
@@ -157,7 +157,7 @@ export default function ProductsEcosystem() {
 
   return (
     <section className="section bg-[#000008] relative overflow-hidden" id="products">
-      <div className="orb w-[500px] h-[500px] bg-[#0066FF] opacity-[0.05] right-0 top-0" />
+      <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.05] right-0 top-0" />
 
       <div className="container relative z-10">
         {/* Header */}
@@ -206,7 +206,7 @@ export default function ProductsEcosystem() {
                     </span>
                   )}
                 </div>
-                <p className="text-[#60A5FA] font-medium text-[15px]">{product.tagline}</p>
+                <p className="text-[#33B5E5] font-medium text-[15px]">{product.tagline}</p>
               </div>
             </div>
 
@@ -282,7 +282,7 @@ export default function ProductsEcosystem() {
         <div className="mt-16 pt-10 border-t border-[#0E1E34]">
           <div className="flex items-center justify-between mb-6">
             <p className="text-[15px] font-semibold text-white">Full Product Catalog</p>
-            <Link href="/products" className="text-[13px] text-[#60A5FA] hover:text-white transition-colors flex items-center gap-1">
+            <Link href="/products" className="text-[13px] text-[#33B5E5] hover:text-white transition-colors flex items-center gap-1">
               View all products <ArrowRight size={13} />
             </Link>
           </div>

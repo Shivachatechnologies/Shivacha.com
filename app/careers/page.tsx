@@ -31,7 +31,7 @@ export default function CareersPage() {
   return (
     <div className="bg-[#000008]">
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-96 h-96 bg-[#0066FF] opacity-[0.06] -left-20 top-0" />
+        <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.06] -left-20 top-0" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Join the Team</div>
@@ -82,7 +82,7 @@ export default function CareersPage() {
                     <span className="badge badge-blue text-[11px]">{job.dept}</span>
                     <span className="badge text-[11px] bg-[#0E1E34] border-[#1E3A5A] text-[#3D5470]">{job.level}</span>
                   </div>
-                  <h3 className="text-[15px] font-bold text-white group-hover:text-[#60A5FA] transition-colors mb-1">{job.title}</h3>
+                  <h3 className="text-[15px] font-bold text-white group-hover:text-[#33B5E5] transition-colors mb-1">{job.title}</h3>
                   <div className="flex items-center gap-4 text-[12px] text-[#3D5470]">
                     <span className="flex items-center gap-1"><MapPin size={11} />{job.location}</span>
                     <span className="flex items-center gap-1"><Clock size={11} />{job.type}</span>

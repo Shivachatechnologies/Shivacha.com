@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const POSTS = [
-  { tag: 'Blockchain', color: '#0066FF', title: 'The State of DeFi in 2025: Institutional Adoption and Enterprise Requirements', excerpt: 'As institutional DeFi adoption accelerates, we break down the key protocols, compliance frameworks, and infrastructure requirements.', author: 'Shivacha Research', date: 'May 15, 2025', readTime: '8 min', href: '/blog/defi-institutional-2025' },
+  { tag: 'Blockchain', color: '#0099E6', title: 'The State of DeFi in 2025: Institutional Adoption and Enterprise Requirements', excerpt: 'As institutional DeFi adoption accelerates, we break down the key protocols, compliance frameworks, and infrastructure requirements.', author: 'Shivacha Research', date: 'May 15, 2025', readTime: '8 min', href: '/blog/defi-institutional-2025' },
   { tag: 'AI', color: '#00D4FF', title: 'Building Enterprise AI Agents: Architecture Patterns for Financial Services', excerpt: 'How to architect autonomous AI agent systems for trading, compliance, and customer operations in regulated environments.', author: 'AI Lab', date: 'May 10, 2025', readTime: '12 min', href: '/blog/ai-agents-fintech' },
   { tag: 'Fintech', color: '#FFB800', title: 'Neo Banking Infrastructure: Complete Technical & Regulatory Guide 2025', excerpt: 'IBAN issuance, SWIFT/SEPA, open banking APIs, and regulatory compliance — everything for a modern digital bank.', author: 'Fintech Desk', date: 'April 28, 2025', readTime: '15 min', href: '/blog/neo-banking-guide' },
   { tag: 'RWA', color: '#00FF87', title: 'Real-World Asset Tokenization: Technical & Legal Framework', excerpt: 'ERC-3643, custody solutions, investor portals, and regulatory requirements for compliant RWA tokenization at scale.', author: 'Legal Tech', date: 'April 20, 2025', readTime: '10 min', href: '/blog/rwa-tokenization' },
@@ -22,7 +22,7 @@ export default function BlogPage() {
   return (
     <div className="bg-[#000008]">
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-96 h-96 bg-[#0066FF] opacity-[0.06] right-0 top-0" />
+        <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.06] right-0 top-0" />
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Insights & Research</div>
@@ -43,7 +43,7 @@ export default function BlogPage() {
               <button key={cat}
                 className={`px-4 py-2 rounded-xl text-[13px] font-medium transition-all ${
                   cat === 'All'
-                    ? 'bg-[#0066FF] text-white'
+                    ? 'bg-[#0099E6] text-white'
                     : 'bg-[#060E1C] border border-[#0E1E34] text-[#7A8FA6] hover:text-white hover:border-[#1E3A5A]'
                 }`}>
                 {cat}
@@ -64,7 +64,7 @@ export default function BlogPage() {
                     <Clock size={11} />{post.readTime} read
                   </span>
                 </div>
-                <h2 className="text-[16px] font-bold text-white mb-3 leading-snug group-hover:text-[#60A5FA] transition-colors line-clamp-2">
+                <h2 className="text-[16px] font-bold text-white mb-3 leading-snug group-hover:text-[#33B5E5] transition-colors line-clamp-2">
                   {post.title}
                 </h2>
                 <p className="text-[13px] text-[#7A8FA6] leading-relaxed mb-4 flex-1 line-clamp-3">{post.excerpt}</p>

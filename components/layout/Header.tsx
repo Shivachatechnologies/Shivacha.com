@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ChevronDown, Menu, X, ArrowRight, Phone, Mail } from 'lucide-react';
 import { TwitterIcon, LinkedinIcon, FacebookIcon, InstagramIcon } from '@/components/common/SocialIcons';
+import ShivachaLogo from '@/components/common/ShivachaLogo';
 
 /* ── Navigation Data ── */
 const products = [
@@ -77,10 +78,10 @@ export default function Header() {
       <div className="hidden md:block bg-[#020B18] border-b border-[#0E1E34] py-2">
         <div className="container flex items-center justify-between text-[12px] text-[#3D5470]">
           <div className="flex items-center gap-6">
-            <a href="tel:+18008000000" className="flex items-center gap-1.5 hover:text-[#60A5FA] transition-colors">
+            <a href="tel:+18008000000" className="flex items-center gap-1.5 hover:text-[#33B5E5] transition-colors">
               <Phone size={11} />+1 800 800 0000
             </a>
-            <a href="mailto:enterprise@shivacha.com" className="flex items-center gap-1.5 hover:text-[#60A5FA] transition-colors">
+            <a href="mailto:enterprise@shivacha.com" className="flex items-center gap-1.5 hover:text-[#33B5E5] transition-colors">
               <Mail size={11} />enterprise@shivacha.com
             </a>
           </div>
@@ -95,7 +96,7 @@ export default function Header() {
                 { I: InstagramIcon, h: 'https://instagram.com/Shivachatech'          },
               ].map(({ I, h }) => (
                 <a key={h} href={h} target="_blank" rel="noopener noreferrer"
-                  className="hover:text-[#60A5FA] transition-colors">
+                  className="hover:text-[#33B5E5] transition-colors">
                   <I size={13} />
                 </a>
               ))}
@@ -113,18 +114,7 @@ export default function Header() {
         <div className="container">
           <div className="flex items-center justify-between h-[68px]">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-              <div className="relative">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0066FF] to-[#00D4FF] flex items-center justify-center font-black text-xl text-white shadow-lg shadow-blue-900/40">
-                  S
-                </div>
-                <div className="absolute -inset-1 bg-gradient-to-br from-[#0066FF] to-[#00D4FF] rounded-xl opacity-0 group-hover:opacity-20 blur-md transition-opacity" />
-              </div>
-              <div className="hidden sm:block">
-                <p className="text-white font-bold text-[18px] leading-none tracking-tight">Shivacha</p>
-                <p className="text-[10px] text-[#3D5470] tracking-[0.15em] uppercase mt-0.5">Technologies</p>
-              </div>
-            </Link>
+            <ShivachaLogo size="md" variant="full" href="/" />
 
             {/* Desktop nav */}
             <nav className="hidden xl:flex items-center">
@@ -141,8 +131,8 @@ export default function Header() {
                   <MegaDropdown onMouseEnter={stayOpen} onMouseLeave={closeMenu}>
                     <div className="w-[680px] p-6">
                       <div className="flex items-center justify-between mb-4">
-                        <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-[#60A5FA]">Platform Products</p>
-                        <Link href="/products" className="text-[12px] text-[#3D5470] hover:text-[#60A5FA] transition-colors flex items-center gap-1">
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-[#33B5E5]">Platform Products</p>
+                        <Link href="/products" className="text-[12px] text-[#3D5470] hover:text-[#33B5E5] transition-colors flex items-center gap-1">
                           View all <ArrowRight size={11} />
                         </Link>
                       </div>
@@ -153,7 +143,7 @@ export default function Header() {
                             <span className="text-xl flex-shrink-0">{p.icon}</span>
                             <div className="min-w-0">
                               <div className="flex items-center gap-2">
-                                <span className="text-[13px] font-semibold text-white group-hover/item:text-[#60A5FA] transition-colors truncate">{p.name}</span>
+                                <span className="text-[13px] font-semibold text-white group-hover/item:text-[#33B5E5] transition-colors truncate">{p.name}</span>
                                 {p.badge && (
                                   <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-semibold flex-shrink-0 ${p.badge === 'New' ? 'bg-green-500/15 text-green-400' : 'bg-blue-500/15 text-blue-400'}`}>
                                     {p.badge}
@@ -180,7 +170,7 @@ export default function Header() {
                 {activeDesktop === 'services' && (
                   <MegaDropdown onMouseEnter={stayOpen} onMouseLeave={closeMenu}>
                     <div className="w-[400px] p-5">
-                      <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-[#60A5FA] mb-3">Development Services</p>
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-[#33B5E5] mb-3">Development Services</p>
                       <div className="grid grid-cols-2 gap-1">
                         {services.map((s) => (
                           <Link key={s.href} href={s.href}
@@ -208,7 +198,7 @@ export default function Header() {
                       {industries.map((i) => (
                         <Link key={i.href} href={i.href}
                           className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl hover:bg-[#060E1C] transition-colors group/item">
-                          <div className="w-1 h-1 rounded-full bg-[#0066FF] group-hover/item:bg-[#00D4FF] transition-colors" />
+                          <div className="w-1 h-1 rounded-full bg-[#0099E6] group-hover/item:bg-[#00D4FF] transition-colors" />
                           <span className="text-[13px] text-[#7A8FA6] group-hover/item:text-white transition-colors">{i.name}</span>
                         </Link>
                       ))}
@@ -268,7 +258,7 @@ export default function Header() {
                     <div className="pl-4 py-1">
                       {item.items.map((sub) => (
                         <Link key={sub.href} href={sub.href}
-                          className="block py-2.5 text-[14px] text-[#3D5470] hover:text-[#60A5FA] transition-colors border-b border-[#0E1E34]/50 last:border-0"
+                          className="block py-2.5 text-[14px] text-[#3D5470] hover:text-[#33B5E5] transition-colors border-b border-[#0E1E34]/50 last:border-0"
                           onClick={() => setMobileOpen(false)}>
                           {sub.name}
                         </Link>
@@ -311,7 +301,7 @@ function MegaDropdown({ children, onMouseEnter, onMouseLeave }: {
     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50"
       onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       <div className="bg-[#020B18] border border-[#0E1E34] rounded-2xl shadow-2xl shadow-black/60 overflow-hidden"
-        style={{ boxShadow: '0 25px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(0,102,255,0.08)' }}>
+        style={{ boxShadow: '0 25px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(0,153,230,0.08)' }}>
         {children}
       </div>
     </div>
