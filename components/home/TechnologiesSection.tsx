@@ -24,7 +24,7 @@ const TECH_CATEGORIES = [
       { name: 'PyTorch', icon: '🔥', color: '#EE4C2C', desc: 'Research & production AI' },
       { name: 'LangChain', icon: '🔗', color: '#1C3553', desc: 'LLM application framework' },
       { name: 'Hugging Face', icon: '🤗', color: '#FFD21E', desc: 'Model hub & fine-tuning' },
-      { name: 'Anthropic', icon: '🌐', color: '#0099E6', desc: 'Claude AI models' },
+      { name: 'Anthropic', icon: '🌐', color: '#006FEE', desc: 'Claude AI models' },
       { name: 'Computer Vision', icon: '👁️', color: '#34D399', desc: 'Image & video AI' },
       { name: 'AutoML', icon: '⚙️', color: '#A855F7', desc: 'Automated ML pipelines' },
     ],
@@ -62,7 +62,7 @@ export default function TechnologiesSection() {
 
   return (
     <section className="section bg-slate-50 relative overflow-hidden" id="technologies">
-      <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.05] left-1/2 top-0" />
+      <div className="orb w-96 h-96 bg-[#006FEE] opacity-[0.05] left-1/2 top-0" />
 
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-14">
@@ -84,7 +84,7 @@ export default function TechnologiesSection() {
               onClick={() => setActiveTab(i)}
               className={`px-5 py-2.5 rounded-xl text-[14px] font-medium transition-all ${
                 activeTab === i
-                  ? 'bg-[#0099E6] text-white shadow-lg shadow-blue-500/30'
+                  ? 'bg-[#006FEE] text-white shadow-lg shadow-blue-500/20'
                   : 'bg-white border border-slate-200 text-slate-500 hover:text-slate-900 hover:border-slate-300'
               }`}>
               {cat.label}

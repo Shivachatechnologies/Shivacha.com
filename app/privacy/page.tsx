@@ -131,7 +131,7 @@ export default function PrivacyPage() {
     <div className="bg-white">
 
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.05] -left-20 top-0" />
+        <div className="orb w-96 h-96 bg-[#006FEE] opacity-[0.05] -left-20 top-0" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Legal</div>
@@ -158,7 +158,7 @@ export default function PrivacyPage() {
                 <nav className="space-y-2">
                   {SECTIONS.map((s, i) => (
                     <a key={i} href={`#section-${i}`}
-                      className="block text-[13px] text-slate-400 hover:text-[#33B5E5] transition-colors py-1">
+                      className="block text-[13px] text-slate-400 hover:text-[#338EF7] transition-colors py-1">
                       {s.title}
                     </a>
                   ))}
@@ -182,7 +182,7 @@ export default function PrivacyPage() {
                   <div className="space-y-5">
                     {section.content.map((c, j) => (
                       <div key={j}>
-                        <h3 className="text-[14px] font-semibold text-[#33B5E5] mb-2">{c.sub}</h3>
+                        <h3 className="text-[14px] font-semibold text-[#338EF7] mb-2">{c.sub}</h3>
                         <p className="text-[13px] text-slate-500 leading-relaxed">{c.text}</p>
                       </div>
                     ))}
@@ -193,11 +193,11 @@ export default function PrivacyPage() {
               <div className="glass rounded-2xl p-6 border border-slate-200 text-center">
                 <p className="text-[14px] text-slate-500 mb-4">
                   Questions about this Privacy Policy? Contact us at{' '}
-                  <a href="mailto:privacy@shivacha.com" className="text-[#33B5E5] hover:underline">privacy@shivacha.com</a>
+                  <a href="mailto:privacy@shivacha.com" className="text-[#338EF7] hover:underline">privacy@shivacha.com</a>
                 </p>
                 <div className="flex justify-center gap-4">
-                  <Link href="/terms" className="text-[13px] text-[#33B5E5] hover:underline">Terms of Service</Link>
-                  <Link href="/contact" className="text-[13px] text-[#33B5E5] hover:underline">Contact Us</Link>
+                  <Link href="/terms" className="text-[13px] text-[#338EF7] hover:underline">Terms of Service</Link>
+                  <Link href="/contact" className="text-[13px] text-[#338EF7] hover:underline">Contact Us</Link>
                 </div>
               </div>
             </div>

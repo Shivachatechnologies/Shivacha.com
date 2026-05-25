@@ -74,7 +74,7 @@ const METRICS = [
   { v: 'MT4/MT5', l: 'Native Integration' },
 ];
 
-const COLOR = '#0099E6';
+const COLOR = '#006FEE';
 
 export default function BrokerCRMProductPage() {
   return (
@@ -149,7 +149,7 @@ export default function BrokerCRMProductPage() {
                         <span className="text-[11px] font-semibold text-slate-900 w-24">{name}</span>
                         <span className={`text-[10px] px-2 py-0.5 rounded-full ${kyc === 'KYC Approved' ? 'bg-green-400/10 text-green-400' : 'bg-yellow-400/10 text-yellow-400'}`}>{kyc}</span>
                         <span className="text-[10px] text-slate-400">{platform}</span>
-                        <span className="text-[11px] font-bold text-[#33B5E5]">{dep}</span>
+                        <span className="text-[11px] font-bold text-[#338EF7]">{dep}</span>
                       </div>
                     ))}
                   </div>
@@ -176,9 +176,9 @@ export default function BrokerCRMProductPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURES.map(f => (
-              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#0099E6]/30 transition-colors group">
+              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#006FEE]/30 transition-colors group">
                 <div className="text-3xl mb-4">{f.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">{f.title}</h3>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">{f.title}</h3>
                 <p className="text-[13px] text-slate-500 leading-relaxed">{f.desc}</p>
               </div>
             ))}
@@ -250,7 +250,7 @@ export default function BrokerCRMProductPage() {
               { icon: '₿', title: 'Crypto Brokers & Exchanges', desc: 'Crypto deposit/withdrawal handling, AML screening on all transactions, and compliance-grade client documentation for digital asset brokers.' },
               { icon: '🔀', title: 'Multi-Asset Brokers', desc: 'Run Forex, crypto, stocks, and commodities under one CRM. Separate compliance workflows, payment rails, and trading platforms per asset class.' },
             ].map(u => (
-              <div key={u.title} className="card rounded-2xl p-7 border border-slate-200 hover:border-[#0099E6]/30 transition-colors">
+              <div key={u.title} className="card rounded-2xl p-7 border border-slate-200 hover:border-[#006FEE]/30 transition-colors">
                 <div className="text-4xl mb-4">{u.icon}</div>
                 <h3 className="text-[17px] font-bold text-slate-900 mb-3">{u.title}</h3>
                 <p className="text-[13px] text-slate-500 leading-relaxed">{u.desc}</p>

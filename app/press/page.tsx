@@ -12,7 +12,7 @@ const NEWS = [
     date: 'May 12, 2026', outlet: 'Forbes', type: 'Feature',
     headline: 'How Shivacha Technologies Is Powering the Next Wave of Institutional DeFi',
     excerpt: 'Forbes examines how Shivacha\'s enterprise infrastructure is enabling banks and hedge funds to participate in decentralized finance at scale.',
-    color: '#0099E6', href: '#',
+    color: '#006FEE', href: '#',
   },
   {
     date: 'April 28, 2026', outlet: 'TechCrunch', type: 'News',
@@ -65,7 +65,7 @@ export default function PressPage() {
 
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.06] -right-40 top-0" />
+        <div className="orb w-[500px] h-[500px] bg-[#006FEE] opacity-[0.06] -right-40 top-0" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Press & Media</div>
@@ -76,7 +76,7 @@ export default function PressPage() {
             <p className="lead max-w-xl mb-8">
               Media coverage, press releases, awards, and company news.
               For media inquiries, contact our press team at{' '}
-              <a href="mailto:press@shivacha.com" className="text-[#33B5E5] hover:underline">press@shivacha.com</a>.
+              <a href="mailto:press@shivacha.com" className="text-[#338EF7] hover:underline">press@shivacha.com</a>.
             </p>
             <div className="flex gap-4 flex-wrap">
               <a href="#press-kit" className="btn btn-primary">
@@ -131,10 +131,10 @@ export default function PressPage() {
                     <span className="text-[12px] text-slate-400 flex items-center gap-1">
                       <Calendar size={11} />{item.date}
                     </span>
-                    <ExternalLink size={13} className="text-slate-400 group-hover:text-[#33B5E5] transition-colors" />
+                    <ExternalLink size={13} className="text-slate-400 group-hover:text-[#338EF7] transition-colors" />
                   </div>
                 </div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-3 leading-snug group-hover:text-[#33B5E5] transition-colors line-clamp-2">
+                <h3 className="text-[15px] font-bold text-slate-900 mb-3 leading-snug group-hover:text-[#338EF7] transition-colors line-clamp-2">
                   {item.headline}
                 </h3>
                 <p className="text-[13px] text-slate-500 leading-relaxed flex-1 line-clamp-3">{item.excerpt}</p>
@@ -182,7 +182,7 @@ export default function PressPage() {
             <div className="grid sm:grid-cols-2 gap-3 max-w-lg mx-auto mb-7">
               {['Official Logos (SVG, PNG)', 'Executive Headshots', 'Product Screenshots', 'Brand Guidelines', 'Company Fact Sheet', 'Boilerplate Copy'].map(item => (
                 <div key={item} className="flex items-center gap-2 p-2.5 rounded-xl bg-white border border-slate-200">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#0099E6] flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#006FEE] flex-shrink-0" />
                   <span className="text-[13px] text-slate-500">{item}</span>
                 </div>
               ))}

@@ -91,7 +91,7 @@ export default function MobileAppsPage() {
       {/* ── HERO ── */}
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-[560px] h-[560px] bg-[#F97316] opacity-[0.05] -right-32 top-0" />
-        <div className="orb w-[320px] h-[320px] bg-[#33B5E5] opacity-[0.04] left-0 bottom-0" />
+        <div className="orb w-[320px] h-[320px] bg-[#338EF7] opacity-[0.04] left-0 bottom-0" />
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -139,7 +139,7 @@ export default function MobileAppsPage() {
                     <span className="badge badge-green text-[10px]">+3.2%</span>
                   </div>
                   {[
-                    { coin: 'ETH', val: '$42,100', chg: '+2.1%', color: '#33B5E5' },
+                    { coin: 'ETH', val: '$42,100', chg: '+2.1%', color: '#338EF7' },
                     { coin: 'BTC', val: '$31,400', chg: '+1.8%', color: '#F97316' },
                     { coin: 'SOL', val: '$10,719', chg: '+5.4%', color: '#A78BFA' },
                   ].map((r) => (
@@ -156,7 +156,7 @@ export default function MobileAppsPage() {
                   ))}
                   <div className="grid grid-cols-3 gap-2 pt-1">
                     {['Send', 'Receive', 'Swap'].map((a) => (
-                      <div key={a} className="text-center py-2 rounded-lg border border-slate-200 text-[11px] text-[#33B5E5] font-semibold">{a}</div>
+                      <div key={a} className="text-center py-2 rounded-lg border border-slate-200 text-[11px] text-[#338EF7] font-semibold">{a}</div>
                     ))}
                   </div>
                 </div>

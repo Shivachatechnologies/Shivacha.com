@@ -14,7 +14,7 @@ const INDUSTRIES: Record<string, {
   banking: {
     name: 'Banking & Finance',
     icon: '🏦',
-    color: '#0099E6',
+    color: '#006FEE',
     tagline: 'Digital Banking & Payments Infrastructure',
     headline: 'Modernize Your Financial Infrastructure with Blockchain & AI',
     overview: 'Legacy banking systems cost institutions billions annually in maintenance, fraud, and inefficiency. Shivacha builds next-generation digital banking infrastructure — from core banking microservices and SWIFT/SEPA payment rails to CBDC infrastructure and DeFi-enabled treasury management — helping banks and fintech companies compete with neobank challengers.',
@@ -279,7 +279,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
             {industry.solutions.map((s) => (
               <div key={s.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group">
                 <div className="text-4xl mb-4">{s.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">{s.title}</h3>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">{s.title}</h3>
                 <p className="text-[13px] text-slate-500 leading-relaxed">{s.desc}</p>
               </div>
             ))}

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const WALLET_TYPES = [
-  { icon: '📱', title: 'Mobile Wallet (iOS & Android)', desc: 'Native Swift/Kotlin or React Native cross-platform wallets with biometric auth, push notifications, in-app swap, staking, and WalletConnect V2 integration for 50+ chains.', accent: '#0099E6' },
+  { icon: '📱', title: 'Mobile Wallet (iOS & Android)', desc: 'Native Swift/Kotlin or React Native cross-platform wallets with biometric auth, push notifications, in-app swap, staking, and WalletConnect V2 integration for 50+ chains.', accent: '#006FEE' },
   { icon: '🌐', title: 'Browser Extension Wallet', desc: 'Chrome/Firefox/Brave extension wallets (MetaMask-style) with injected Web3 provider, dApp browser, hardware wallet support (Ledger/Trezor), and multi-chain account management.', accent: '#6644FF' },
   { icon: '🔐', title: 'MPC / Custodial Wallet', desc: 'Multi-Party Computation wallets where private keys are never in one place. HSM-backed threshold signatures, policy engines, spend limits, and institutional custody frameworks.', accent: '#00FF87' },
   { icon: '💳', title: 'Smart Contract Wallet', desc: 'ERC-4337 Account Abstraction wallets with social recovery, gasless transactions (paymaster), session keys, batched transactions, and biometric signing without seed phrases.', accent: '#FFB800' },
@@ -133,7 +133,7 @@ export default function WalletDevelopmentPage() {
               <div key={w.title} className="card rounded-2xl p-6 border border-slate-200 group"
                 style={{ ['--hover-color' as string]: w.accent }}>
                 <div className="text-4xl mb-4">{w.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">{w.title}</h3>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">{w.title}</h3>
                 <p className="text-[13px] text-slate-500 leading-relaxed">{w.desc}</p>
               </div>
             ))}

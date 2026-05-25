@@ -12,7 +12,7 @@ const TIERS = [
   {
     name: 'Referral Partner',
     icon: '🤝',
-    color: '#0099E6',
+    color: '#006FEE',
     commission: '8%',
     desc: 'Earn commissions by referring clients to Shivacha. Ideal for consultants, freelancers, and advisors in the blockchain and fintech space.',
     requirements: ['No minimum volume', 'Free onboarding', 'Deal registration portal'],
@@ -97,7 +97,7 @@ export default function PartnersPage() {
 
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.06] -left-40 top-0" />
+        <div className="orb w-[500px] h-[500px] bg-[#006FEE] opacity-[0.06] -left-40 top-0" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Partner Program</div>

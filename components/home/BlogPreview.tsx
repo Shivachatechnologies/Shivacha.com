@@ -4,7 +4,7 @@ import { ArrowRight, Clock, User } from 'lucide-react';
 const POSTS = [
   {
     tag: 'Blockchain',
-    tagColor: '#0099E6',
+    tagColor: '#006FEE',
     title: 'The State of DeFi in 2025: Institutional Adoption and What It Means for Enterprises',
     excerpt: 'Institutional DeFi adoption is accelerating. We analyze the key protocols, compliance frameworks, and infrastructure requirements for enterprise-grade DeFi.',
     author: 'Shivacha Research',
@@ -14,7 +14,7 @@ const POSTS = [
   },
   {
     tag: 'AI',
-    tagColor: '#00D4FF',
+    tagColor: '#338EF7',
     title: 'Building Enterprise AI Agents: Architecture Patterns for Financial Services',
     excerpt: 'How to architect autonomous AI agent systems for trading, compliance, and customer operations in regulated financial environments.',
     author: 'AI Lab',
@@ -74,7 +74,7 @@ export default function BlogPreview() {
                   <Clock size={11} />{post.readTime}
                 </div>
               </div>
-              <h3 className="text-[16px] font-bold text-slate-900 mb-3 leading-snug group-hover:text-[#33B5E5] transition-colors line-clamp-2">
+              <h3 className="text-[16px] font-bold text-slate-900 mb-3 leading-snug group-hover:text-[#338EF7] transition-colors line-clamp-2">
                 {post.title}
               </h3>
               <p className="text-[13px] text-slate-500 leading-relaxed mb-4 flex-1 line-clamp-3">
@@ -84,7 +84,7 @@ export default function BlogPreview() {
                 <div className="flex items-center gap-2 text-[12px] text-slate-400">
                   <User size={12} />{post.author} · {post.date}
                 </div>
-                <div className="flex items-center gap-1 text-[13px] text-[#33B5E5] font-medium">
+                <div className="flex items-center gap-1 text-[13px] text-[#338EF7] font-medium">
                   Read <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>

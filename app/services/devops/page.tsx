@@ -89,7 +89,7 @@ export default function DevOpsPage() {
       {/* ── HERO ── */}
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-[560px] h-[560px] bg-[#14B8A6] opacity-[0.05] -right-32 top-0" />
-        <div className="orb w-[320px] h-[320px] bg-[#33B5E5] opacity-[0.04] left-0 bottom-0" />
+        <div className="orb w-[320px] h-[320px] bg-[#338EF7] opacity-[0.04] left-0 bottom-0" />
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -126,7 +126,7 @@ export default function DevOpsPage() {
                 <div className="space-y-2 mb-4">
                   {[
                     { label: 'K8s Nodes (3/3 healthy)', pct: 100, color: '#14B8A6' },
-                    { label: 'Pod CPU Utilization', pct: 62, color: '#33B5E5' },
+                    { label: 'Pod CPU Utilization', pct: 62, color: '#338EF7' },
                     { label: 'Pod Memory Utilization', pct: 47, color: '#A78BFA' },
                     { label: 'Uptime (30-day)', pct: 99.99, color: '#34D399' },
                   ].map((m) => (

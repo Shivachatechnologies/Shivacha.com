@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const STACKS = [
   {
-    category: 'Blockchain Protocols', icon: '⛓️', color: '#0099E6',
+    category: 'Blockchain Protocols', icon: '⛓️', color: '#006FEE',
     items: [
       { name: 'Ethereum', desc: 'EVM, Solidity, Layer 2 solutions, zkEVM' },
       { name: 'Solana', desc: 'Rust programs, SPL tokens, high-TPS dApps' },
@@ -115,7 +115,7 @@ export default function TechnologiesPage() {
   return (
     <div className="bg-white">
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.06] -left-20 top-0" />
+        <div className="orb w-96 h-96 bg-[#006FEE] opacity-[0.06] -left-20 top-0" />
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Technology Stack</div>
@@ -139,7 +139,7 @@ export default function TechnologiesPage() {
                     className="card rounded-xl p-4 border border-slate-200 hover:border-slate-300 group cursor-default">
                     <div className="flex items-center gap-2 mb-1">
                       <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: stack.color }} />
-                      <p className="text-[14px] font-semibold text-slate-900 group-hover:text-[#33B5E5] transition-colors">{item.name}</p>
+                      <p className="text-[14px] font-semibold text-slate-900 group-hover:text-[#338EF7] transition-colors">{item.name}</p>
                     </div>
                     <p className="text-[12px] text-slate-400 pl-4">{item.desc}</p>
                   </div>

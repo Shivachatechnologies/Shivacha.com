@@ -116,7 +116,7 @@ export default function TokenDevelopmentPage() {
             {TOKEN_TYPES.map(t => (
               <div key={t.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#00FF87]/30 group">
                 <div className="text-4xl mb-4">{t.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">{t.title}</h3>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">{t.title}</h3>
                 <p className="text-[13px] text-slate-500 leading-relaxed mb-3">{t.desc}</p>
                 <span className="text-[11px] px-2 py-1 rounded-lg bg-[#00FF87]/08 border border-[#00FF87]/20 text-[#00FF87]">{t.chain}</span>
               </div>

@@ -97,7 +97,7 @@ export default function SecurityAuditPage() {
       {/* ── HERO ── */}
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-[560px] h-[560px] bg-[#34D399] opacity-[0.04] -right-32 top-0" />
-        <div className="orb w-[320px] h-[320px] bg-[#33B5E5] opacity-[0.04] left-0 bottom-0" />
+        <div className="orb w-[320px] h-[320px] bg-[#338EF7] opacity-[0.04] left-0 bottom-0" />
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

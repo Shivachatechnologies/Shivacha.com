@@ -22,7 +22,7 @@ export default function NotFound() {
             { label: 'About', href: '/about' },
           ].map(l => (
             <Link key={l.href} href={l.href}
-              className="p-3 rounded-xl bg-white border border-slate-200 hover:border-slate-300 text-[13px] text-slate-500 hover:text-[#33B5E5] transition-colors">
+              className="p-3 rounded-xl bg-white border border-slate-200 hover:border-slate-300 text-[13px] text-slate-500 hover:text-[#338EF7] transition-colors">
               {l.label}
             </Link>
           ))}

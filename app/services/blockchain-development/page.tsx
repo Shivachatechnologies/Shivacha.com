@@ -44,7 +44,7 @@ export default function BlockchainDevelopmentPage() {
     <div className="bg-white">
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.07] -left-40 top-0" />
+        <div className="orb w-[500px] h-[500px] bg-[#006FEE] opacity-[0.07] -left-40 top-0" />
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -87,7 +87,7 @@ export default function BlockchainDevelopmentPage() {
                 <div className="space-y-3">
                   {['Layer 1: Custom Blockchain', 'Layer 2: Scaling & ZK-Proofs', 'Application Layer: dApps & APIs', 'Cross-Chain Bridge', 'Developer SDK & Tools'].map((layer, i) => (
                     <div key={layer} className="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200">
-                      <div className="w-8 h-8 rounded-lg bg-[#0099E6]/15 flex items-center justify-center text-[12px] font-bold text-[#33B5E5]">
+                      <div className="w-8 h-8 rounded-lg bg-[#006FEE]/15 flex items-center justify-center text-[12px] font-bold text-[#338EF7]">
                         L{i + 1}
                       </div>
                       <span className="text-[13px] text-slate-500">{layer}</span>
@@ -112,7 +112,7 @@ export default function BlockchainDevelopmentPage() {
             {OFFERINGS.map((o) => (
               <div key={o.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group">
                 <div className="text-4xl mb-4">{o.icon}</div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">{o.title}</h3>
+                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">{o.title}</h3>
                 <p className="text-[13px] text-slate-500 leading-relaxed">{o.desc}</p>
               </div>
             ))}
@@ -128,7 +128,7 @@ export default function BlockchainDevelopmentPage() {
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
             {CHAINS.map((c) => (
-              <div key={c.name} className="card rounded-xl p-4 text-center border border-slate-200 hover:border-[#0099E6]/40 group cursor-default">
+              <div key={c.name} className="card rounded-xl p-4 text-center border border-slate-200 hover:border-[#006FEE]/40 group cursor-default">
                 <div className="text-3xl mb-2">{c.icon}</div>
                 <p className="text-[13px] font-semibold text-slate-900">{c.name}</p>
                 <p className="text-[11px] text-slate-400 mt-0.5">{c.desc}</p>
@@ -147,7 +147,7 @@ export default function BlockchainDevelopmentPage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {USE_CASES.map((uc) => (
               <div key={uc} className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200">
-                <CheckCircle size={14} className="text-[#33B5E5] flex-shrink-0" />
+                <CheckCircle size={14} className="text-[#338EF7] flex-shrink-0" />
                 <span className="text-[13px] text-slate-500">{uc}</span>
               </div>
             ))}

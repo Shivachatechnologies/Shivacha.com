@@ -11,7 +11,7 @@ const POSTS: Record<string, {
   related: string[];
 }> = {
   'defi-institutional-2025': {
-    tag: 'Blockchain', color: '#0099E6',
+    tag: 'Blockchain', color: '#006FEE',
     title: 'The State of DeFi in 2025: Institutional Adoption and Enterprise Requirements',
     date: 'May 15, 2025', author: 'Shivacha Research', readTime: '8 min',
     excerpt: 'As institutional DeFi adoption accelerates, we break down the key protocols, compliance frameworks, and infrastructure requirements.',
@@ -207,7 +207,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                           style={{ background: `${related.color}15`, borderColor: `${related.color}30`, color: related.color }}>
                           {related.tag}
                         </span>
-                        <p className="text-[13px] font-semibold text-slate-900 group-hover:text-[#33B5E5] transition-colors leading-snug line-clamp-2">
+                        <p className="text-[13px] font-semibold text-slate-900 group-hover:text-[#338EF7] transition-colors leading-snug line-clamp-2">
                           {related.title}
                         </p>
                         <p className="text-[11px] text-slate-400 mt-1">{related.readTime} read</p>
@@ -233,7 +233,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <div className="glass rounded-2xl p-5 border border-slate-200">
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-3">Author</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0099E6] to-[#00D4FF] flex items-center justify-center text-[13px] font-black text-slate-900 flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#006FEE] to-[#00D4FF] flex items-center justify-center text-[13px] font-black text-slate-900 flex-shrink-0">
                     {post.author.split(' ').map(w => w[0]).join('').slice(0, 2)}
                   </div>
                   <div>

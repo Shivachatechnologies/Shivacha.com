@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const INDUSTRIES = [
   {
-    id: 'banking', icon: '🏦', name: 'Banking & Finance', color: '#0099E6',
+    id: 'banking', icon: '🏦', name: 'Banking & Finance', color: '#006FEE',
     headline: 'Modernizing Financial Infrastructure',
     desc: 'From core banking modernization to DeFi-powered financial products. We build the infrastructure for the next generation of digital banking.',
     solutions: ['Digital Banking OS', 'Payment Rails (SWIFT/SEPA)', 'Core Banking Integration', 'Open Banking APIs (PSD2)', 'RegTech & AML', 'CBDC Infrastructure'],
@@ -57,7 +57,7 @@ export default function IndustriesPage() {
   return (
     <div className="bg-white">
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.06] -left-20 top-0" />
+        <div className="orb w-96 h-96 bg-[#006FEE] opacity-[0.06] -left-20 top-0" />
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Industries</div>
@@ -78,7 +78,7 @@ export default function IndustriesPage() {
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-5xl">{ind.icon}</span>
                     <div>
-                      <h2 className="text-[22px] font-bold text-slate-900 group-hover:text-[#33B5E5] transition-colors">{ind.name}</h2>
+                      <h2 className="text-[22px] font-bold text-slate-900 group-hover:text-[#338EF7] transition-colors">{ind.name}</h2>
                       <p className="text-[14px] font-medium" style={{ color: ind.color }}>{ind.headline}</p>
                     </div>
                   </div>

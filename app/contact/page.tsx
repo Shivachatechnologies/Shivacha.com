@@ -56,7 +56,7 @@ export default function ContactPage() {
     <div className="bg-white">
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.07] -left-20 top-0" />
+        <div className="orb w-96 h-96 bg-[#006FEE] opacity-[0.07] -left-20 top-0" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Contact Us</div>
@@ -176,24 +176,24 @@ export default function ContactPage() {
                       <span className="text-3xl">{o.flag}</span>
                       <div>
                         <p className="text-[16px] font-bold text-slate-900">{o.country}</p>
-                        <p className="text-[13px] text-[#33B5E5]">{o.city}</p>
+                        <p className="text-[13px] text-[#338EF7]">{o.city}</p>
                       </div>
                     </div>
                     <div className="space-y-2">
                       <div className="flex items-start gap-2 text-[13px] text-slate-500">
-                        <MapPin size={14} className="text-[#0099E6] mt-0.5 flex-shrink-0" />
+                        <MapPin size={14} className="text-[#006FEE] mt-0.5 flex-shrink-0" />
                         <span className="whitespace-pre-line">{o.address}</span>
                       </div>
                       <a href={`tel:${o.phone.replace(/\s/g,'')}`}
-                        className="flex items-center gap-2 text-[13px] text-slate-500 hover:text-[#33B5E5] transition-colors">
-                        <Phone size={13} className="text-[#0099E6]" />{o.phone}
+                        className="flex items-center gap-2 text-[13px] text-slate-500 hover:text-[#338EF7] transition-colors">
+                        <Phone size={13} className="text-[#006FEE]" />{o.phone}
                       </a>
                       <a href={`mailto:${o.email}`}
-                        className="flex items-center gap-2 text-[13px] text-slate-500 hover:text-[#33B5E5] transition-colors">
-                        <Mail size={13} className="text-[#0099E6]" />{o.email}
+                        className="flex items-center gap-2 text-[13px] text-slate-500 hover:text-[#338EF7] transition-colors">
+                        <Mail size={13} className="text-[#006FEE]" />{o.email}
                       </a>
                       <div className="flex items-center gap-2 text-[13px] text-slate-500">
-                        <Clock size={13} className="text-[#0099E6]" />{o.hours}
+                        <Clock size={13} className="text-[#006FEE]" />{o.hours}
                       </div>
                     </div>
                   </div>

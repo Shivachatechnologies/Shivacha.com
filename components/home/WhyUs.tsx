@@ -49,7 +49,7 @@ const CHECKLIST = [
 export default function WhyUs() {
   return (
     <section className="section bg-white relative overflow-hidden" id="why-shivacha">
-      <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.05] right-0 top-1/4" />
+      <div className="orb w-[500px] h-[500px] bg-[#006FEE] opacity-[0.05] right-0 top-1/4" />
 
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -70,8 +70,8 @@ export default function WhyUs() {
             <div className="space-y-3">
               {CHECKLIST.map((item) => (
                 <div key={item} className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-[#0099E6]/15 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle size={12} className="text-[#33B5E5]" />
+                  <div className="w-5 h-5 rounded-full bg-[#006FEE]/15 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle size={12} className="text-[#338EF7]" />
                   </div>
                   <span className="text-[14px] text-slate-500">{item}</span>
                 </div>
@@ -86,7 +86,7 @@ export default function WhyUs() {
                 className="card rounded-2xl p-5 border border-slate-200 hover:border-slate-300 group">
                 <div className="text-3xl mb-3">{p.icon}</div>
                 <div className="badge badge-blue text-[10px] mb-3">{p.metric}</div>
-                <h3 className="text-[14px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">
+                <h3 className="text-[14px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">
                   {p.title}
                 </h3>
                 <p className="text-[12px] text-slate-400 leading-relaxed">{p.desc}</p>

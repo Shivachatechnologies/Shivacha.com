@@ -13,8 +13,8 @@ const PRODUCTS = [
     desc: 'White-label centralized (CEX) and decentralized (DEX) exchange infrastructure with matching engine, liquidity management, multi-asset support, and institutional-grade security.',
     href: '/products/crypto-exchange',
     badge: 'Most Popular',
-    badgeColor: '#0099E6',
-    color: '#0099E6',
+    badgeColor: '#006FEE',
+    color: '#006FEE',
     features: [
       '100K+ TPS matching engine',
       'Multi-chain asset support',
@@ -109,8 +109,8 @@ const PRODUCTS = [
     desc: 'Deploy intelligent AI agents for trading, compliance, customer service, risk assessment, fraud detection, and business process automation across your enterprise.',
     href: '/products/ai-agents',
     badge: 'AI-Powered',
-    badgeColor: '#00D4FF',
-    color: '#00D4FF',
+    badgeColor: '#338EF7',
+    color: '#338EF7',
     features: [
       'Multi-model AI orchestration',
       'Autonomous workflow engine',
@@ -157,7 +157,7 @@ export default function ProductsEcosystem() {
 
   return (
     <section className="section bg-white relative overflow-hidden" id="products">
-      <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.05] right-0 top-0" />
+      <div className="orb w-[500px] h-[500px] bg-[#006FEE] opacity-[0.05] right-0 top-0" />
 
       <div className="container relative z-10">
         {/* Header */}
@@ -206,7 +206,7 @@ export default function ProductsEcosystem() {
                     </span>
                   )}
                 </div>
-                <p className="text-[#33B5E5] font-medium text-[15px]">{product.tagline}</p>
+                <p className="text-[#338EF7] font-medium text-[15px]">{product.tagline}</p>
               </div>
             </div>
 
@@ -282,7 +282,7 @@ export default function ProductsEcosystem() {
         <div className="mt-16 pt-10 border-t border-slate-200">
           <div className="flex items-center justify-between mb-6">
             <p className="text-[15px] font-semibold text-slate-900">Full Product Catalog</p>
-            <Link href="/products" className="text-[13px] text-[#33B5E5] hover:text-slate-900 transition-colors flex items-center gap-1">
+            <Link href="/products" className="text-[13px] text-[#338EF7] hover:text-slate-900 transition-colors flex items-center gap-1">
               View all products <ArrowRight size={13} />
             </Link>
           </div>

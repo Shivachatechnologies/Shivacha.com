@@ -53,7 +53,7 @@ export default function CryptoExchangeDevelopmentPage() {
 
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-[550px] h-[550px] bg-[#0099E6] opacity-[0.06] -left-40 top-0" />
+        <div className="orb w-[550px] h-[550px] bg-[#006FEE] opacity-[0.06] -left-40 top-0" />
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -80,7 +80,7 @@ export default function CryptoExchangeDevelopmentPage() {
                   { v: '14 Wks', l: 'Avg Delivery' },
                 ].map(s => (
                   <div key={s.l} className="metric-card">
-                    <p className="text-xl font-black" style={{ color: '#0099E6' }}>{s.v}</p>
+                    <p className="text-xl font-black" style={{ color: '#006FEE' }}>{s.v}</p>
                     <p className="text-[11px] text-slate-400">{s.l}</p>
                   </div>
                 ))}
@@ -117,7 +117,7 @@ export default function CryptoExchangeDevelopmentPage() {
                   <div className="flex items-end gap-1 h-12">
                     {[45,60,55,80,65,90,70,95,75,100].map((h, i) => (
                       <div key={i} className="flex-1 rounded-t-sm"
-                        style={{ height: `${h}%`, background: `linear-gradient(180deg, #0099E6 0%, #00D4FF 100%)`, opacity: 0.6 + i * 0.04 }} />
+                        style={{ height: `${h}%`, background: `linear-gradient(180deg, #006FEE 0%, #00D4FF 100%)`, opacity: 0.6 + i * 0.04 }} />
                     ))}
                   </div>
                 </div>
@@ -136,9 +136,9 @@ export default function CryptoExchangeDevelopmentPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {OFFERINGS.map((o) => (
-              <div key={o.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#0099E6]/40 group">
+              <div key={o.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#006FEE]/40 group">
                 <div className="text-4xl mb-4">{o.icon}</div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">{o.title}</h3>
+                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">{o.title}</h3>
                 <p className="text-[13px] text-slate-500 leading-relaxed">{o.desc}</p>
               </div>
             ))}
@@ -164,7 +164,7 @@ export default function CryptoExchangeDevelopmentPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {FEATURES.map(f => (
                 <div key={f} className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200">
-                  <CheckCircle size={14} className="text-[#33B5E5] flex-shrink-0" />
+                  <CheckCircle size={14} className="text-[#338EF7] flex-shrink-0" />
                   <span className="text-[13px] text-slate-500">{f}</span>
                 </div>
               ))}
@@ -181,7 +181,7 @@ export default function CryptoExchangeDevelopmentPage() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {TECH.map(t => (
-              <div key={t.name} className="card rounded-xl p-4 text-center border border-slate-200 hover:border-[#0099E6]/40 cursor-default">
+              <div key={t.name} className="card rounded-xl p-4 text-center border border-slate-200 hover:border-[#006FEE]/40 cursor-default">
                 <p className="text-[14px] font-semibold text-slate-900 mb-1">{t.name}</p>
                 <p className="text-[11px] text-slate-400">{t.cat}</p>
               </div>

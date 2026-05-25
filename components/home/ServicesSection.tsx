@@ -6,13 +6,13 @@ const SERVICES = [
     icon: '⛓️', title: 'Blockchain Development', href: '/services/blockchain-development',
     desc: 'Custom Layer 1/2 solutions, consensus mechanism design, cross-chain bridges, and enterprise private blockchains.',
     tags: ['Ethereum', 'Solana', 'Hyperledger', 'Polygon'],
-    color: '#0099E6',
+    color: '#006FEE',
   },
   {
     icon: '🧠', title: 'AI & ML Development', href: '/services/ai-development',
     desc: 'Custom LLMs, computer vision, NLP, predictive analytics, AI agents, and intelligent automation systems.',
     tags: ['GPT-4', 'TensorFlow', 'PyTorch', 'LangChain'],
-    color: '#00D4FF',
+    color: '#338EF7',
   },
   {
     icon: '📋', title: 'Smart Contract Development', href: '/services/smart-contracts',
@@ -91,7 +91,7 @@ export default function ServicesSection() {
 
               <div className="relative z-10">
                 <div className="text-4xl mb-4">{s.icon}</div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">
+                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">
                   {s.title}
                 </h3>
                 <p className="text-[13px] text-slate-500 leading-relaxed mb-4 line-clamp-3">

@@ -74,7 +74,7 @@ export default function IndustriesSection() {
               <div className="flex items-start gap-4 mb-4">
                 <div className="text-4xl flex-shrink-0">{ind.icon}</div>
                 <div>
-                  <h3 className="text-[16px] font-bold text-slate-900 group-hover:text-[#33B5E5] transition-colors">
+                  <h3 className="text-[16px] font-bold text-slate-900 group-hover:text-[#338EF7] transition-colors">
                     {ind.name}
                   </h3>
                 </div>
@@ -89,7 +89,7 @@ export default function IndustriesSection() {
                   </span>
                 ))}
               </div>
-              <div className="flex items-center gap-1.5 text-[13px] text-[#33B5E5] font-medium">
+              <div className="flex items-center gap-1.5 text-[13px] text-[#338EF7] font-medium">
                 Explore Solutions <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>

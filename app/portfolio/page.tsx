@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const CASE_STUDIES = [
   {
     client: 'FinVault Exchange', country: '🇺🇸 USA', type: 'Crypto Exchange',
-    color: '#0099E6',
+    color: '#006FEE',
     headline: 'Built a Tier-1 crypto exchange handling $847M daily volume',
     description: 'Complete white-label CEX + DEX infrastructure with institutional-grade matching engine, multi-chain support, and advanced trading features. Launched in 14 weeks.',
     metrics: [
@@ -99,7 +99,7 @@ export default function PortfolioPage() {
   return (
     <div className="bg-white">
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.06] -left-20 top-0" />
+        <div className="orb w-96 h-96 bg-[#006FEE] opacity-[0.06] -left-20 top-0" />
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Portfolio</div>
@@ -129,7 +129,7 @@ export default function PortfolioPage() {
                     </div>
                     <span className="text-[12px] text-slate-400">⏱ {cs.duration}</span>
                   </div>
-                  <h3 className="text-[16px] font-bold text-slate-900 leading-snug mb-2 group-hover:text-[#33B5E5] transition-colors">
+                  <h3 className="text-[16px] font-bold text-slate-900 leading-snug mb-2 group-hover:text-[#338EF7] transition-colors">
                     {cs.client}: {cs.headline}
                   </h3>
                   <p className="text-[13px] text-slate-500 leading-relaxed">{cs.description}</p>

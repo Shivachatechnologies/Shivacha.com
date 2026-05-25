@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const CASE_STUDIES = [
   {
     client: 'FinVault Exchange', country: '🇺🇸 USA', type: 'Crypto Exchange', duration: '14 weeks',
-    color: '#0099E6', logo: 'FV',
+    color: '#006FEE', logo: 'FV',
     headline: 'Built a Tier-1 crypto exchange processing $847M in daily volume',
     challenge: 'FinVault needed a scalable, institutional-grade centralized exchange that could handle Tier-1 volume from day one — with KYC compliance, advanced trading features, and a mobile-first UX.',
     solution: 'Shivacha built a complete white-label CEX with a custom Rust-based matching engine capable of 100K+ TPS. We delivered multi-chain support, margin trading, derivatives, and a React Native mobile app in 14 weeks.',
@@ -120,7 +120,7 @@ export default function CaseStudiesPage() {
 
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
-        <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.06] -left-40 top-0" />
+        <div className="orb w-[500px] h-[500px] bg-[#006FEE] opacity-[0.06] -left-40 top-0" />
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Case Studies</div>

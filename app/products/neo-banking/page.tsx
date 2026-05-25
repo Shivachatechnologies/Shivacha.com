@@ -143,7 +143,7 @@ export default function NeoBankingProductPage() {
                     </div>
                     <div className="glass rounded-xl p-3 h-36 flex flex-col justify-between">
                       <p className="text-[10px] text-slate-400 uppercase tracking-wider">Virtual Card</p>
-                      <div className="rounded-lg p-2" style={{ background: 'linear-gradient(135deg, #6644FF44, #33B5E522)' }}>
+                      <div className="rounded-lg p-2" style={{ background: 'linear-gradient(135deg, #6644FF44, #338EF722)' }}>
                         <p className="text-[9px] text-[#6644FF] font-mono">•••• •••• •••• 4291</p>
                         <p className="text-[9px] text-slate-500 mt-1">VISA DEBIT</p>
                         <p className="text-[9px] text-slate-400">Exp 05/28</p>

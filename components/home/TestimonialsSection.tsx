@@ -7,7 +7,7 @@ const TESTIMONIALS = [
     rating: 5,
     text: 'Shivacha delivered our crypto exchange infrastructure in record time. The matching engine handles 100K+ TPS with zero downtime. Their engineering team\'s depth of blockchain knowledge is genuinely unmatched in the industry.',
     metric: '100K TPS delivered',
-    color: '#0099E6',
+    color: '#006FEE',
   },
   {
     name: 'Priya Nair',
@@ -47,7 +47,7 @@ const TESTIMONIALS = [
     rating: 5,
     text: 'The AI-powered trading bot ecosystem Shivacha built is generating consistent alpha. Strategy backtesting, live deployment, risk management — all integrated seamlessly. We\'ve scaled to 15 exchanges with one codebase.',
     metric: '15 exchanges integrated',
-    color: '#00D4FF',
+    color: '#338EF7',
   },
   {
     name: 'Elena Bastos',
