@@ -20,13 +20,13 @@ const POSTS = [
 
 export default function BlogPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.06] right-0 top-0" />
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Insights & Research</div>
-            <h1 className="h1 text-white mb-6">Shivacha <span className="gt-blue">Knowledge Hub</span></h1>
+            <h1 className="h1 text-slate-900 mb-6">Shivacha <span className="gt-blue">Knowledge Hub</span></h1>
             <p className="lead max-w-2xl mx-auto">
               Deep technical insights, research, and thought leadership on blockchain, AI,
               fintech, and enterprise technology from the Shivacha team.
@@ -35,7 +35,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           {/* Category filters */}
           <div className="flex flex-wrap gap-2 mb-10">
@@ -43,8 +43,8 @@ export default function BlogPage() {
               <button key={cat}
                 className={`px-4 py-2 rounded-xl text-[13px] font-medium transition-all ${
                   cat === 'All'
-                    ? 'bg-[#0099E6] text-white'
-                    : 'bg-[#060E1C] border border-[#0E1E34] text-[#7A8FA6] hover:text-white hover:border-[#1E3A5A]'
+                    ? 'bg-[#0099E6] text-slate-900'
+                    : 'bg-white border border-slate-200 text-slate-500 hover:text-slate-900 hover:border-slate-300'
                 }`}>
                 {cat}
               </button>
@@ -54,22 +54,22 @@ export default function BlogPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {POSTS.map((post) => (
               <Link key={post.href} href={post.href}
-                className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#1E3A5A] group flex flex-col">
+                className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group flex flex-col">
                 <div className="flex items-center justify-between mb-4">
                   <span className="badge text-[11px]"
                     style={{ background: `${post.color}12`, borderColor: `${post.color}30`, color: post.color }}>
                     <Tag size={10} />{post.tag}
                   </span>
-                  <span className="text-[12px] text-[#3D5470] flex items-center gap-1">
+                  <span className="text-[12px] text-slate-400 flex items-center gap-1">
                     <Clock size={11} />{post.readTime} read
                   </span>
                 </div>
-                <h2 className="text-[16px] font-bold text-white mb-3 leading-snug group-hover:text-[#33B5E5] transition-colors line-clamp-2">
+                <h2 className="text-[16px] font-bold text-slate-900 mb-3 leading-snug group-hover:text-[#33B5E5] transition-colors line-clamp-2">
                   {post.title}
                 </h2>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed mb-4 flex-1 line-clamp-3">{post.excerpt}</p>
-                <div className="flex items-center justify-between pt-4 border-t border-[#0E1E34]">
-                  <div className="flex items-center gap-2 text-[12px] text-[#3D5470]">
+                <p className="text-[13px] text-slate-500 leading-relaxed mb-4 flex-1 line-clamp-3">{post.excerpt}</p>
+                <div className="flex items-center justify-between pt-4 border-t border-slate-200">
+                  <div className="flex items-center gap-2 text-[12px] text-slate-400">
                     <User size={11} />{post.author} · {post.date}
                   </div>
                   <span className="flex items-center gap-1 text-[13px] font-medium" style={{ color: post.color }}>

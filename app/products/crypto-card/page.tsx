@@ -78,7 +78,7 @@ const COLOR = '#00CCFF';
 
 export default function CryptoCardProductPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
 
       {/* ── HERO ── */}
       <section className="section relative overflow-hidden grid-bg">
@@ -92,7 +92,7 @@ export default function CryptoCardProductPage() {
                 <span className="badge" style={{ background: `${COLOR}18`, color: COLOR, border: `1px solid ${COLOR}40` }}>Card Infrastructure</span>
               </div>
               <div className="section-label mb-4">Crypto Card Program Infrastructure</div>
-              <h1 className="h1 text-white mb-6">
+              <h1 className="h1 text-slate-900 mb-6">
                 Launch Your Own
                 <br /><span style={{ color: COLOR }}>Crypto Card Program</span>
               </h1>
@@ -111,7 +111,7 @@ export default function CryptoCardProductPage() {
                 {METRICS.map(m => (
                   <div key={m.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: COLOR }}>{m.v}</p>
-                    <p className="text-[11px] text-[#3D5470] mt-1">{m.l}</p>
+                    <p className="text-[11px] text-slate-400 mt-1">{m.l}</p>
                   </div>
                 ))}
               </div>
@@ -125,33 +125,33 @@ export default function CryptoCardProductPage() {
                   <span className="db-dot bg-red-500" />
                   <span className="db-dot bg-yellow-400" />
                   <span className="db-dot bg-green-400" />
-                  <span className="ml-3 text-[11px] text-[#3D5470]">cards.yourplatform.com — Card Management</span>
+                  <span className="ml-3 text-[11px] text-slate-400">cards.yourplatform.com — Card Management</span>
                 </div>
                 <div className="p-5 space-y-3">
                   {/* Virtual card mockup */}
                   <div className="rounded-2xl p-4 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #00334466, #001A2A66)', border: `1px solid ${COLOR}33` }}>
                     <div className="flex justify-between items-start mb-4">
-                      <p className="text-[10px] text-[#3D5470] uppercase tracking-wider">Virtual Card</p>
+                      <p className="text-[10px] text-slate-400 uppercase tracking-wider">Virtual Card</p>
                       <p className="text-[11px] font-bold" style={{ color: COLOR }}>VISA</p>
                     </div>
-                    <p className="text-[14px] font-mono text-white tracking-widest mb-3">4242 •••• •••• 8741</p>
-                    <div className="flex justify-between text-[10px] text-[#3D5470]">
+                    <p className="text-[14px] font-mono text-slate-900 tracking-widest mb-3">4242 •••• •••• 8741</p>
+                    <div className="flex justify-between text-[10px] text-slate-400">
                       <span>Alex K.</span>
                       <span>Exp: 12/27</span>
                     </div>
                   </div>
                   {/* Recent transactions */}
                   <div className="glass rounded-xl p-3">
-                    <p className="text-[10px] text-[#3D5470] uppercase tracking-wider mb-2">Recent Transactions</p>
+                    <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-2">Recent Transactions</p>
                     {[
                       ['Amazon', '–$84.99', 'USD', '0.0022 ETH'],
                       ['Starbucks', '–$6.50', 'USD', '168 USDT'],
                       ['Netflix', '–$15.99', 'USD', '15.99 USDC'],
                     ].map(([merchant, amount, fiat, crypto]) => (
-                      <div key={String(merchant)} className="flex items-center justify-between py-1.5 border-b border-[#0E1E34] last:border-0">
-                        <span className="text-[11px] font-semibold text-white">{merchant}</span>
+                      <div key={String(merchant)} className="flex items-center justify-between py-1.5 border-b border-slate-200 last:border-0">
+                        <span className="text-[11px] font-semibold text-slate-900">{merchant}</span>
                         <span className="text-[11px] text-red-400">{amount} {fiat}</span>
-                        <span className="text-[10px] text-[#3D5470]">{crypto}</span>
+                        <span className="text-[10px] text-slate-400">{crypto}</span>
                       </div>
                     ))}
                   </div>
@@ -159,7 +159,7 @@ export default function CryptoCardProductPage() {
                   <div className="grid grid-cols-3 gap-2">
                     {[['Cards Issued','48,210'],['MTD Spend','$2.4M'],['Cashback Paid','$18,940']].map(([l, v]) => (
                       <div key={l} className="metric-card">
-                        <p className="text-[10px] text-[#3D5470]">{l}</p>
+                        <p className="text-[10px] text-slate-400">{l}</p>
                         <p className="text-[12px] font-bold" style={{ color: COLOR }}>{v}</p>
                       </div>
                     ))}
@@ -172,19 +172,19 @@ export default function CryptoCardProductPage() {
       </section>
 
       {/* ── FEATURES ── */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Platform Capabilities</div>
-            <h2 className="h2 text-white mb-4">Everything to Run <span style={{ color: COLOR }}>a Crypto Card Program</span></h2>
+            <h2 className="h2 text-slate-900 mb-4">Everything to Run <span style={{ color: COLOR }}>a Crypto Card Program</span></h2>
             <p className="lead">From BIN sponsorship to cardholder app — the complete infrastructure stack for launching your card programme.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURES.map(f => (
-              <div key={f.title} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#00CCFF]/30 transition-colors group">
+              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#00CCFF]/30 transition-colors group">
                 <div className="text-3xl mb-4">{f.icon}</div>
-                <h3 className="text-[15px] font-bold text-white mb-2 group-hover:text-[#7EE8FF] transition-colors">{f.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{f.desc}</p>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#7EE8FF] transition-colors">{f.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -192,32 +192,32 @@ export default function CryptoCardProductPage() {
       </section>
 
       {/* ── TECH SPECS ── */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-label mb-4">Technical Architecture</div>
-              <h2 className="h2 text-white mb-6">Card-Grade <span style={{ color: COLOR }}>Infrastructure Stack</span></h2>
+              <h2 className="h2 text-slate-900 mb-6">Card-Grade <span style={{ color: COLOR }}>Infrastructure Stack</span></h2>
               <p className="lead mb-8">Visa/Mastercard certified processing, PCI-DSS compliant infrastructure, real-time FX settlement — enterprise-ready on day one.</p>
               <div className="space-y-2">
                 {SPECS.map(s => (
-                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-[#0E1E34]">
-                    <span className="text-[12px] font-bold text-[#3D5470] uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
-                    <span className="text-[13px] text-[#7A8FA6]">{s.value}</span>
+                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-slate-200">
+                    <span className="text-[12px] font-bold text-slate-400 uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
+                    <span className="text-[13px] text-slate-500">{s.value}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <div className="section-label mb-4">Tech Stack</div>
-              <h3 className="h3 text-white mb-6">Card Issuance Technology</h3>
+              <h3 className="h3 text-slate-900 mb-6">Card Issuance Technology</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {['Visa DPS','Mastercard MDES','EMV Tokenization','Apple Pay','Google Pay','Idemia Card Personalisation','Sumsub KYC','Chainalysis','React Native','Node.js / Go','PostgreSQL','PCI-DSS L1'].map(t => (
                   <span key={t} className="tech-pill">{t}</span>
                 ))}
               </div>
-              <div className="glass-lg rounded-2xl p-6 border border-[#0E1E34]">
-                <p className="text-[12px] text-[#3D5470] uppercase tracking-wider mb-4">Supported Crypto Assets</p>
+              <div className="glass-lg rounded-2xl p-6 border border-slate-200">
+                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Supported Crypto Assets</p>
                 <div className="grid grid-cols-2 gap-2">
                   {[
                     ['Bitcoin (BTC)', 'Native + Lightning'],
@@ -227,11 +227,11 @@ export default function CryptoCardProductPage() {
                     ['Your Token', 'Custom ERC-20 / BEP-20'],
                     ['50+ more', 'Configurable on request'],
                   ].map(([asset, detail]) => (
-                    <div key={String(asset)} className="flex items-start gap-2 p-2 rounded-lg bg-[#060E1C]">
+                    <div key={String(asset)} className="flex items-start gap-2 p-2 rounded-lg bg-white">
                       <CheckCircle size={12} style={{ color: COLOR }} className="flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-[12px] font-semibold text-white">{asset}</p>
-                        <p className="text-[11px] text-[#3D5470]">{detail}</p>
+                        <p className="text-[12px] font-semibold text-slate-900">{asset}</p>
+                        <p className="text-[11px] text-slate-400">{detail}</p>
                       </div>
                     </div>
                   ))}
@@ -243,11 +243,11 @@ export default function CryptoCardProductPage() {
       </section>
 
       {/* ── USE CASES ── */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Who Uses It</div>
-            <h2 className="h2 text-white mb-4">Perfect for <span style={{ color: COLOR }}>These Use Cases</span></h2>
+            <h2 className="h2 text-slate-900 mb-4">Perfect for <span style={{ color: COLOR }}>These Use Cases</span></h2>
           </div>
           <div className="grid md:grid-cols-4 gap-5">
             {[
@@ -256,10 +256,10 @@ export default function CryptoCardProductPage() {
               { icon: '🌍', title: 'Remittance Fintechs', desc: 'Issue cards to recipients in 50+ countries so cross-border transfers are immediately spendable at any POS terminal.' },
               { icon: '🏷️', title: 'Loyalty Platforms', desc: 'Issue branded reward cards where points or tokens can be spent in real-world retail — driving programme engagement.' },
             ].map(u => (
-              <div key={u.title} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#00CCFF]/30 transition-colors">
+              <div key={u.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#00CCFF]/30 transition-colors">
                 <div className="text-3xl mb-4">{u.icon}</div>
-                <h3 className="text-[15px] font-bold text-white mb-2">{u.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{u.desc}</p>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2">{u.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{u.desc}</p>
               </div>
             ))}
           </div>

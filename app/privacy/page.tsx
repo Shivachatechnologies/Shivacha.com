@@ -128,37 +128,37 @@ const SECTIONS = [
 
 export default function PrivacyPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
 
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.05] -left-20 top-0" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Legal</div>
-            <h1 className="h1 text-white mb-4">Privacy Policy</h1>
+            <h1 className="h1 text-slate-900 mb-4">Privacy Policy</h1>
             <p className="lead mb-3">
               Shivacha Technologies Pvt. Ltd. and its affiliates (&ldquo;Shivacha&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;).
             </p>
-            <p className="text-[14px] text-[#3D5470]">
-              Last updated: <span className="text-[#7A8FA6]">May 1, 2026</span> &nbsp;·&nbsp;
-              Effective: <span className="text-[#7A8FA6]">May 1, 2026</span>
+            <p className="text-[14px] text-slate-400">
+              Last updated: <span className="text-slate-500">May 1, 2026</span> &nbsp;·&nbsp;
+              Effective: <span className="text-slate-500">May 1, 2026</span>
             </p>
           </div>
         </div>
       </section>
 
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="grid lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
 
             {/* Sidebar Nav */}
             <div className="hidden lg:block">
-              <div className="glass rounded-2xl p-5 border border-[#0E1E34] sticky top-24">
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-[#3D5470] mb-4">Contents</p>
+              <div className="glass rounded-2xl p-5 border border-slate-200 sticky top-24">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-4">Contents</p>
                 <nav className="space-y-2">
                   {SECTIONS.map((s, i) => (
                     <a key={i} href={`#section-${i}`}
-                      className="block text-[13px] text-[#3D5470] hover:text-[#33B5E5] transition-colors py-1">
+                      className="block text-[13px] text-slate-400 hover:text-[#33B5E5] transition-colors py-1">
                       {s.title}
                     </a>
                   ))}
@@ -168,8 +168,8 @@ export default function PrivacyPage() {
 
             {/* Content */}
             <div className="lg:col-span-3 space-y-8">
-              <div className="card rounded-2xl p-6 border border-[#0E1E34]">
-                <p className="text-[14px] text-[#7A8FA6] leading-relaxed">
+              <div className="card rounded-2xl p-6 border border-slate-200">
+                <p className="text-[14px] text-slate-500 leading-relaxed">
                   This Privacy Policy explains how Shivacha Technologies collects, uses, discloses, and protects your personal
                   information when you use our website, products, or services. By using our services, you agree to the collection
                   and use of information in accordance with this policy.
@@ -177,21 +177,21 @@ export default function PrivacyPage() {
               </div>
 
               {SECTIONS.map((section, i) => (
-                <div key={i} id={`section-${i}`} className="card rounded-2xl p-6 border border-[#0E1E34]">
-                  <h2 className="text-[18px] font-bold text-white mb-5">{section.title}</h2>
+                <div key={i} id={`section-${i}`} className="card rounded-2xl p-6 border border-slate-200">
+                  <h2 className="text-[18px] font-bold text-slate-900 mb-5">{section.title}</h2>
                   <div className="space-y-5">
                     {section.content.map((c, j) => (
                       <div key={j}>
                         <h3 className="text-[14px] font-semibold text-[#33B5E5] mb-2">{c.sub}</h3>
-                        <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{c.text}</p>
+                        <p className="text-[13px] text-slate-500 leading-relaxed">{c.text}</p>
                       </div>
                     ))}
                   </div>
                 </div>
               ))}
 
-              <div className="glass rounded-2xl p-6 border border-[#0E1E34] text-center">
-                <p className="text-[14px] text-[#7A8FA6] mb-4">
+              <div className="glass rounded-2xl p-6 border border-slate-200 text-center">
+                <p className="text-[14px] text-slate-500 mb-4">
                   Questions about this Privacy Policy? Contact us at{' '}
                   <a href="mailto:privacy@shivacha.com" className="text-[#33B5E5] hover:underline">privacy@shivacha.com</a>
                 </p>

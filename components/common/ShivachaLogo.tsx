@@ -64,7 +64,7 @@ export default function ShivachaLogo({ size = 'md', variant = 'full', href = '/'
       {variant === 'full' && (
         <div>
           <p
-            className="font-black leading-none tracking-tight text-white"
+            className="font-black leading-none tracking-tight text-slate-900"
             style={{ fontSize: s.name.replace('text-[','').replace(']',''), fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '-0.01em' }}
           >
             SHIVACHA

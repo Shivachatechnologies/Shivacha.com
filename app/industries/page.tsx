@@ -55,42 +55,42 @@ const INDUSTRIES = [
 
 export default function IndustriesPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.06] -left-20 top-0" />
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Industries</div>
-            <h1 className="h1 text-white mb-6">Industry-Specific <br /><span className="gt-blue">Infrastructure Solutions</span></h1>
+            <h1 className="h1 text-slate-900 mb-6">Industry-Specific <br /><span className="gt-blue">Infrastructure Solutions</span></h1>
             <p className="lead max-w-2xl mx-auto">Deep domain expertise across every major industry. We understand the regulatory landscape, technical challenges, and growth drivers specific to your sector.</p>
           </div>
         </div>
       </section>
 
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container space-y-8">
           {INDUSTRIES.map((ind, i) => (
             <div key={ind.id} id={ind.id}
-              className="card rounded-3xl p-8 border border-[#0E1E34] hover:border-[#1E3A5A] group"
+              className="card rounded-3xl p-8 border border-slate-200 hover:border-slate-300 group"
               style={{ background: `linear-gradient(135deg, ${ind.color}04 0%, transparent 50%)` }}>
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-5xl">{ind.icon}</span>
                     <div>
-                      <h2 className="text-[22px] font-bold text-white group-hover:text-[#33B5E5] transition-colors">{ind.name}</h2>
+                      <h2 className="text-[22px] font-bold text-slate-900 group-hover:text-[#33B5E5] transition-colors">{ind.name}</h2>
                       <p className="text-[14px] font-medium" style={{ color: ind.color }}>{ind.headline}</p>
                     </div>
                   </div>
-                  <p className="text-[14px] text-[#7A8FA6] leading-relaxed mb-4">{ind.desc}</p>
-                  <p className="text-[12px] text-[#3D5470] mb-4"><span className="font-medium text-[#7A8FA6]">Clients:</span> {ind.clients}</p>
+                  <p className="text-[14px] text-slate-500 leading-relaxed mb-4">{ind.desc}</p>
+                  <p className="text-[12px] text-slate-400 mb-4"><span className="font-medium text-slate-500">Clients:</span> {ind.clients}</p>
                   <Link href={`/industries/${ind.id}`} className="btn btn-secondary text-sm py-2.5 px-5">
                     Explore Solutions <ArrowRight size={13} />
                   </Link>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   {ind.solutions.map(s => (
-                    <div key={s} className="flex items-center gap-2 p-3 rounded-xl bg-[#060E1C] border border-[#0E1E34] text-[13px] text-[#7A8FA6]">
+                    <div key={s} className="flex items-center gap-2 p-3 rounded-xl bg-white border border-slate-200 text-[13px] text-slate-500">
                       <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: ind.color }} />
                       {s}
                     </div>

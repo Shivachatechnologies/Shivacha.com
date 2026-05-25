@@ -116,7 +116,7 @@ const STATS = [
 
 export default function CaseStudiesPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
 
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
@@ -124,7 +124,7 @@ export default function CaseStudiesPage() {
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Case Studies</div>
-            <h1 className="h1 text-white mb-6">
+            <h1 className="h1 text-slate-900 mb-6">
               Real Results for
               <br /><span className="gt-blue">Real Global Enterprises</span>
             </h1>
@@ -137,7 +137,7 @@ export default function CaseStudiesPage() {
                 <div key={s.l} className="metric-card">
                   <div className="text-2xl mb-1">{s.icon}</div>
                   <p className="text-xl font-black gt-blue">{s.v}</p>
-                  <p className="text-[11px] text-[#3D5470]">{s.l}</p>
+                  <p className="text-[11px] text-slate-400">{s.l}</p>
                 </div>
               ))}
             </div>
@@ -146,63 +146,63 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Case Studies */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container space-y-10">
           {CASE_STUDIES.map((cs) => (
             <div key={cs.client}
-              className="card rounded-3xl border border-[#0E1E34] hover:border-[#1E3A5A] overflow-hidden"
+              className="card rounded-3xl border border-slate-200 hover:border-slate-300 overflow-hidden"
               style={{ background: `linear-gradient(135deg, ${cs.color}04 0%, transparent 50%)` }}>
 
               {/* Header */}
-              <div className="p-8 pb-6 border-b border-[#0E1E34]">
+              <div className="p-8 pb-6 border-b border-slate-200">
                 <div className="flex items-center gap-3 mb-4 flex-wrap">
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center font-black text-[15px]"
                     style={{ background: `${cs.color}20`, color: cs.color }}>
                     {cs.logo}
                   </div>
                   <div>
-                    <p className="text-[16px] font-bold text-white">{cs.client}</p>
-                    <p className="text-[13px] text-[#3D5470]">{cs.country}</p>
+                    <p className="text-[16px] font-bold text-slate-900">{cs.client}</p>
+                    <p className="text-[13px] text-slate-400">{cs.country}</p>
                   </div>
                   <span className="badge text-[11px]" style={{ background: `${cs.color}15`, borderColor: `${cs.color}30`, color: cs.color }}>
                     {cs.type}
                   </span>
-                  <span className="flex items-center gap-1 text-[12px] text-[#3D5470]">
+                  <span className="flex items-center gap-1 text-[12px] text-slate-400">
                     <Clock size={11} /> {cs.duration}
                   </span>
                 </div>
-                <h2 className="text-[20px] font-bold text-white leading-snug mb-6">{cs.headline}</h2>
+                <h2 className="text-[20px] font-bold text-slate-900 leading-snug mb-6">{cs.headline}</h2>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#3D5470] mb-2">The Challenge</p>
-                    <p className="text-[14px] text-[#7A8FA6] leading-relaxed">{cs.challenge}</p>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-400 mb-2">The Challenge</p>
+                    <p className="text-[14px] text-slate-500 leading-relaxed">{cs.challenge}</p>
                   </div>
                   <div>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#3D5470] mb-2">Our Solution</p>
-                    <p className="text-[14px] text-[#7A8FA6] leading-relaxed">{cs.solution}</p>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-400 mb-2">Our Solution</p>
+                    <p className="text-[14px] text-slate-500 leading-relaxed">{cs.solution}</p>
                   </div>
                 </div>
               </div>
 
               {/* Metrics */}
-              <div className="grid grid-cols-4 border-b border-[#0E1E34]">
+              <div className="grid grid-cols-4 border-b border-slate-200">
                 {cs.results.map((m) => (
-                  <div key={m.l} className="text-center py-5 border-r border-[#0E1E34] last:border-0">
+                  <div key={m.l} className="text-center py-5 border-r border-slate-200 last:border-0">
                     <div className="text-[22px] font-black" style={{ color: cs.color }}>{m.v}</div>
-                    <div className="text-[12px] text-[#3D5470] mt-0.5">{m.l}</div>
+                    <div className="text-[12px] text-slate-400 mt-0.5">{m.l}</div>
                   </div>
                 ))}
               </div>
 
               {/* Quote + Tech */}
               <div className="p-6 flex flex-col md:flex-row items-start gap-6">
-                <div className="flex-1 glass rounded-2xl p-5 border border-[#0E1E34]">
-                  <p className="text-[14px] text-[#7A8FA6] leading-relaxed italic mb-3">&ldquo;{cs.quote}&rdquo;</p>
-                  <p className="text-[13px] font-semibold text-white">— {cs.quoteName}</p>
+                <div className="flex-1 glass rounded-2xl p-5 border border-slate-200">
+                  <p className="text-[14px] text-slate-500 leading-relaxed italic mb-3">&ldquo;{cs.quote}&rdquo;</p>
+                  <p className="text-[13px] font-semibold text-slate-900">— {cs.quoteName}</p>
                 </div>
                 <div className="md:w-64 flex-shrink-0">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#3D5470] mb-3">Tech Stack</p>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-400 mb-3">Tech Stack</p>
                   <div className="flex flex-wrap gap-1.5">
                     {cs.tech.map(t => (
                       <span key={t} className="tech-pill text-[11px] py-1 px-2">{t}</span>
@@ -216,12 +216,12 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Portfolio CTA */}
-      <section className="section-sm bg-[#000008]">
+      <section className="section-sm bg-white">
         <div className="container">
-          <div className="glass rounded-3xl p-10 border border-[#0E1E34] text-center max-w-3xl mx-auto">
+          <div className="glass rounded-3xl p-10 border border-slate-200 text-center max-w-3xl mx-auto">
             <div className="text-5xl mb-4">📋</div>
-            <h2 className="text-2xl font-bold text-white mb-3">Want Our Full Portfolio Deck?</h2>
-            <p className="text-[#7A8FA6] mb-6 leading-relaxed">
+            <h2 className="text-2xl font-bold text-slate-900 mb-3">Want Our Full Portfolio Deck?</h2>
+            <p className="text-slate-500 mb-6 leading-relaxed">
               We have 400+ additional case studies covering every industry and technology vertical.
               Request a tailored deck with projects specific to your industry and use case.
             </p>

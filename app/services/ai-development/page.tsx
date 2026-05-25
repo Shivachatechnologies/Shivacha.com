@@ -65,14 +65,14 @@ const USE_CASES = [
 
 export default function AIDevelopmentPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-[500px] h-[500px] bg-[#00D4FF] opacity-[0.06] -right-40 top-0" />
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">AI Development</div>
-              <h1 className="h1 text-white mb-6">Enterprise AI & ML <br /><span className="gt-blue">Development Company</span></h1>
+              <h1 className="h1 text-slate-900 mb-6">Enterprise AI & ML <br /><span className="gt-blue">Development Company</span></h1>
               <p className="lead max-w-xl mb-8">
                 We build production-grade AI systems — custom LLMs, autonomous agents, computer vision,
                 predictive analytics, and intelligent automation. Not experiments, but enterprise systems
@@ -86,7 +86,7 @@ export default function AIDevelopmentPage() {
                 {[{ v: '50+', l: 'AI Projects' }, { v: '15+', l: 'AI Models Used' }, { v: '98.5%', l: 'Accuracy Rate' }].map(s => (
                   <div key={s.l} className="metric-card">
                     <p className="text-xl font-black gt-blue">{s.v}</p>
-                    <p className="text-[11px] text-[#3D5470]">{s.l}</p>
+                    <p className="text-[11px] text-slate-400">{s.l}</p>
                   </div>
                 ))}
               </div>
@@ -94,9 +94,9 @@ export default function AIDevelopmentPage() {
 
             {/* AI pipeline visual */}
             <div className="hidden lg:block">
-              <div className="glass-lg rounded-3xl p-7 border border-[#0E1E34] relative overflow-hidden">
+              <div className="glass-lg rounded-3xl p-7 border border-slate-200 relative overflow-hidden">
                 <div className="scan-line" />
-                <p className="text-[12px] text-[#3D5470] uppercase tracking-wider mb-4">AI Agent Execution Trace</p>
+                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">AI Agent Execution Trace</p>
                 <div className="space-y-2.5">
                   {[
                     { agent: 'Data Retrieval Agent', action: 'Fetching Q4 financial filings...', status: 'done', time: '0.4s' },
@@ -105,21 +105,21 @@ export default function AIDevelopmentPage() {
                     { agent: 'Report Agent', action: 'Generating compliance summary', status: 'pending', time: '—' },
                     { agent: 'Approval Agent', action: 'Awaiting human review gate', status: 'pending', time: '—' },
                   ].map(({ agent, action, status, time }) => (
-                    <div key={agent} className="flex items-start gap-3 p-3 rounded-xl bg-[#060E1C] border border-[#0E1E34]">
+                    <div key={agent} className="flex items-start gap-3 p-3 rounded-xl bg-white border border-slate-200">
                       <div className={`w-2 h-2 rounded-full mt-1.5 flex-shrink-0 ${status === 'done' ? 'bg-green-400' : status === 'active' ? 'bg-[#00D4FF] animate-pulse' : 'bg-[#1E3A5A]'}`} />
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center justify-between gap-2">
-                          <span className="text-[12px] font-semibold text-white truncate">{agent}</span>
-                          <span className="text-[11px] text-[#3D5470] flex-shrink-0">{time}</span>
+                          <span className="text-[12px] font-semibold text-slate-900 truncate">{agent}</span>
+                          <span className="text-[11px] text-slate-400 flex-shrink-0">{time}</span>
                         </div>
-                        <span className="text-[11px] text-[#3D5470]">{action}</span>
+                        <span className="text-[11px] text-slate-400">{action}</span>
                       </div>
                     </div>
                   ))}
                 </div>
                 <div className="mt-4 p-3 rounded-xl border border-[#00D4FF]/20 bg-[#00D4FF]/06 flex items-center justify-between">
                   <span className="text-[12px] text-[#00D4FF]">Pipeline: AML Compliance Review</span>
-                  <span className="text-[11px] text-[#3D5470]">3/5 steps complete</span>
+                  <span className="text-[11px] text-slate-400">3/5 steps complete</span>
                 </div>
               </div>
             </div>
@@ -127,18 +127,18 @@ export default function AIDevelopmentPage() {
         </div>
       </section>
 
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">AI Services</div>
-            <h2 className="h2 text-white">Enterprise AI <span className="gt-blue">Capabilities</span></h2>
+            <h2 className="h2 text-slate-900">Enterprise AI <span className="gt-blue">Capabilities</span></h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {AI_SERVICES.map((s) => (
-              <div key={s.title} className="card rounded-2xl p-5 border border-[#0E1E34] hover:border-[#00D4FF]/30 group">
+              <div key={s.title} className="card rounded-2xl p-5 border border-slate-200 hover:border-[#00D4FF]/30 group">
                 <div className="text-4xl mb-3">{s.icon}</div>
-                <h3 className="text-[15px] font-bold text-white mb-2 group-hover:text-[#00D4FF] transition-colors">{s.title}</h3>
-                <p className="text-[12px] text-[#7A8FA6] leading-relaxed">{s.desc}</p>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#00D4FF] transition-colors">{s.title}</h3>
+                <p className="text-[12px] text-slate-500 leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -146,17 +146,17 @@ export default function AIDevelopmentPage() {
       </section>
 
       {/* Use Cases */}
-      <section className="section-sm bg-[#000008]">
+      <section className="section-sm bg-white">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">AI in <span className="gt-blue">Financial Services</span></h2>
+            <h2 className="h3 text-slate-900">AI in <span className="gt-blue">Financial Services</span></h2>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-5">
             {USE_CASES.map((uc) => (
-              <div key={uc.title} className="card rounded-2xl p-5 border border-[#0E1E34] hover:border-[#00D4FF]/30">
+              <div key={uc.title} className="card rounded-2xl p-5 border border-slate-200 hover:border-[#00D4FF]/30">
                 <div className="text-3xl mb-3">{uc.icon}</div>
-                <h3 className="text-[14px] font-bold text-white mb-2">{uc.title}</h3>
-                <p className="text-[12px] text-[#7A8FA6] leading-relaxed">{uc.desc}</p>
+                <h3 className="text-[14px] font-bold text-slate-900 mb-2">{uc.title}</h3>
+                <p className="text-[12px] text-slate-500 leading-relaxed">{uc.desc}</p>
               </div>
             ))}
           </div>
@@ -164,20 +164,20 @@ export default function AIDevelopmentPage() {
       </section>
 
       {/* Process */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">How We Work</div>
-            <h2 className="h2 text-white">Our AI Development <span className="gt-blue">Process</span></h2>
+            <h2 className="h2 text-slate-900">Our AI Development <span className="gt-blue">Process</span></h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {PROCESS.map((p) => (
-              <div key={p.step} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#00D4FF]/30 group relative overflow-hidden">
+              <div key={p.step} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#00D4FF]/30 group relative overflow-hidden">
                 <div className="absolute top-4 right-5 text-[56px] font-black text-[#00D4FF]/05 leading-none select-none">{p.step}</div>
                 <div className="relative">
                   <div className="w-10 h-10 rounded-xl bg-[#00D4FF]/12 border border-[#00D4FF]/20 flex items-center justify-center text-[13px] font-black text-[#00D4FF] mb-4">{p.step}</div>
-                  <h3 className="text-[15px] font-bold text-white mb-2 group-hover:text-[#00D4FF] transition-colors">{p.title}</h3>
-                  <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{p.desc}</p>
+                  <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#00D4FF] transition-colors">{p.title}</h3>
+                  <p className="text-[13px] text-slate-500 leading-relaxed">{p.desc}</p>
                 </div>
               </div>
             ))}
@@ -186,16 +186,16 @@ export default function AIDevelopmentPage() {
       </section>
 
       {/* Models */}
-      <section className="section-sm bg-[#000008]">
+      <section className="section-sm bg-white">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">AI Models & Frameworks <span className="gt-blue">We Work With</span></h2>
+            <h2 className="h3 text-slate-900">AI Models & Frameworks <span className="gt-blue">We Work With</span></h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
             {MODELS.map((m) => (
-              <div key={m.name} className="card rounded-xl p-4 text-center border border-[#0E1E34] hover:border-[#00D4FF]/40">
-                <p className="text-[13px] font-bold text-white">{m.name}</p>
-                <p className="text-[11px] text-[#3D5470] mt-0.5">{m.org}</p>
+              <div key={m.name} className="card rounded-xl p-4 text-center border border-slate-200 hover:border-[#00D4FF]/40">
+                <p className="text-[13px] font-bold text-slate-900">{m.name}</p>
+                <p className="text-[11px] text-slate-400 mt-0.5">{m.org}</p>
               </div>
             ))}
           </div>
@@ -203,16 +203,16 @@ export default function AIDevelopmentPage() {
       </section>
 
       {/* FAQ */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Frequently Asked <span className="gt-blue">Questions</span></h2>
+            <h2 className="h3 text-slate-900">Frequently Asked <span className="gt-blue">Questions</span></h2>
           </div>
           <div className="space-y-4">
             {FAQS.map((faq) => (
-              <div key={faq.q} className="card rounded-2xl p-6 border border-[#0E1E34]">
-                <h4 className="text-[15px] font-bold text-white mb-3">{faq.q}</h4>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{faq.a}</p>
+              <div key={faq.q} className="card rounded-2xl p-6 border border-slate-200">
+                <h4 className="text-[15px] font-bold text-slate-900 mb-3">{faq.q}</h4>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

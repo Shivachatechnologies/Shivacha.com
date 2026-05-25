@@ -91,7 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <SchemaOrg />
       </head>
-      <body className="font-sans antialiased bg-[#000008] text-white overflow-x-hidden">
+      <body className="font-sans antialiased bg-white text-slate-900 overflow-x-hidden">
         <Header />
         <main className="relative">{children}</main>
         <Footer />

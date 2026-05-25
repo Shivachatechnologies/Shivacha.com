@@ -61,7 +61,7 @@ const BOILERPLATE = `Shivacha Technologies is a global enterprise infrastructure
 
 export default function PressPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
 
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
@@ -69,7 +69,7 @@ export default function PressPage() {
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Press & Media</div>
-            <h1 className="h1 text-white mb-6">
+            <h1 className="h1 text-slate-900 mb-6">
               Shivacha in the
               <br /><span className="gt-blue">News</span>
             </h1>
@@ -89,11 +89,11 @@ export default function PressPage() {
       </section>
 
       {/* Company Boilerplate */}
-      <section className="section-sm bg-[#020B18] border-y border-[#0E1E34]">
+      <section className="section-sm bg-slate-50 border-y border-slate-200">
         <div className="container max-w-4xl">
-          <div className="glass rounded-3xl p-8 border border-[#0E1E34]">
-            <h2 className="text-[18px] font-bold text-white mb-3">Company Overview</h2>
-            <p className="text-[14px] text-[#7A8FA6] leading-relaxed mb-5">{BOILERPLATE}</p>
+          <div className="glass rounded-3xl p-8 border border-slate-200">
+            <h2 className="text-[18px] font-bold text-slate-900 mb-3">Company Overview</h2>
+            <p className="text-[14px] text-slate-500 leading-relaxed mb-5">{BOILERPLATE}</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {[
                 { v: '2016', l: 'Founded' },
@@ -103,7 +103,7 @@ export default function PressPage() {
               ].map(s => (
                 <div key={s.l} className="text-center">
                   <div className="text-[22px] font-black gt-blue">{s.v}</div>
-                  <div className="text-[12px] text-[#3D5470]">{s.l}</div>
+                  <div className="text-[12px] text-slate-400">{s.l}</div>
                 </div>
               ))}
             </div>
@@ -112,34 +112,34 @@ export default function PressPage() {
       </section>
 
       {/* News Coverage */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container">
           <div className="mb-10">
-            <h2 className="h2 text-white mb-2">Recent <span className="gt-blue">Coverage</span></h2>
-            <p className="text-[#7A8FA6]">Latest news, features, and interviews from global media outlets.</p>
+            <h2 className="h2 text-slate-900 mb-2">Recent <span className="gt-blue">Coverage</span></h2>
+            <p className="text-slate-500">Latest news, features, and interviews from global media outlets.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {NEWS.map((item) => (
               <a key={item.headline} href={item.href} target="_blank" rel="noopener noreferrer"
-                className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#1E3A5A] group flex flex-col">
+                className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group flex flex-col">
                 <div className="flex items-center justify-between mb-4">
                   <span className="badge text-[11px]"
                     style={{ background: `${item.color}15`, borderColor: `${item.color}30`, color: item.color }}>
                     {item.outlet}
                   </span>
                   <div className="flex items-center gap-3">
-                    <span className="text-[12px] text-[#3D5470] flex items-center gap-1">
+                    <span className="text-[12px] text-slate-400 flex items-center gap-1">
                       <Calendar size={11} />{item.date}
                     </span>
-                    <ExternalLink size={13} className="text-[#3D5470] group-hover:text-[#33B5E5] transition-colors" />
+                    <ExternalLink size={13} className="text-slate-400 group-hover:text-[#33B5E5] transition-colors" />
                   </div>
                 </div>
-                <h3 className="text-[15px] font-bold text-white mb-3 leading-snug group-hover:text-[#33B5E5] transition-colors line-clamp-2">
+                <h3 className="text-[15px] font-bold text-slate-900 mb-3 leading-snug group-hover:text-[#33B5E5] transition-colors line-clamp-2">
                   {item.headline}
                 </h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed flex-1 line-clamp-3">{item.excerpt}</p>
-                <div className="flex items-center justify-between mt-4 pt-4 border-t border-[#0E1E34]">
-                  <span className="badge text-[11px] bg-[#0E1E34] border-[#1E3A5A] text-[#3D5470]">{item.type}</span>
+                <p className="text-[13px] text-slate-500 leading-relaxed flex-1 line-clamp-3">{item.excerpt}</p>
+                <div className="flex items-center justify-between mt-4 pt-4 border-t border-slate-200">
+                  <span className="badge text-[11px] bg-slate-200 border-slate-300 text-slate-400">{item.type}</span>
                   <span className="text-[13px] font-medium flex items-center gap-1" style={{ color: item.color }}>
                     Read Article <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -151,18 +151,18 @@ export default function PressPage() {
       </section>
 
       {/* Awards */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Awards & <span className="gt-blue">Recognition</span></h2>
+            <h2 className="h3 text-slate-900">Awards & <span className="gt-blue">Recognition</span></h2>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
             {AWARDS.map((a) => (
-              <div key={a.award} className="card rounded-2xl p-5 border border-[#0E1E34] hover:border-[#1E3A5A]">
+              <div key={a.award} className="card rounded-2xl p-5 border border-slate-200 hover:border-slate-300">
                 <div className="text-3xl mb-3">🏆</div>
                 <div className="badge badge-blue text-[10px] mb-2">{a.year}</div>
-                <h4 className="text-[13px] font-bold text-white mb-1 leading-snug">{a.award}</h4>
-                <p className="text-[11px] text-[#3D5470]">{a.org}</p>
+                <h4 className="text-[13px] font-bold text-slate-900 mb-1 leading-snug">{a.award}</h4>
+                <p className="text-[11px] text-slate-400">{a.org}</p>
               </div>
             ))}
           </div>
@@ -170,20 +170,20 @@ export default function PressPage() {
       </section>
 
       {/* Press Kit */}
-      <section id="press-kit" className="section bg-[#000008]">
+      <section id="press-kit" className="section bg-white">
         <div className="container max-w-3xl mx-auto">
-          <div className="glass rounded-3xl p-10 border border-[#0E1E34] text-center">
+          <div className="glass rounded-3xl p-10 border border-slate-200 text-center">
             <div className="text-5xl mb-4">📦</div>
-            <h2 className="text-[24px] font-bold text-white mb-3">Download Press Kit</h2>
-            <p className="text-[#7A8FA6] mb-6 leading-relaxed">
+            <h2 className="text-[24px] font-bold text-slate-900 mb-3">Download Press Kit</h2>
+            <p className="text-slate-500 mb-6 leading-relaxed">
               Official logos, executive headshots, product screenshots, brand guidelines,
               and company fact sheet — all in one package.
             </p>
             <div className="grid sm:grid-cols-2 gap-3 max-w-lg mx-auto mb-7">
               {['Official Logos (SVG, PNG)', 'Executive Headshots', 'Product Screenshots', 'Brand Guidelines', 'Company Fact Sheet', 'Boilerplate Copy'].map(item => (
-                <div key={item} className="flex items-center gap-2 p-2.5 rounded-xl bg-[#060E1C] border border-[#0E1E34]">
+                <div key={item} className="flex items-center gap-2 p-2.5 rounded-xl bg-white border border-slate-200">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#0099E6] flex-shrink-0" />
-                  <span className="text-[13px] text-[#7A8FA6]">{item}</span>
+                  <span className="text-[13px] text-slate-500">{item}</span>
                 </div>
               ))}
             </div>

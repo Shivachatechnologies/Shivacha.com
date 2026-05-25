@@ -61,13 +61,13 @@ export default function TechnologiesSection() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="section bg-[#020B18] relative overflow-hidden" id="technologies">
+    <section className="section bg-slate-50 relative overflow-hidden" id="technologies">
       <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.05] left-1/2 top-0" />
 
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="section-label justify-center">Technology Stack</div>
-          <h2 className="h2 text-white mb-4">
+          <h2 className="h2 text-slate-900 mb-4">
             Cutting-Edge Technology
             <br /><span className="gt-blue">Powering Every Solution</span>
           </h2>
@@ -84,8 +84,8 @@ export default function TechnologiesSection() {
               onClick={() => setActiveTab(i)}
               className={`px-5 py-2.5 rounded-xl text-[14px] font-medium transition-all ${
                 activeTab === i
-                  ? 'bg-[#0099E6] text-white shadow-lg shadow-blue-900/30'
-                  : 'bg-[#060E1C] border border-[#0E1E34] text-[#7A8FA6] hover:text-white hover:border-[#1E3A5A]'
+                  ? 'bg-[#0099E6] text-white shadow-lg shadow-blue-500/30'
+                  : 'bg-white border border-slate-200 text-slate-500 hover:text-slate-900 hover:border-slate-300'
               }`}>
               {cat.label}
             </button>
@@ -96,10 +96,10 @@ export default function TechnologiesSection() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
           {TECH_CATEGORIES[activeTab].items.map((tech) => (
             <div key={tech.name}
-              className="card rounded-2xl p-5 text-center group hover:border-[#1E3A5A] cursor-default border border-[#0E1E34]">
+              className="card rounded-2xl p-5 text-center group hover:border-slate-300 cursor-default border border-slate-200">
               <div className="text-3xl mb-3">{tech.icon}</div>
-              <p className="text-[14px] font-semibold text-white mb-1">{tech.name}</p>
-              <p className="text-[12px] text-[#3D5470]">{tech.desc}</p>
+              <p className="text-[14px] font-semibold text-slate-900 mb-1">{tech.name}</p>
+              <p className="text-[12px] text-slate-400">{tech.desc}</p>
               <div className="w-8 h-0.5 rounded-full mx-auto mt-3 transition-all group-hover:w-14"
                 style={{ background: tech.color }} />
             </div>
@@ -107,8 +107,8 @@ export default function TechnologiesSection() {
         </div>
 
         {/* All-tech ticker */}
-        <div className="border-t border-[#0E1E34] pt-8">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-[#3D5470] text-center mb-5">
+        <div className="border-t border-slate-200 pt-8">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-400 text-center mb-5">
             200+ Technologies in our stack
           </p>
           <div className="ticker-container">

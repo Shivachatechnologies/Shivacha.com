@@ -156,14 +156,14 @@ export default function ProductsEcosystem() {
   const product = PRODUCTS.find(p => p.id === active) || PRODUCTS[0];
 
   return (
-    <section className="section bg-[#000008] relative overflow-hidden" id="products">
+    <section className="section bg-white relative overflow-hidden" id="products">
       <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.05] right-0 top-0" />
 
       <div className="container relative z-10">
         {/* Header */}
         <div className="max-w-3xl mb-14">
           <div className="section-label">Platform Ecosystem</div>
-          <h2 className="h2 text-white mb-4">
+          <h2 className="h2 text-slate-900 mb-4">
             Ready-to-Deploy Enterprise
             <br /><span className="gt-blue">Infrastructure Products</span>
           </h2>
@@ -180,10 +180,10 @@ export default function ProductsEcosystem() {
               onClick={() => setActive(p.id)}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-[13px] font-medium transition-all ${
                 active === p.id
-                  ? 'text-white border'
-                  : 'text-[#7A8FA6] bg-[#060E1C] border border-[#0E1E34] hover:text-white hover:border-[#1E3A5A]'
+                  ? 'text-slate-900 border'
+                  : 'text-slate-500 bg-white border border-slate-200 hover:text-slate-900 hover:border-slate-300'
               }`}
-              style={active === p.id ? { background: `${p.color}15`, borderColor: `${p.color}40`, color: 'white' } : {}}>
+              style={active === p.id ? { background: `${p.color}12`, borderColor: `${p.color}40`, color: p.color } : {}}>
               <span>{p.icon}</span>
               {p.name.split(' ')[0]} {p.name.split(' ')[1]}
             </button>
@@ -198,7 +198,7 @@ export default function ProductsEcosystem() {
               <div className="text-5xl">{product.icon}</div>
               <div>
                 <div className="flex items-center gap-3 mb-1">
-                  <h3 className="h4 text-white">{product.name}</h3>
+                  <h3 className="h4 text-slate-900">{product.name}</h3>
                   {product.badge && (
                     <span className="text-[11px] px-2 py-0.5 rounded-full font-bold"
                       style={{ background: `${product.badgeColor}20`, color: product.badgeColor, border: `1px solid ${product.badgeColor}40` }}>
@@ -220,7 +220,7 @@ export default function ProductsEcosystem() {
                     style={{ background: `${product.color}20` }}>
                     <Check size={11} style={{ color: product.color }} />
                   </div>
-                  <span className="text-[13px] text-[#7A8FA6]">{f}</span>
+                  <span className="text-[13px] text-slate-500">{f}</span>
                 </div>
               ))}
             </div>
@@ -241,23 +241,23 @@ export default function ProductsEcosystem() {
               <div className="db-dot bg-red-400/60" />
               <div className="db-dot bg-yellow-400/60" />
               <div className="db-dot bg-green-400/60" />
-              <span className="text-[12px] text-[#3D5470] ml-2">{product.name} — Admin Panel</span>
+              <span className="text-[12px] text-slate-400 ml-2">{product.name} — Admin Panel</span>
             </div>
             <div className="p-5">
               {/* Metrics row */}
               <div className="grid grid-cols-3 gap-3 mb-5">
                 {product.metrics.map((m) => (
                   <div key={m.label} className="metric-card">
-                    <p className="text-[11px] text-[#3D5470] mb-1">{m.label}</p>
+                    <p className="text-[11px] text-slate-400 mb-1">{m.label}</p>
                     <p className="text-lg font-black" style={{ color: product.color }}>{m.value}</p>
                   </div>
                 ))}
               </div>
 
               {/* Simulated chart */}
-              <div className="bg-[#020B18] rounded-xl p-4 mb-4">
+              <div className="bg-slate-50 rounded-xl p-4 mb-4">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-[12px] text-[#3D5470]">Performance Overview</span>
+                  <span className="text-[12px] text-slate-400">Performance Overview</span>
                   <span className="badge badge-green text-[10px]">+18.4% MoM</span>
                 </div>
                 <div className="flex items-end gap-1.5 h-20">
@@ -279,10 +279,10 @@ export default function ProductsEcosystem() {
         </div>
 
         {/* All products grid — quick access */}
-        <div className="mt-16 pt-10 border-t border-[#0E1E34]">
+        <div className="mt-16 pt-10 border-t border-slate-200">
           <div className="flex items-center justify-between mb-6">
-            <p className="text-[15px] font-semibold text-white">Full Product Catalog</p>
-            <Link href="/products" className="text-[13px] text-[#33B5E5] hover:text-white transition-colors flex items-center gap-1">
+            <p className="text-[15px] font-semibold text-slate-900">Full Product Catalog</p>
+            <Link href="/products" className="text-[13px] text-[#33B5E5] hover:text-slate-900 transition-colors flex items-center gap-1">
               View all products <ArrowRight size={13} />
             </Link>
           </div>
@@ -293,7 +293,7 @@ export default function ProductsEcosystem() {
                 onClick={() => setActive(p.id)}>
                 <div className="product-card-glow" style={{ background: `radial-gradient(ellipse at 50% -20%, ${p.color}15 0%, transparent 70%)` }} />
                 <div className="text-3xl mb-2">{p.icon}</div>
-                <p className="text-[12px] font-medium text-[#7A8FA6] group-hover:text-white transition-colors leading-tight">{p.name}</p>
+                <p className="text-[12px] font-medium text-slate-500 group-hover:text-slate-900 transition-colors leading-tight">{p.name}</p>
               </Link>
             ))}
           </div>

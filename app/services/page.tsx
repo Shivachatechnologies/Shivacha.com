@@ -73,13 +73,13 @@ const SERVICES = [
 
 export default function ServicesPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.06] -left-20 top-0" />
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Development Services</div>
-            <h1 className="h1 text-white mb-6">Enterprise Development <br /><span className="gt-blue">Services</span></h1>
+            <h1 className="h1 text-slate-900 mb-6">Enterprise Development <br /><span className="gt-blue">Services</span></h1>
             <p className="lead max-w-2xl mx-auto">
               Specialized enterprise development services across blockchain, AI, DeFi, NFT, Web3,
               and cloud — delivered by 200+ specialized engineers.
@@ -88,25 +88,25 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-6">
             {SERVICES.map((s) => (
-              <div key={s.href} className="card rounded-3xl p-7 border border-[#0E1E34] hover:border-[#1E3A5A] group">
+              <div key={s.href} className="card rounded-3xl p-7 border border-slate-200 hover:border-slate-300 group">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="text-4xl flex-shrink-0">{s.icon}</div>
                   <div>
-                    <h2 className="text-[18px] font-bold text-white group-hover:text-[#33B5E5] transition-colors mb-1">{s.title}</h2>
+                    <h2 className="text-[18px] font-bold text-slate-900 group-hover:text-[#33B5E5] transition-colors mb-1">{s.title}</h2>
                     <div className="flex items-center gap-3">
                       <span className="badge badge-blue text-[11px]">⏱ {s.time}</span>
                       <span className="badge text-[11px] bg-[#6644FF]/10 border-[#6644FF]/25 text-[#A78BFA]">👥 {s.team}</span>
                     </div>
                   </div>
                 </div>
-                <p className="text-[14px] text-[#7A8FA6] leading-relaxed mb-4">{s.desc}</p>
+                <p className="text-[14px] text-slate-500 leading-relaxed mb-4">{s.desc}</p>
                 <div className="grid grid-cols-2 gap-2 mb-5">
                   {s.features.map((f) => (
-                    <div key={f} className="flex items-center gap-2 text-[12px] text-[#3D5470]">
+                    <div key={f} className="flex items-center gap-2 text-[12px] text-slate-400">
                       <div className="w-1 h-1 rounded-full flex-shrink-0" style={{ background: s.color }} />
                       {f}
                     </div>

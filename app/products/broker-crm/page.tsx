@@ -78,7 +78,7 @@ const COLOR = '#0099E6';
 
 export default function BrokerCRMProductPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
 
       {/* ── HERO ── */}
       <section className="section relative overflow-hidden grid-bg">
@@ -92,7 +92,7 @@ export default function BrokerCRMProductPage() {
                 <span className="badge" style={{ background: `${COLOR}18`, color: COLOR, border: `1px solid ${COLOR}40` }}>Broker CRM</span>
               </div>
               <div className="section-label mb-4">Forex / Crypto Broker CRM</div>
-              <h1 className="h1 text-white mb-6">
+              <h1 className="h1 text-slate-900 mb-6">
                 Complete Client Lifecycle
                 <br /><span style={{ color: COLOR }}>Management for Brokers</span>
               </h1>
@@ -111,7 +111,7 @@ export default function BrokerCRMProductPage() {
                 {METRICS.map(m => (
                   <div key={m.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: COLOR }}>{m.v}</p>
-                    <p className="text-[11px] text-[#3D5470] mt-1">{m.l}</p>
+                    <p className="text-[11px] text-slate-400 mt-1">{m.l}</p>
                   </div>
                 ))}
               </div>
@@ -125,39 +125,39 @@ export default function BrokerCRMProductPage() {
                   <span className="db-dot bg-red-500" />
                   <span className="db-dot bg-yellow-400" />
                   <span className="db-dot bg-green-400" />
-                  <span className="ml-3 text-[11px] text-[#3D5470]">crm.yourbrokerage.com — Admin</span>
+                  <span className="ml-3 text-[11px] text-slate-400">crm.yourbrokerage.com — Admin</span>
                 </div>
                 <div className="p-5 space-y-3">
                   {/* Pipeline summary */}
                   <div className="grid grid-cols-4 gap-2">
                     {[['Leads','1,284'],['KYC Pending','87'],['Funded','4,912'],['Active Traders','2,108']].map(([l, v]) => (
                       <div key={l} className="metric-card">
-                        <p className="text-[10px] text-[#3D5470]">{l}</p>
+                        <p className="text-[10px] text-slate-400">{l}</p>
                         <p className="text-[13px] font-bold" style={{ color: COLOR }}>{v}</p>
                       </div>
                     ))}
                   </div>
                   {/* Client rows */}
                   <div className="glass rounded-xl p-3">
-                    <p className="text-[10px] text-[#3D5470] uppercase tracking-wider mb-2">Recent Clients</p>
+                    <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-2">Recent Clients</p>
                     {[
                       ['James W.', 'KYC Approved', 'MT5 Live', '+$5,000'],
                       ['Priya S.', 'Pending KYC', 'Demo', '—'],
                       ['Marco F.', 'KYC Approved', 'MT4 Live', '+$12,400'],
                     ].map(([name, kyc, platform, dep]) => (
-                      <div key={String(name)} className="flex items-center justify-between py-1.5 border-b border-[#0E1E34] last:border-0">
-                        <span className="text-[11px] font-semibold text-white w-24">{name}</span>
+                      <div key={String(name)} className="flex items-center justify-between py-1.5 border-b border-slate-200 last:border-0">
+                        <span className="text-[11px] font-semibold text-slate-900 w-24">{name}</span>
                         <span className={`text-[10px] px-2 py-0.5 rounded-full ${kyc === 'KYC Approved' ? 'bg-green-400/10 text-green-400' : 'bg-yellow-400/10 text-yellow-400'}`}>{kyc}</span>
-                        <span className="text-[10px] text-[#3D5470]">{platform}</span>
+                        <span className="text-[10px] text-slate-400">{platform}</span>
                         <span className="text-[11px] font-bold text-[#33B5E5]">{dep}</span>
                       </div>
                     ))}
                   </div>
                   {/* IB commission strip */}
                   <div className="glass rounded-xl p-3">
-                    <p className="text-[10px] text-[#3D5470] uppercase tracking-wider mb-1">IB Commissions This Month</p>
+                    <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-1">IB Commissions This Month</p>
                     <p className="text-[18px] font-black" style={{ color: COLOR }}>$48,240</p>
-                    <p className="text-[10px] text-[#3D5470]">across 38 active IBs</p>
+                    <p className="text-[10px] text-slate-400">across 38 active IBs</p>
                   </div>
                 </div>
               </div>
@@ -167,19 +167,19 @@ export default function BrokerCRMProductPage() {
       </section>
 
       {/* ── FEATURES ── */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Platform Capabilities</div>
-            <h2 className="h2 text-white mb-4">Everything a Modern <span style={{ color: COLOR }}>Broker Needs</span></h2>
+            <h2 className="h2 text-slate-900 mb-4">Everything a Modern <span style={{ color: COLOR }}>Broker Needs</span></h2>
             <p className="lead">One platform covering the full client lifecycle — from first lead to long-term retention and compliance.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURES.map(f => (
-              <div key={f.title} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#0099E6]/30 transition-colors group">
+              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#0099E6]/30 transition-colors group">
                 <div className="text-3xl mb-4">{f.icon}</div>
-                <h3 className="text-[15px] font-bold text-white mb-2 group-hover:text-[#33B5E5] transition-colors">{f.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{f.desc}</p>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">{f.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -187,32 +187,32 @@ export default function BrokerCRMProductPage() {
       </section>
 
       {/* ── TECH SPECS ── */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-label mb-4">Technical Architecture</div>
-              <h2 className="h2 text-white mb-6">White-Label Ready <span style={{ color: COLOR }}>Out of the Box</span></h2>
+              <h2 className="h2 text-slate-900 mb-6">White-Label Ready <span style={{ color: COLOR }}>Out of the Box</span></h2>
               <p className="lead mb-8">Deployed under your domain, your brand, your servers — in as little as 4 weeks from contract signing.</p>
               <div className="space-y-2">
                 {SPECS.map(s => (
-                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-[#0E1E34]">
-                    <span className="text-[12px] font-bold text-[#3D5470] uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
-                    <span className="text-[13px] text-[#7A8FA6]">{s.value}</span>
+                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-slate-200">
+                    <span className="text-[12px] font-bold text-slate-400 uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
+                    <span className="text-[13px] text-slate-500">{s.value}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <div className="section-label mb-4">Regulatory Coverage</div>
-              <h3 className="h3 text-white mb-6">Compliance Across 40+ Jurisdictions</h3>
+              <h3 className="h3 text-slate-900 mb-6">Compliance Across 40+ Jurisdictions</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {['FCA (UK)','CySEC (EU)','ASIC (AU)','DFSA (UAE)','FSA (SVG)','FSC (BVI)','EMIR Reporting','MiFID II','CFTC (US)','MAS (SG)','ADGM (UAE)'].map(t => (
                   <span key={t} className="tech-pill">{t}</span>
                 ))}
               </div>
-              <div className="glass-lg rounded-2xl p-6 border border-[#0E1E34]">
-                <p className="text-[12px] text-[#3D5470] uppercase tracking-wider mb-4">Supported Payment Methods</p>
+              <div className="glass-lg rounded-2xl p-6 border border-slate-200">
+                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Supported Payment Methods</p>
                 <div className="grid grid-cols-2 gap-2">
                   {[
                     ['Credit / Debit Cards','Visa, Mastercard, Amex'],
@@ -222,11 +222,11 @@ export default function BrokerCRMProductPage() {
                     ['Local Methods','PIX, UPI, FPS, iDEAL'],
                     ['Stablecoins','USDT, USDC, BUSD, DAI'],
                   ].map(([method, detail]) => (
-                    <div key={String(method)} className="flex items-start gap-2 p-2 rounded-lg bg-[#060E1C]">
+                    <div key={String(method)} className="flex items-start gap-2 p-2 rounded-lg bg-white">
                       <CheckCircle size={12} style={{ color: COLOR }} className="flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-[12px] font-semibold text-white">{method}</p>
-                        <p className="text-[11px] text-[#3D5470]">{detail}</p>
+                        <p className="text-[12px] font-semibold text-slate-900">{method}</p>
+                        <p className="text-[11px] text-slate-400">{detail}</p>
                       </div>
                     </div>
                   ))}
@@ -238,11 +238,11 @@ export default function BrokerCRMProductPage() {
       </section>
 
       {/* ── USE CASES ── */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Who Uses It</div>
-            <h2 className="h2 text-white mb-4">Built for Every <span style={{ color: COLOR }}>Type of Broker</span></h2>
+            <h2 className="h2 text-slate-900 mb-4">Built for Every <span style={{ color: COLOR }}>Type of Broker</span></h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -250,10 +250,10 @@ export default function BrokerCRMProductPage() {
               { icon: '₿', title: 'Crypto Brokers & Exchanges', desc: 'Crypto deposit/withdrawal handling, AML screening on all transactions, and compliance-grade client documentation for digital asset brokers.' },
               { icon: '🔀', title: 'Multi-Asset Brokers', desc: 'Run Forex, crypto, stocks, and commodities under one CRM. Separate compliance workflows, payment rails, and trading platforms per asset class.' },
             ].map(u => (
-              <div key={u.title} className="card rounded-2xl p-7 border border-[#0E1E34] hover:border-[#0099E6]/30 transition-colors">
+              <div key={u.title} className="card rounded-2xl p-7 border border-slate-200 hover:border-[#0099E6]/30 transition-colors">
                 <div className="text-4xl mb-4">{u.icon}</div>
-                <h3 className="text-[17px] font-bold text-white mb-3">{u.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{u.desc}</p>
+                <h3 className="text-[17px] font-bold text-slate-900 mb-3">{u.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{u.desc}</p>
               </div>
             ))}
           </div>

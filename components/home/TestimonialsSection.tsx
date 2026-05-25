@@ -63,13 +63,13 @@ const TESTIMONIALS = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="section bg-[#000008] relative overflow-hidden" id="testimonials">
+    <section className="section bg-white relative overflow-hidden" id="testimonials">
       <div className="orb w-96 h-96 bg-[#6644FF] opacity-[0.05] left-0 top-1/2" />
 
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="section-label justify-center">Client Success</div>
-          <h2 className="h2 text-white mb-4">
+          <h2 className="h2 text-slate-900 mb-4">
             What Global Enterprises
             <br /><span className="gt-blue">Say About Shivacha</span>
           </h2>
@@ -97,16 +97,16 @@ export default function TestimonialsSection() {
                 📊 {t.metric}
               </div>
 
-              <p className="text-[14px] text-[#7A8FA6] leading-relaxed mb-6">&ldquo;{t.text}&rdquo;</p>
+              <p className="text-[14px] text-slate-500 leading-relaxed mb-6">&ldquo;{t.text}&rdquo;</p>
 
-              <div className="flex items-center gap-3 pt-4 border-t border-[#0E1E34]">
+              <div className="flex items-center gap-3 pt-4 border-t border-slate-200">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-[13px] flex-shrink-0"
                   style={{ background: `${t.color}20`, color: t.color }}>
                   {t.avatar}
                 </div>
                 <div>
-                  <p className="text-[14px] font-semibold text-white">{t.name}</p>
-                  <p className="text-[12px] text-[#3D5470]">{t.role} · {t.country}</p>
+                  <p className="text-[14px] font-semibold text-slate-900">{t.name}</p>
+                  <p className="text-[12px] text-slate-400">{t.role} · {t.country}</p>
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function TestimonialsSection() {
             <div key={s.l} className="text-center">
               <div className="text-2xl mb-1">{s.icon}</div>
               <div className="text-2xl font-black gt-blue">{s.v}</div>
-              <div className="text-[12px] text-[#3D5470]">{s.l}</div>
+              <div className="text-[12px] text-slate-400">{s.l}</div>
             </div>
           ))}
         </div>

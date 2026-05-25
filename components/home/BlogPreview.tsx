@@ -46,12 +46,12 @@ const POSTS = [
 
 export default function BlogPreview() {
   return (
-    <section className="section bg-[#000008] relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden">
       <div className="container relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <div className="section-label">Knowledge Hub</div>
-            <h2 className="h2 text-white">
+            <h2 className="h2 text-slate-900">
               Insights &amp; Research from
               <br /><span className="gt-blue">Shivacha Labs</span>
             </h2>
@@ -64,24 +64,24 @@ export default function BlogPreview() {
         <div className="grid md:grid-cols-2 gap-6">
           {POSTS.map((post) => (
             <Link key={post.href} href={post.href}
-              className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#1E3A5A] group flex flex-col">
+              className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group flex flex-col">
               <div className="flex items-center justify-between mb-4">
                 <span className="badge text-[11px] font-semibold"
                   style={{ background: `${post.tagColor}12`, borderColor: `${post.tagColor}30`, color: post.tagColor }}>
                   {post.tag}
                 </span>
-                <div className="flex items-center gap-1.5 text-[12px] text-[#3D5470]">
+                <div className="flex items-center gap-1.5 text-[12px] text-slate-400">
                   <Clock size={11} />{post.readTime}
                 </div>
               </div>
-              <h3 className="text-[16px] font-bold text-white mb-3 leading-snug group-hover:text-[#33B5E5] transition-colors line-clamp-2">
+              <h3 className="text-[16px] font-bold text-slate-900 mb-3 leading-snug group-hover:text-[#33B5E5] transition-colors line-clamp-2">
                 {post.title}
               </h3>
-              <p className="text-[13px] text-[#7A8FA6] leading-relaxed mb-4 flex-1 line-clamp-3">
+              <p className="text-[13px] text-slate-500 leading-relaxed mb-4 flex-1 line-clamp-3">
                 {post.excerpt}
               </p>
-              <div className="flex items-center justify-between pt-4 border-t border-[#0E1E34]">
-                <div className="flex items-center gap-2 text-[12px] text-[#3D5470]">
+              <div className="flex items-center justify-between pt-4 border-t border-slate-200">
+                <div className="flex items-center gap-2 text-[12px] text-slate-400">
                   <User size={12} />{post.author} · {post.date}
                 </div>
                 <div className="flex items-center gap-1 text-[13px] text-[#33B5E5] font-medium">

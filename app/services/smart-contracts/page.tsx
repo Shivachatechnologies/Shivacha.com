@@ -74,7 +74,7 @@ const COMPARISON = [
 
 export default function SmartContractsDevelopmentPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-[500px] h-[500px] opacity-[0.07] -left-40 top-0" style={{ background: '#6644FF' }} />
@@ -82,7 +82,7 @@ export default function SmartContractsDevelopmentPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Smart Contract Development</div>
-              <h1 className="h1 text-white mb-6">
+              <h1 className="h1 text-slate-900 mb-6">
                 Secure Smart Contract
                 <br /><span style={{ color: '#6644FF' }}>Development & Audit</span>
               </h1>
@@ -105,7 +105,7 @@ export default function SmartContractsDevelopmentPage() {
                 ].map(s => (
                   <div key={s.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: '#6644FF' }}>{s.v}</p>
-                    <p className="text-[11px] text-[#3D5470]">{s.l}</p>
+                    <p className="text-[11px] text-slate-400">{s.l}</p>
                   </div>
                 ))}
               </div>
@@ -113,9 +113,9 @@ export default function SmartContractsDevelopmentPage() {
 
             {/* Hero visual — contract audit pipeline */}
             <div className="hidden lg:block">
-              <div className="glass rounded-3xl p-7 border border-[#0E1E34] relative overflow-hidden">
+              <div className="glass rounded-3xl p-7 border border-slate-200 relative overflow-hidden">
                 <div className="scan-line" />
-                <p className="text-[12px] text-[#3D5470] uppercase tracking-wider mb-4">Smart Contract Lifecycle</p>
+                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Smart Contract Lifecycle</p>
                 <div className="space-y-3">
                   {[
                     { step: '01', label: 'Requirements & Architecture', status: 'done' },
@@ -125,12 +125,12 @@ export default function SmartContractsDevelopmentPage() {
                     { step: '05', label: 'Third-Party Security Audit', status: 'pending' },
                     { step: '06', label: 'Mainnet Deployment & Monitoring', status: 'pending' },
                   ].map(({ step, label, status }) => (
-                    <div key={step} className="flex items-center gap-3 p-3 rounded-xl bg-[#060E1C] border border-[#0E1E34]">
-                      <div className="w-8 h-8 rounded-lg flex items-center justify-center text-[11px] font-bold text-white flex-shrink-0"
+                    <div key={step} className="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200">
+                      <div className="w-8 h-8 rounded-lg flex items-center justify-center text-[11px] font-bold text-slate-900 flex-shrink-0"
                         style={{ background: status === 'done' ? '#6644FF33' : status === 'active' ? '#6644FF' : '#0E1E34', color: status === 'done' ? '#a78bfa' : 'white' }}>
                         {step}
                       </div>
-                      <span className="text-[13px] text-[#7A8FA6] flex-1">{label}</span>
+                      <span className="text-[13px] text-slate-500 flex-1">{label}</span>
                       <div className={`w-2 h-2 rounded-full flex-shrink-0 ${status === 'done' ? 'bg-green-400' : status === 'active' ? 'bg-yellow-400 animate-pulse' : 'bg-[#1E3A5A]'}`} />
                     </div>
                   ))}
@@ -146,19 +146,19 @@ export default function SmartContractsDevelopmentPage() {
       </section>
 
       {/* Offerings */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">What We Build</div>
-            <h2 className="h2 text-white">Smart Contract <span style={{ color: '#6644FF' }}>Development Services</span></h2>
+            <h2 className="h2 text-slate-900">Smart Contract <span style={{ color: '#6644FF' }}>Development Services</span></h2>
             <p className="lead mt-4">From simple ERC-20 tokens to complex DeFi primitives — every contract we ship is production-hardened.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {OFFERINGS.map((o) => (
-              <div key={o.title} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#1E3A5A] group">
+              <div key={o.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group">
                 <div className="text-4xl mb-4">{o.icon}</div>
-                <h3 className="text-[16px] font-bold text-white mb-2 group-hover:transition-colors" style={{ '--hover-color': '#a78bfa' } as React.CSSProperties}>{o.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{o.desc}</p>
+                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:transition-colors" style={{ '--hover-color': '#a78bfa' } as React.CSSProperties}>{o.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{o.desc}</p>
               </div>
             ))}
           </div>
@@ -166,17 +166,17 @@ export default function SmartContractsDevelopmentPage() {
       </section>
 
       {/* Chains */}
-      <section className="section-sm bg-[#000008]">
+      <section className="section-sm bg-white">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Chains & <span style={{ color: '#6644FF' }}>Runtimes</span> We Support</h2>
+            <h2 className="h3 text-slate-900">Chains & <span style={{ color: '#6644FF' }}>Runtimes</span> We Support</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-3">
             {CHAINS.map((c) => (
-              <div key={c.name} className="card rounded-xl p-4 text-center border border-[#0E1E34] hover:border-[#6644FF]/40 group cursor-default">
+              <div key={c.name} className="card rounded-xl p-4 text-center border border-slate-200 hover:border-[#6644FF]/40 group cursor-default">
                 <div className="text-3xl mb-2">{c.icon}</div>
-                <p className="text-[13px] font-semibold text-white">{c.name}</p>
-                <p className="text-[11px] text-[#3D5470] mt-0.5">{c.desc}</p>
+                <p className="text-[13px] font-semibold text-slate-900">{c.name}</p>
+                <p className="text-[11px] text-slate-400 mt-0.5">{c.desc}</p>
               </div>
             ))}
           </div>
@@ -184,16 +184,16 @@ export default function SmartContractsDevelopmentPage() {
       </section>
 
       {/* Toolchain */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Security <span style={{ color: '#6644FF' }}>Toolchain</span></h2>
-            <p className="text-[#7A8FA6] mt-2 max-w-lg mx-auto text-[14px]">Industry-standard tools combined with our proprietary audit checklist.</p>
+            <h2 className="h3 text-slate-900">Security <span style={{ color: '#6644FF' }}>Toolchain</span></h2>
+            <p className="text-slate-500 mt-2 max-w-lg mx-auto text-[14px]">Industry-standard tools combined with our proprietary audit checklist.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
             {TOOLS.map((t) => (
-              <div key={t.name} className="card rounded-xl p-4 border border-[#0E1E34] text-center hover:border-[#6644FF]/40">
-                <p className="text-[14px] font-bold text-white mb-1">{t.name}</p>
+              <div key={t.name} className="card rounded-xl p-4 border border-slate-200 text-center hover:border-[#6644FF]/40">
+                <p className="text-[14px] font-bold text-slate-900 mb-1">{t.name}</p>
                 <span className="badge badge-blue text-[10px]">{t.tag}</span>
               </div>
             ))}
@@ -202,26 +202,26 @@ export default function SmartContractsDevelopmentPage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Shivacha vs <span style={{ color: '#6644FF' }}>Typical Agency</span></h2>
+            <h2 className="h3 text-slate-900">Shivacha vs <span style={{ color: '#6644FF' }}>Typical Agency</span></h2>
           </div>
-          <div className="card rounded-2xl border border-[#0E1E34] overflow-hidden">
+          <div className="card rounded-2xl border border-slate-200 overflow-hidden">
             <table className="w-full text-[13px]">
               <thead>
-                <tr className="border-b border-[#0E1E34]">
-                  <th className="text-left p-4 text-[#3D5470] font-semibold">Feature</th>
+                <tr className="border-b border-slate-200">
+                  <th className="text-left p-4 text-slate-400 font-semibold">Feature</th>
                   <th className="p-4 text-center font-bold" style={{ color: '#a78bfa' }}>Shivacha</th>
-                  <th className="p-4 text-center text-[#3D5470] font-semibold">Typical Agency</th>
+                  <th className="p-4 text-center text-slate-400 font-semibold">Typical Agency</th>
                 </tr>
               </thead>
               <tbody>
                 {COMPARISON.map((row, i) => (
-                  <tr key={row.feature} className={i % 2 === 0 ? 'bg-[#060E1C]' : ''}>
-                    <td className="p-4 text-[#7A8FA6]">{row.feature}</td>
+                  <tr key={row.feature} className={i % 2 === 0 ? 'bg-white' : ''}>
+                    <td className="p-4 text-slate-500">{row.feature}</td>
                     <td className="p-4 text-center font-semibold" style={{ color: '#a78bfa' }}>{row.shivacha}</td>
-                    <td className="p-4 text-center text-[#3D5470]">{row.typical}</td>
+                    <td className="p-4 text-center text-slate-400">{row.typical}</td>
                   </tr>
                 ))}
               </tbody>
@@ -231,16 +231,16 @@ export default function SmartContractsDevelopmentPage() {
       </section>
 
       {/* Use Cases */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Smart Contract <span style={{ color: '#6644FF' }}>Use Cases</span></h2>
+            <h2 className="h3 text-slate-900">Smart Contract <span style={{ color: '#6644FF' }}>Use Cases</span></h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {USE_CASES.map((uc) => (
-              <div key={uc} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#060E1C] border border-[#0E1E34]">
+              <div key={uc} className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200">
                 <CheckCircle size={14} style={{ color: '#6644FF' }} className="flex-shrink-0" />
-                <span className="text-[13px] text-[#7A8FA6]">{uc}</span>
+                <span className="text-[13px] text-slate-500">{uc}</span>
               </div>
             ))}
           </div>
@@ -248,16 +248,16 @@ export default function SmartContractsDevelopmentPage() {
       </section>
 
       {/* FAQ */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Frequently Asked <span style={{ color: '#6644FF' }}>Questions</span></h2>
+            <h2 className="h3 text-slate-900">Frequently Asked <span style={{ color: '#6644FF' }}>Questions</span></h2>
           </div>
           <div className="space-y-4">
             {FAQS.map((faq) => (
-              <div key={faq.q} className="card rounded-2xl p-6 border border-[#0E1E34]">
-                <h4 className="text-[15px] font-bold text-white mb-3">{faq.q}</h4>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{faq.a}</p>
+              <div key={faq.q} className="card rounded-2xl p-6 border border-slate-200">
+                <h4 className="text-[15px] font-bold text-slate-900 mb-3">{faq.q}</h4>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

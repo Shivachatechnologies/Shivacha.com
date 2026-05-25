@@ -113,35 +113,35 @@ const STACKS = [
 
 export default function TechnologiesPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.06] -left-20 top-0" />
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Technology Stack</div>
-            <h1 className="h1 text-white mb-6">Our Enterprise <br /><span className="gt-blue">Technology Stack</span></h1>
+            <h1 className="h1 text-slate-900 mb-6">Our Enterprise <br /><span className="gt-blue">Technology Stack</span></h1>
             <p className="lead max-w-2xl mx-auto">200+ technologies across blockchain, AI, cloud, frontend, backend, and security — always choosing the right tool for each specific use case.</p>
           </div>
         </div>
       </section>
 
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container space-y-12">
           {STACKS.map((stack) => (
             <div key={stack.category} id={stack.category.toLowerCase().replace(/\s+/g, '-')}>
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-3xl">{stack.icon}</span>
-                <h2 className="text-[20px] font-bold text-white">{stack.category}</h2>
+                <h2 className="text-[20px] font-bold text-slate-900">{stack.category}</h2>
               </div>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                 {stack.items.map((item) => (
                   <div key={item.name}
-                    className="card rounded-xl p-4 border border-[#0E1E34] hover:border-[#1E3A5A] group cursor-default">
+                    className="card rounded-xl p-4 border border-slate-200 hover:border-slate-300 group cursor-default">
                     <div className="flex items-center gap-2 mb-1">
                       <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: stack.color }} />
-                      <p className="text-[14px] font-semibold text-white group-hover:text-[#33B5E5] transition-colors">{item.name}</p>
+                      <p className="text-[14px] font-semibold text-slate-900 group-hover:text-[#33B5E5] transition-colors">{item.name}</p>
                     </div>
-                    <p className="text-[12px] text-[#3D5470] pl-4">{item.desc}</p>
+                    <p className="text-[12px] text-slate-400 pl-4">{item.desc}</p>
                   </div>
                 ))}
               </div>

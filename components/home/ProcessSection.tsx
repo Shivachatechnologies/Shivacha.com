@@ -39,11 +39,11 @@ const STEPS = [
 
 export default function ProcessSection() {
   return (
-    <section className="section bg-[#020B18] relative overflow-hidden" id="process">
+    <section className="section bg-slate-50 relative overflow-hidden" id="process">
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="section-label justify-center">Our Process</div>
-          <h2 className="h2 text-white mb-4">
+          <h2 className="h2 text-slate-900 mb-4">
             Enterprise Delivery
             <br /><span className="gt-blue">Methodology</span>
           </h2>
@@ -56,7 +56,7 @@ export default function ProcessSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {STEPS.map((step, i) => (
             <div key={step.n}
-              className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#1E3A5A] group relative overflow-hidden">
+              className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group relative overflow-hidden">
               {/* Step number bg */}
               <div className="absolute -right-4 -top-4 text-[80px] font-black opacity-[0.04] text-[#0099E6] leading-none select-none">
                 {step.n}
@@ -68,15 +68,15 @@ export default function ProcessSection() {
                   </div>
                   <span className="badge badge-blue text-[11px]">{step.duration}</span>
                 </div>
-                <h3 className="text-[16px] font-bold text-white mb-2 group-hover:text-[#33B5E5] transition-colors">
+                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">
                   {step.title}
                 </h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed mb-4">
+                <p className="text-[13px] text-slate-500 leading-relaxed mb-4">
                   {step.desc}
                 </p>
                 <div className="space-y-1.5">
                   {step.deliverables.map((d) => (
-                    <div key={d} className="flex items-center gap-2 text-[12px] text-[#3D5470]">
+                    <div key={d} className="flex items-center gap-2 text-[12px] text-slate-400">
                       <div className="w-1 h-1 rounded-full bg-[#0099E6]" />
                       {d}
                     </div>
@@ -85,7 +85,7 @@ export default function ProcessSection() {
               </div>
               {/* Connecting line for desktop */}
               {i < STEPS.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-2.5 w-5 h-px bg-[#0E1E34] z-20" />
+                <div className="hidden lg:block absolute top-1/2 -right-2.5 w-5 h-px bg-slate-200 z-20" />
               )}
             </div>
           ))}

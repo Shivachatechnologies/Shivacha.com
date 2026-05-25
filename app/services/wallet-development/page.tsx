@@ -40,7 +40,7 @@ const CHAINS = [
 
 export default function WalletDevelopmentPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
 
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-[500px] h-[500px] bg-[#A855F7] opacity-[0.05] -left-40 top-0" />
@@ -48,7 +48,7 @@ export default function WalletDevelopmentPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Wallet Development</div>
-              <h1 className="h1 text-white mb-6">
+              <h1 className="h1 text-slate-900 mb-6">
                 Crypto Wallet
                 <br /><span className="gt-blue">Development Company</span>
               </h1>
@@ -71,20 +71,20 @@ export default function WalletDevelopmentPage() {
                 ].map(s => (
                   <div key={s.l} className="metric-card">
                     <p className="text-lg font-black" style={{ color: '#A855F7' }}>{s.v}</p>
-                    <p className="text-[11px] text-[#3D5470]">{s.l}</p>
+                    <p className="text-[11px] text-slate-400">{s.l}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="hidden lg:block">
-              <div className="glass-lg rounded-3xl p-7 border border-[#0E1E34] relative overflow-hidden">
+              <div className="glass-lg rounded-3xl p-7 border border-slate-200 relative overflow-hidden">
                 <div className="scan-line" />
-                <p className="text-[12px] text-[#3D5470] uppercase tracking-wider mb-4">Enterprise Wallet Dashboard</p>
+                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Enterprise Wallet Dashboard</p>
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <p className="text-[13px] text-[#3D5470]">Total Portfolio Value</p>
-                    <p className="text-2xl font-black text-white">$248,420.50</p>
+                    <p className="text-[13px] text-slate-400">Total Portfolio Value</p>
+                    <p className="text-2xl font-black text-slate-900">$248,420.50</p>
                   </div>
                   <span className="text-[12px] px-2 py-1 rounded-lg text-green-400 bg-green-400/10">+8.4% 24h</span>
                 </div>
@@ -94,15 +94,15 @@ export default function WalletDevelopmentPage() {
                     { token: 'BTC', amount: '1.2', value: '$80,904', pct: '33%' },
                     { token: 'USDC', amount: '17,836', value: '$17,836', pct: '7%' },
                   ].map(r => (
-                    <div key={r.token} className="flex items-center gap-3 p-2.5 rounded-xl bg-[#060E1C] border border-[#0E1E34]">
+                    <div key={r.token} className="flex items-center gap-3 p-2.5 rounded-xl bg-white border border-slate-200">
                       <div className="w-8 h-8 rounded-lg flex items-center justify-center font-bold text-[12px] flex-shrink-0"
                         style={{ background: '#A855F720', color: '#A855F7' }}>{r.token}</div>
                       <div className="flex-1">
                         <div className="flex justify-between">
-                          <span className="text-[13px] font-semibold text-white">{r.token}</span>
-                          <span className="text-[13px] text-white">{r.value}</span>
+                          <span className="text-[13px] font-semibold text-slate-900">{r.token}</span>
+                          <span className="text-[13px] text-slate-900">{r.value}</span>
                         </div>
-                        <div className="w-full bg-[#0E1E34] rounded-full h-1 mt-1">
+                        <div className="w-full bg-slate-200 rounded-full h-1 mt-1">
                           <div className="h-1 rounded-full" style={{ width: r.pct, background: '#A855F7' }} />
                         </div>
                       </div>
@@ -111,7 +111,7 @@ export default function WalletDevelopmentPage() {
                 </div>
                 <div className="flex gap-2">
                   {['Send', 'Receive', 'Swap', 'Stake'].map(a => (
-                    <button key={a} className="flex-1 py-2 rounded-xl text-[12px] font-medium text-white"
+                    <button key={a} className="flex-1 py-2 rounded-xl text-[12px] font-medium text-slate-900"
                       style={{ background: '#A855F720', border: '1px solid #A855F730' }}>{a}</button>
                   ))}
                 </div>
@@ -122,19 +122,19 @@ export default function WalletDevelopmentPage() {
       </section>
 
       {/* Wallet Types */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Wallet Types</div>
-            <h2 className="h2 text-white">Wallets We <span className="gt-blue">Design & Build</span></h2>
+            <h2 className="h2 text-slate-900">Wallets We <span className="gt-blue">Design & Build</span></h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {WALLET_TYPES.map(w => (
-              <div key={w.title} className="card rounded-2xl p-6 border border-[#0E1E34] group"
+              <div key={w.title} className="card rounded-2xl p-6 border border-slate-200 group"
                 style={{ ['--hover-color' as string]: w.accent }}>
                 <div className="text-4xl mb-4">{w.icon}</div>
-                <h3 className="text-[15px] font-bold text-white mb-2 group-hover:text-[#33B5E5] transition-colors">{w.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{w.desc}</p>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">{w.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{w.desc}</p>
               </div>
             ))}
           </div>
@@ -142,12 +142,12 @@ export default function WalletDevelopmentPage() {
       </section>
 
       {/* Features */}
-      <section className="section-sm bg-[#000008]">
+      <section className="section-sm bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Standard Features</div>
-              <h2 className="h2 text-white mb-4">Every Wallet Includes <span className="gt-blue">These Features</span></h2>
+              <h2 className="h2 text-slate-900 mb-4">Every Wallet Includes <span className="gt-blue">These Features</span></h2>
               <p className="lead mb-6">
                 Our wallet template delivers a production-ready feature set so you don&apos;t build from scratch —
                 you customize and launch faster.
@@ -156,9 +156,9 @@ export default function WalletDevelopmentPage() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {FEATURES.map(f => (
-                <div key={f} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#060E1C] border border-[#0E1E34]">
+                <div key={f} className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200">
                   <CheckCircle size={14} className="text-[#A855F7] flex-shrink-0" />
-                  <span className="text-[13px] text-[#7A8FA6]">{f}</span>
+                  <span className="text-[13px] text-slate-500">{f}</span>
                 </div>
               ))}
             </div>
@@ -167,10 +167,10 @@ export default function WalletDevelopmentPage() {
       </section>
 
       {/* Chains */}
-      <section className="section-sm bg-[#020B18]">
+      <section className="section-sm bg-slate-50">
         <div className="container">
           <div className="text-center mb-8">
-            <h2 className="h3 text-white">50+ Blockchain <span className="gt-blue">Networks Supported</span></h2>
+            <h2 className="h3 text-slate-900">50+ Blockchain <span className="gt-blue">Networks Supported</span></h2>
           </div>
           <div className="flex flex-wrap justify-center gap-2">
             {CHAINS.map(c => (

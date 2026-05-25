@@ -67,37 +67,37 @@ const SECTIONS = [
 
 export default function TermsPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
 
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-96 h-96 bg-[#0099E6] opacity-[0.05] -right-20 top-0" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Legal</div>
-            <h1 className="h1 text-white mb-4">Terms of Service</h1>
+            <h1 className="h1 text-slate-900 mb-4">Terms of Service</h1>
             <p className="lead mb-3">
               These Terms govern your use of Shivacha Technologies products, services, and website.
             </p>
-            <p className="text-[14px] text-[#3D5470]">
-              Last updated: <span className="text-[#7A8FA6]">May 1, 2026</span> &nbsp;·&nbsp;
-              Effective: <span className="text-[#7A8FA6]">May 1, 2026</span>
+            <p className="text-[14px] text-slate-400">
+              Last updated: <span className="text-slate-500">May 1, 2026</span> &nbsp;·&nbsp;
+              Effective: <span className="text-slate-500">May 1, 2026</span>
             </p>
           </div>
         </div>
       </section>
 
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="grid lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
 
             {/* Sidebar Nav */}
             <div className="hidden lg:block">
-              <div className="glass rounded-2xl p-5 border border-[#0E1E34] sticky top-24">
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-[#3D5470] mb-4">Sections</p>
+              <div className="glass rounded-2xl p-5 border border-slate-200 sticky top-24">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-4">Sections</p>
                 <nav className="space-y-1.5">
                   {SECTIONS.map((s, i) => (
                     <a key={i} href={`#section-${i}`}
-                      className="block text-[12px] text-[#3D5470] hover:text-[#33B5E5] transition-colors py-0.5 leading-snug">
+                      className="block text-[12px] text-slate-400 hover:text-[#33B5E5] transition-colors py-0.5 leading-snug">
                       {s.title}
                     </a>
                   ))}
@@ -114,14 +114,14 @@ export default function TermsPage() {
               </div>
 
               {SECTIONS.map((section, i) => (
-                <div key={i} id={`section-${i}`} className="card rounded-2xl p-6 border border-[#0E1E34]">
-                  <h2 className="text-[17px] font-bold text-white mb-3">{section.title}</h2>
-                  <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{section.content}</p>
+                <div key={i} id={`section-${i}`} className="card rounded-2xl p-6 border border-slate-200">
+                  <h2 className="text-[17px] font-bold text-slate-900 mb-3">{section.title}</h2>
+                  <p className="text-[13px] text-slate-500 leading-relaxed">{section.content}</p>
                 </div>
               ))}
 
-              <div className="glass rounded-2xl p-6 border border-[#0E1E34] text-center">
-                <p className="text-[14px] text-[#7A8FA6] mb-4">
+              <div className="glass rounded-2xl p-6 border border-slate-200 text-center">
+                <p className="text-[14px] text-slate-500 mb-4">
                   Questions about these Terms? Contact us at{' '}
                   <a href="mailto:legal@shivacha.com" className="text-[#33B5E5] hover:underline">legal@shivacha.com</a>
                 </p>

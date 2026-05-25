@@ -48,7 +48,7 @@ const CHECKLIST = [
 
 export default function WhyUs() {
   return (
-    <section className="section bg-[#000008] relative overflow-hidden" id="why-shivacha">
+    <section className="section bg-white relative overflow-hidden" id="why-shivacha">
       <div className="orb w-[500px] h-[500px] bg-[#0099E6] opacity-[0.05] right-0 top-1/4" />
 
       <div className="container relative z-10">
@@ -56,7 +56,7 @@ export default function WhyUs() {
           {/* Left */}
           <div>
             <div className="section-label">Why Shivacha</div>
-            <h2 className="h2 text-white mb-6">
+            <h2 className="h2 text-slate-900 mb-6">
               Why Global Enterprises
               <br /><span className="gt-blue">Choose Shivacha</span>
             </h2>
@@ -73,7 +73,7 @@ export default function WhyUs() {
                   <div className="w-5 h-5 rounded-full bg-[#0099E6]/15 flex items-center justify-center flex-shrink-0">
                     <CheckCircle size={12} className="text-[#33B5E5]" />
                   </div>
-                  <span className="text-[14px] text-[#7A8FA6]">{item}</span>
+                  <span className="text-[14px] text-slate-500">{item}</span>
                 </div>
               ))}
             </div>
@@ -83,30 +83,30 @@ export default function WhyUs() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PILLARS.map((p) => (
               <div key={p.title}
-                className="card rounded-2xl p-5 border border-[#0E1E34] hover:border-[#1E3A5A] group">
+                className="card rounded-2xl p-5 border border-slate-200 hover:border-slate-300 group">
                 <div className="text-3xl mb-3">{p.icon}</div>
                 <div className="badge badge-blue text-[10px] mb-3">{p.metric}</div>
-                <h3 className="text-[14px] font-bold text-white mb-2 group-hover:text-[#33B5E5] transition-colors">
+                <h3 className="text-[14px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">
                   {p.title}
                 </h3>
-                <p className="text-[12px] text-[#3D5470] leading-relaxed">{p.desc}</p>
+                <p className="text-[12px] text-slate-400 leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Bottom comparison table */}
-        <div className="mt-16 glass rounded-3xl p-8 border border-[#0E1E34] overflow-x-auto">
-          <h3 className="text-lg font-bold text-white mb-6">How We Compare</h3>
+        <div className="mt-16 glass rounded-3xl p-8 border border-slate-200 overflow-x-auto">
+          <h3 className="text-lg font-bold text-slate-900 mb-6">How We Compare</h3>
           <table className="w-full text-[13px]">
             <thead>
               <tr>
-                <th className="text-left text-[#3D5470] font-medium pb-3 pr-6">Criteria</th>
+                <th className="text-left text-slate-400 font-medium pb-3 pr-6">Criteria</th>
                 <th className="text-center pb-3 px-4">
                   <span className="badge badge-blue">Shivacha</span>
                 </th>
-                <th className="text-center pb-3 px-4 text-[#3D5470]">Generic Agency</th>
-                <th className="text-center pb-3 px-4 text-[#3D5470]">Freelancers</th>
+                <th className="text-center pb-3 px-4 text-slate-400">Generic Agency</th>
+                <th className="text-center pb-3 px-4 text-slate-400">Freelancers</th>
               </tr>
             </thead>
             <tbody>
@@ -119,8 +119,8 @@ export default function WhyUs() {
                 ['Post-launch maintenance', '✅', '⚠️', '❌'],
                 ['Dedicated R&D team', '✅', '❌', '❌'],
               ].map(([criteria, ...values]) => (
-                <tr key={criteria} className="border-t border-[#0E1E34]">
-                  <td className="py-3 pr-6 text-[#7A8FA6]">{criteria}</td>
+                <tr key={criteria} className="border-t border-slate-200">
+                  <td className="py-3 pr-6 text-slate-500">{criteria}</td>
                   {values.map((v, i) => (
                     <td key={i} className="py-3 px-4 text-center text-base">{v}</td>
                   ))}

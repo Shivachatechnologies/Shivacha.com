@@ -195,7 +195,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
   if (!industry) notFound();
 
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
 
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
@@ -206,7 +206,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
             <div className="flex items-center gap-4 mb-4">
               <span className="text-6xl">{industry.icon}</span>
             </div>
-            <h1 className="h1 text-white mb-6">
+            <h1 className="h1 text-slate-900 mb-6">
               {industry.headline.split(' ').slice(0, 4).join(' ')}
               <br /><span style={{ color: industry.color }}>{industry.headline.split(' ').slice(4).join(' ')}</span>
             </h1>
@@ -221,7 +221,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
               {industry.results.map(s => (
                 <div key={s.l} className="metric-card">
                   <p className="text-xl font-black" style={{ color: industry.color }}>{s.v}</p>
-                  <p className="text-[11px] text-[#3D5470]">{s.l}</p>
+                  <p className="text-[11px] text-slate-400">{s.l}</p>
                 </div>
               ))}
             </div>
@@ -230,38 +230,38 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
       </section>
 
       {/* Challenges */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <div className="section-label mb-4">Industry Challenges</div>
-              <h2 className="h2 text-white mb-4">Problems We <span className="gt-blue">Solve</span></h2>
+              <h2 className="h2 text-slate-900 mb-4">Problems We <span className="gt-blue">Solve</span></h2>
               <p className="lead mb-6">Deep understanding of the {industry.name.toLowerCase()} sector means we solve the real problems — not generic ones.</p>
               <div className="space-y-3">
                 {industry.challenges.map((c, i) => (
-                  <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-[#060E1C] border border-[#0E1E34]">
+                  <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-white border border-slate-200">
                     <div className="w-6 h-6 rounded-lg flex items-center justify-center text-[11px] font-black flex-shrink-0 mt-0.5"
                       style={{ background: `${industry.color}20`, color: industry.color }}>
                       {i + 1}
                     </div>
-                    <span className="text-[13px] text-[#7A8FA6] leading-relaxed">{c}</span>
+                    <span className="text-[13px] text-slate-500 leading-relaxed">{c}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <div className="section-label mb-4">Compliance & Regulation</div>
-              <h3 className="h3 text-white mb-4">Regulatory <span className="gt-blue">Frameworks</span></h3>
+              <h3 className="h3 text-slate-900 mb-4">Regulatory <span className="gt-blue">Frameworks</span></h3>
               <div className="grid grid-cols-2 gap-2 mb-6">
                 {industry.compliance.map(c => (
-                  <div key={c} className="flex items-center gap-2 p-3 rounded-xl bg-[#060E1C] border border-[#0E1E34]">
+                  <div key={c} className="flex items-center gap-2 p-3 rounded-xl bg-white border border-slate-200">
                     <CheckCircle size={13} style={{ color: industry.color }} className="flex-shrink-0" />
-                    <span className="text-[13px] text-[#7A8FA6]">{c}</span>
+                    <span className="text-[13px] text-slate-500">{c}</span>
                   </div>
                 ))}
               </div>
-              <p className="text-[13px] text-[#3D5470]">
-                <span className="text-[#7A8FA6] font-medium">Typical clients:</span> {industry.clients}
+              <p className="text-[13px] text-slate-400">
+                <span className="text-slate-500 font-medium">Typical clients:</span> {industry.clients}
               </p>
             </div>
           </div>
@@ -269,18 +269,18 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
       </section>
 
       {/* Solutions */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Solutions</div>
-            <h2 className="h2 text-white">What We Build for <span style={{ color: industry.color }}>{industry.name}</span></h2>
+            <h2 className="h2 text-slate-900">What We Build for <span style={{ color: industry.color }}>{industry.name}</span></h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {industry.solutions.map((s) => (
-              <div key={s.title} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#1E3A5A] group">
+              <div key={s.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group">
                 <div className="text-4xl mb-4">{s.icon}</div>
-                <h3 className="text-[15px] font-bold text-white mb-2 group-hover:text-[#33B5E5] transition-colors">{s.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{s.desc}</p>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">{s.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -288,10 +288,10 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
       </section>
 
       {/* Tech Stack */}
-      <section className="section-sm bg-[#020B18]">
+      <section className="section-sm bg-slate-50">
         <div className="container">
           <div className="text-center mb-8">
-            <h2 className="h3 text-white">Technology <span className="gt-blue">Stack</span></h2>
+            <h2 className="h3 text-slate-900">Technology <span className="gt-blue">Stack</span></h2>
           </div>
           <div className="flex flex-wrap justify-center gap-2">
             {industry.techStack.map(t => (

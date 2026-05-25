@@ -92,7 +92,7 @@ const COMPARISON = [
 
 export default function Web3DevelopmentPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
       {/* Hero */}
       <section className="section relative overflow-hidden grid-bg">
         <div className="orb w-[500px] h-[500px] opacity-[0.07] -right-40 top-0" style={{ background: '#EF4444' }} />
@@ -100,7 +100,7 @@ export default function Web3DevelopmentPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Web3 dApp Development</div>
-              <h1 className="h1 text-white mb-6">
+              <h1 className="h1 text-slate-900 mb-6">
                 Web3 dApp
                 <br /><span style={{ color: '#EF4444' }}>Development Company</span>
               </h1>
@@ -123,7 +123,7 @@ export default function Web3DevelopmentPage() {
                 ].map(s => (
                   <div key={s.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: '#EF4444' }}>{s.v}</p>
-                    <p className="text-[11px] text-[#3D5470]">{s.l}</p>
+                    <p className="text-[11px] text-slate-400">{s.l}</p>
                   </div>
                 ))}
               </div>
@@ -131,10 +131,10 @@ export default function Web3DevelopmentPage() {
 
             {/* Hero visual — dApp architecture */}
             <div className="hidden lg:block">
-              <div className="glass rounded-3xl p-7 border border-[#0E1E34] relative overflow-hidden">
+              <div className="glass rounded-3xl p-7 border border-slate-200 relative overflow-hidden">
                 <div className="scan-line" />
-                <p className="text-[12px] text-[#3D5470] uppercase tracking-wider mb-1">dApp Full-Stack Architecture</p>
-                <p className="text-[10px] text-[#3D5470] mb-4">Request flow: User → Wallet → Contract → Indexer → UI</p>
+                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-1">dApp Full-Stack Architecture</p>
+                <p className="text-[10px] text-slate-400 mb-4">Request flow: User → Wallet → Contract → Indexer → UI</p>
                 <div className="space-y-2">
                   {[
                     { layer: 'Next.js 14 Frontend', sub: 'App Router, RSC, TypeScript', side: 'UI' },
@@ -144,12 +144,12 @@ export default function Web3DevelopmentPage() {
                     { layer: 'The Graph Subgraph', sub: 'Indexed events → GraphQL API', side: 'DATA' },
                     { layer: 'IPFS / Arweave', sub: 'Decentralised asset & metadata storage', side: 'STORE' },
                   ].map(({ layer, sub, side }) => (
-                    <div key={layer} className="flex items-center gap-3 p-2.5 rounded-xl bg-[#060E1C] border border-[#0E1E34]">
+                    <div key={layer} className="flex items-center gap-3 p-2.5 rounded-xl bg-white border border-slate-200">
                       <span className="text-[9px] font-bold px-1.5 py-0.5 rounded flex-shrink-0"
                         style={{ background: '#EF444422', color: '#EF4444' }}>{side}</span>
                       <div className="flex-1 min-w-0">
-                        <p className="text-[12px] font-semibold text-white">{layer}</p>
-                        <p className="text-[10px] text-[#3D5470] truncate">{sub}</p>
+                        <p className="text-[12px] font-semibold text-slate-900">{layer}</p>
+                        <p className="text-[10px] text-slate-400 truncate">{sub}</p>
                       </div>
                       <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
                     </div>
@@ -162,19 +162,19 @@ export default function Web3DevelopmentPage() {
       </section>
 
       {/* Offerings */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">What We Build</div>
-            <h2 className="h2 text-white">Web3 dApp <span style={{ color: '#EF4444' }}>Development Services</span></h2>
+            <h2 className="h2 text-slate-900">Web3 dApp <span style={{ color: '#EF4444' }}>Development Services</span></h2>
             <p className="lead mt-4">Full-stack Web3 engineering from smart contracts to pixel-perfect, wallet-connected frontends.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {OFFERINGS.map((o) => (
-              <div key={o.title} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#1E3A5A] group">
+              <div key={o.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group">
                 <div className="text-4xl mb-4">{o.icon}</div>
-                <h3 className="text-[16px] font-bold text-white mb-2">{o.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{o.desc}</p>
+                <h3 className="text-[16px] font-bold text-slate-900 mb-2">{o.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{o.desc}</p>
               </div>
             ))}
           </div>
@@ -182,16 +182,16 @@ export default function Web3DevelopmentPage() {
       </section>
 
       {/* Tech Stack */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Our Web3 <span style={{ color: '#EF4444' }}>Tech Stack</span></h2>
-            <p className="text-[#7A8FA6] mt-2 max-w-lg mx-auto text-[14px]">Modern, battle-tested tooling for every layer of the dApp.</p>
+            <h2 className="h3 text-slate-900">Our Web3 <span style={{ color: '#EF4444' }}>Tech Stack</span></h2>
+            <p className="text-slate-500 mt-2 max-w-lg mx-auto text-[14px]">Modern, battle-tested tooling for every layer of the dApp.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {STACK.map((t) => (
-              <div key={t.name} className="card rounded-xl p-3 border border-[#0E1E34] hover:border-[#EF4444]/40 text-center">
-                <p className="text-[13px] font-bold text-white mb-1">{t.name}</p>
+              <div key={t.name} className="card rounded-xl p-3 border border-slate-200 hover:border-[#EF4444]/40 text-center">
+                <p className="text-[13px] font-bold text-slate-900 mb-1">{t.name}</p>
                 <span className="badge badge-blue text-[10px]">{t.tag}</span>
               </div>
             ))}
@@ -200,17 +200,17 @@ export default function Web3DevelopmentPage() {
       </section>
 
       {/* Chains */}
-      <section className="section-sm bg-[#020B18]">
+      <section className="section-sm bg-slate-50">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">20+ Chains <span style={{ color: '#EF4444' }}>Supported</span></h2>
+            <h2 className="h3 text-slate-900">20+ Chains <span style={{ color: '#EF4444' }}>Supported</span></h2>
           </div>
           <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-10 gap-2">
             {CHAINS.map((c) => (
-              <div key={c.name} className="card rounded-xl p-3 text-center border border-[#0E1E34] hover:border-[#EF4444]/40 cursor-default">
+              <div key={c.name} className="card rounded-xl p-3 text-center border border-slate-200 hover:border-[#EF4444]/40 cursor-default">
                 <div className="text-2xl mb-1">{c.icon}</div>
-                <p className="text-[11px] font-semibold text-white">{c.name}</p>
-                <p className="text-[9px] text-[#3D5470] mt-0.5">{c.desc}</p>
+                <p className="text-[11px] font-semibold text-slate-900">{c.name}</p>
+                <p className="text-[9px] text-slate-400 mt-0.5">{c.desc}</p>
               </div>
             ))}
           </div>
@@ -218,26 +218,26 @@ export default function Web3DevelopmentPage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Shivacha vs <span style={{ color: '#EF4444' }}>Typical Web3 Agency</span></h2>
+            <h2 className="h3 text-slate-900">Shivacha vs <span style={{ color: '#EF4444' }}>Typical Web3 Agency</span></h2>
           </div>
-          <div className="card rounded-2xl border border-[#0E1E34] overflow-hidden">
+          <div className="card rounded-2xl border border-slate-200 overflow-hidden">
             <table className="w-full text-[13px]">
               <thead>
-                <tr className="border-b border-[#0E1E34]">
-                  <th className="text-left p-4 text-[#3D5470] font-semibold">Feature</th>
+                <tr className="border-b border-slate-200">
+                  <th className="text-left p-4 text-slate-400 font-semibold">Feature</th>
                   <th className="p-4 text-center font-bold" style={{ color: '#EF4444' }}>Shivacha</th>
-                  <th className="p-4 text-center text-[#3D5470] font-semibold">Typical Agency</th>
+                  <th className="p-4 text-center text-slate-400 font-semibold">Typical Agency</th>
                 </tr>
               </thead>
               <tbody>
                 {COMPARISON.map((row, i) => (
-                  <tr key={row.feature} className={i % 2 === 0 ? 'bg-[#060E1C]' : ''}>
-                    <td className="p-4 text-[#7A8FA6]">{row.feature}</td>
+                  <tr key={row.feature} className={i % 2 === 0 ? 'bg-white' : ''}>
+                    <td className="p-4 text-slate-500">{row.feature}</td>
                     <td className="p-4 text-center font-semibold" style={{ color: '#EF4444' }}>{row.shivacha}</td>
-                    <td className="p-4 text-center text-[#3D5470]">{row.typical}</td>
+                    <td className="p-4 text-center text-slate-400">{row.typical}</td>
                   </tr>
                 ))}
               </tbody>
@@ -247,16 +247,16 @@ export default function Web3DevelopmentPage() {
       </section>
 
       {/* Use Cases */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Web3 dApp <span style={{ color: '#EF4444' }}>Use Cases</span></h2>
+            <h2 className="h3 text-slate-900">Web3 dApp <span style={{ color: '#EF4444' }}>Use Cases</span></h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {USE_CASES.map((uc) => (
-              <div key={uc} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#060E1C] border border-[#0E1E34]">
+              <div key={uc} className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200">
                 <CheckCircle size={14} style={{ color: '#EF4444' }} className="flex-shrink-0" />
-                <span className="text-[13px] text-[#7A8FA6]">{uc}</span>
+                <span className="text-[13px] text-slate-500">{uc}</span>
               </div>
             ))}
           </div>
@@ -264,16 +264,16 @@ export default function Web3DevelopmentPage() {
       </section>
 
       {/* FAQ */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="h3 text-white">Frequently Asked <span style={{ color: '#EF4444' }}>Questions</span></h2>
+            <h2 className="h3 text-slate-900">Frequently Asked <span style={{ color: '#EF4444' }}>Questions</span></h2>
           </div>
           <div className="space-y-4">
             {FAQS.map((faq) => (
-              <div key={faq.q} className="card rounded-2xl p-6 border border-[#0E1E34]">
-                <h4 className="text-[15px] font-bold text-white mb-3">{faq.q}</h4>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{faq.a}</p>
+              <div key={faq.q} className="card rounded-2xl p-6 border border-slate-200">
+                <h4 className="text-[15px] font-bold text-slate-900 mb-3">{faq.q}</h4>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

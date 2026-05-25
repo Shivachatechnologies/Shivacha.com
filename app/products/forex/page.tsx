@@ -68,7 +68,7 @@ const METRICS = [
 
 export default function ForexProductPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
 
       {/* ── HERO ── */}
       <section className="section relative overflow-hidden grid-bg">
@@ -84,7 +84,7 @@ export default function ForexProductPage() {
                 <span className="badge badge-green">White-Label</span>
               </div>
               <div className="section-label mb-4">Forex & CFD Trading Infrastructure</div>
-              <h1 className="h1 text-white mb-6">
+              <h1 className="h1 text-slate-900 mb-6">
                 Institutional-Grade FX Platform
                 <br /><span style={{ color: '#FFB800' }}>for Brokers</span>
               </h1>
@@ -102,7 +102,7 @@ export default function ForexProductPage() {
                 {METRICS.map(m => (
                   <div key={m.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: '#FFB800' }}>{m.v}</p>
-                    <p className="text-[11px] text-[#3D5470] mt-1">{m.l}</p>
+                    <p className="text-[11px] text-slate-400 mt-1">{m.l}</p>
                   </div>
                 ))}
               </div>
@@ -116,15 +116,15 @@ export default function ForexProductPage() {
                   <span className="db-dot bg-red-500" />
                   <span className="db-dot bg-yellow-400" />
                   <span className="db-dot bg-green-400" />
-                  <span className="ml-3 text-[11px] text-[#3D5470]">broker-admin.yourbrand.com — Risk Desk</span>
+                  <span className="ml-3 text-[11px] text-slate-400">broker-admin.yourbrand.com — Risk Desk</span>
                 </div>
                 <div className="p-5 space-y-3">
                   {/* FX rate strip */}
                   <div className="flex gap-2 overflow-hidden">
                     {[['EUR/USD','1.08432','↑0.12%','text-green-400'],['GBP/USD','1.27140','↓0.08%','text-red-400'],['USD/JPY','149.210','↑0.21%','text-green-400'],['XAU/USD','2,341.0','↑0.54%','text-green-400']].map(([pair,price,chg,cls]) => (
                       <div key={pair} className="glass rounded-lg px-2.5 py-1.5 flex-shrink-0">
-                        <p className="text-[9px] text-[#3D5470]">{pair}</p>
-                        <p className="text-[12px] font-bold text-white font-mono">{price}</p>
+                        <p className="text-[9px] text-slate-400">{pair}</p>
+                        <p className="text-[12px] font-bold text-slate-900 font-mono">{price}</p>
                         <p className={`text-[9px] font-semibold ${cls}`}>{chg}</p>
                       </div>
                     ))}
@@ -132,15 +132,15 @@ export default function ForexProductPage() {
                   {/* Exposure + P&L panel */}
                   <div className="grid grid-cols-3 gap-3">
                     <div className="col-span-2 glass rounded-xl p-3 h-36">
-                      <p className="text-[10px] text-[#3D5470] uppercase tracking-wider mb-2">Live Exposure — Top Positions</p>
+                      <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-2">Live Exposure — Top Positions</p>
                       <div className="space-y-1.5">
                         {([['EUR/USD','Long 42.1M','text-green-400',85],['GBP/USD','Short 18.4M','text-red-400',45],['XAU/USD','Long 9.8M','text-green-400',30],['USD/JPY','Short 31.2M','text-red-400',62]] as [string,string,string,number][]).map(([sym, exp, cls, w]) => (
                           <div key={sym}>
                             <div className="flex justify-between text-[9px] mb-0.5">
-                              <span className="text-[#7A8FA6] font-mono">{sym}</span>
+                              <span className="text-slate-500 font-mono">{sym}</span>
                               <span className={cls}>{exp}</span>
                             </div>
-                            <div className="h-1 bg-[#0E1E34] rounded-full">
+                            <div className="h-1 bg-slate-200 rounded-full">
                               <div className="h-full rounded-full" style={{ width: `${w}%`, background: w > 50 ? '#FFB80066' : '#FFB80033' }} />
                             </div>
                           </div>
@@ -148,11 +148,11 @@ export default function ForexProductPage() {
                       </div>
                     </div>
                     <div className="glass rounded-xl p-3 h-36 flex flex-col justify-between">
-                      <p className="text-[10px] text-[#3D5470] uppercase tracking-wider">Risk Desk</p>
+                      <p className="text-[10px] text-slate-400 uppercase tracking-wider">Risk Desk</p>
                       <div className="space-y-1.5">
-                        <div><p className="text-[9px] text-[#3D5470]">Net P&L</p><p className="text-[12px] font-bold text-green-400">+$48,210</p></div>
-                        <div><p className="text-[9px] text-[#3D5470]">Margin Calls</p><p className="text-[12px] font-bold text-red-400">3 Active</p></div>
-                        <div><p className="text-[9px] text-[#3D5470]">Hedge Ratio</p><p className="text-[12px] font-bold" style={{ color: '#FFB800' }}>94.2%</p></div>
+                        <div><p className="text-[9px] text-slate-400">Net P&L</p><p className="text-[12px] font-bold text-green-400">+$48,210</p></div>
+                        <div><p className="text-[9px] text-slate-400">Margin Calls</p><p className="text-[12px] font-bold text-red-400">3 Active</p></div>
+                        <div><p className="text-[9px] text-slate-400">Hedge Ratio</p><p className="text-[12px] font-bold" style={{ color: '#FFB800' }}>94.2%</p></div>
                       </div>
                     </div>
                   </div>
@@ -160,7 +160,7 @@ export default function ForexProductPage() {
                   <div className="grid grid-cols-3 gap-2">
                     {[['Open Trades','24,819'],['Daily Volume','$1.4B'],['Active Clients','8,204']].map(([l,v]) => (
                       <div key={l} className="metric-card">
-                        <p className="text-[10px] text-[#3D5470]">{l}</p>
+                        <p className="text-[10px] text-slate-400">{l}</p>
                         <p className="text-[13px] font-bold" style={{ color: '#FFB800' }}>{v}</p>
                       </div>
                     ))}
@@ -173,19 +173,19 @@ export default function ForexProductPage() {
       </section>
 
       {/* ── KEY FEATURES ── */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Platform Capabilities</div>
-            <h2 className="h2 text-white mb-4">Everything to Run a <span style={{ color: '#FFB800' }}>Regulated Broker</span></h2>
+            <h2 className="h2 text-slate-900 mb-4">Everything to Run a <span style={{ color: '#FFB800' }}>Regulated Broker</span></h2>
             <p className="lead">From execution infrastructure to back-office compliance — the complete FX brokerage technology stack.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURES.map(f => (
-              <div key={f.title} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#FFB800]/40 group">
+              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#FFB800]/40 group">
                 <div className="text-4xl mb-4">{f.icon}</div>
-                <h3 className="text-[16px] font-bold text-white mb-2 group-hover:text-[#FFB800] transition-colors">{f.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{f.desc}</p>
+                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#FFB800] transition-colors">{f.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -193,40 +193,40 @@ export default function ForexProductPage() {
       </section>
 
       {/* ── TECH SPECS ── */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-label mb-4">Technical Architecture</div>
-              <h2 className="h2 text-white mb-6">Built for <span style={{ color: '#FFB800' }}>Institutional Performance</span></h2>
+              <h2 className="h2 text-slate-900 mb-6">Built for <span style={{ color: '#FFB800' }}>Institutional Performance</span></h2>
               <p className="lead mb-8">Sub-10ms order execution, FIX Protocol 4.4 connectivity, and Equinix co-location — the same infrastructure tier-1 prime brokers use.</p>
               <div className="space-y-2">
                 {SPECS.map(s => (
-                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-[#0E1E34]">
-                    <span className="text-[12px] font-bold text-[#3D5470] uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
-                    <span className="text-[13px] text-[#7A8FA6]">{s.value}</span>
+                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-slate-200">
+                    <span className="text-[12px] font-bold text-slate-400 uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
+                    <span className="text-[13px] text-slate-500">{s.value}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <div className="section-label mb-4">Tech Stack</div>
-              <h3 className="h3 text-white mb-6">The Stack Behind the Speed</h3>
+              <h3 className="h3 text-slate-900 mb-6">The Stack Behind the Speed</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {['FIX Protocol 4.4','C++','Python','React','MT4 Bridge','MT5 Bridge','PostgreSQL','Equinix LD4','Equinix NY4','Redis','Kafka','Kubernetes'].map(t => (
                   <span key={t} className="tech-pill">{t}</span>
                 ))}
               </div>
-              <div className="glass-lg rounded-2xl p-6 border border-[#0E1E34]">
-                <p className="text-[12px] text-[#3D5470] uppercase tracking-wider mb-4">Execution Benchmarks</p>
+              <div className="glass-lg rounded-2xl p-6 border border-slate-200">
+                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Execution Benchmarks</p>
                 <div className="space-y-4">
                   {[['Order Execution (STP)','< 10ms','p99'],['FIX Session Latency','< 2ms','co-location'],['Risk Engine Cycle','< 50ms','real-time'],['Platform Uptime','99.99%','Annual SLA']].map(([lbl, val, ref]) => (
                     <div key={lbl}>
                       <div className="flex justify-between mb-1">
-                        <span className="text-[12px] text-[#7A8FA6]">{lbl}</span>
+                        <span className="text-[12px] text-slate-500">{lbl}</span>
                         <span className="text-[12px] font-bold" style={{ color: '#FFB800' }}>{val}</span>
                       </div>
-                      <div className="h-1.5 bg-[#0E1E34] rounded-full overflow-hidden">
+                      <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
                         <div className="h-full rounded-full" style={{ width: ref === 'Annual SLA' ? '99%' : ref === 'co-location' ? '98%' : '94%', background: 'linear-gradient(to right, #FFB800, #FFCC44)' }} />
                       </div>
                     </div>
@@ -239,22 +239,22 @@ export default function ForexProductPage() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Launch Process</div>
-            <h2 className="h2 text-white mb-4">From Contract to <span style={{ color: '#FFB800' }}>Live Brokerage</span></h2>
+            <h2 className="h2 text-slate-900 mb-4">From Contract to <span style={{ color: '#FFB800' }}>Live Brokerage</span></h2>
             <p className="lead">A structured delivery process used across 100+ FX and CFD broker launches across six continents.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {STEPS.map((s, i) => (
-              <div key={s.n} className="card rounded-2xl p-6 border border-[#0E1E34] relative group hover:border-[#FFB800]/40">
+              <div key={s.n} className="card rounded-2xl p-6 border border-slate-200 relative group hover:border-[#FFB800]/40">
                 <div className="text-[48px] font-black text-[#0E1E34] group-hover:text-[#FFB800]/20 transition-colors absolute top-4 right-4 leading-none">{s.n}</div>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{ background: '#FFB80018', border: '1px solid #FFB80033' }}>
                   <span className="font-bold text-sm" style={{ color: '#FFB800' }}>{i + 1}</span>
                 </div>
-                <h3 className="text-[15px] font-bold text-white mb-2 group-hover:text-[#FFB800] transition-colors">{s.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{s.desc}</p>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#FFB800] transition-colors">{s.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -262,12 +262,12 @@ export default function ForexProductPage() {
       </section>
 
       {/* ── CASE STUDY / METRICS ── */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="section-label mb-4">Client Results</div>
-              <h2 className="h2 text-white mb-6">
+              <h2 className="h2 text-slate-900 mb-6">
                 Middle East FX Broker
                 <br /><span style={{ color: '#FFB800' }}>Reached $500M Monthly Volume</span>
               </h2>
@@ -289,7 +289,7 @@ export default function ForexProductPage() {
                     <div className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: '#FFB80018' }}>
                       <Check size={11} style={{ color: '#FFB800' }} />
                     </div>
-                    <span className="text-[14px] text-[#7A8FA6]">{item}</span>
+                    <span className="text-[14px] text-slate-500">{item}</span>
                   </div>
                 ))}
               </div>
@@ -299,9 +299,9 @@ export default function ForexProductPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[['$500M','Monthly Volume at Month 8'],['1,800+','Instruments Across All Asset Classes'],['9 Weeks','From Contract to DFSA-Licensed Launch'],['320+','Active Introducing Brokers'],['< 8ms','Average STP Execution Latency'],['99.99%','Platform Uptime — First Year']].map(([v, l]) => (
-                <div key={l} className="glass-lg rounded-2xl p-6 border border-[#0E1E34] hover:border-[#FFB800]/30 transition-colors">
+                <div key={l} className="glass-lg rounded-2xl p-6 border border-slate-200 hover:border-[#FFB800]/30 transition-colors">
                   <p className="text-2xl font-black mb-1" style={{ color: '#FFB800' }}>{v}</p>
-                  <p className="text-[13px] text-[#7A8FA6]">{l}</p>
+                  <p className="text-[13px] text-slate-500">{l}</p>
                 </div>
               ))}
             </div>
@@ -310,18 +310,18 @@ export default function ForexProductPage() {
       </section>
 
       {/* ── INTEGRATIONS ── */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Integrations</div>
-            <h2 className="h2 text-white mb-4">Connects With Your <span style={{ color: '#FFB800' }}>Trading Ecosystem</span></h2>
+            <h2 className="h2 text-slate-900 mb-4">Connects With Your <span style={{ color: '#FFB800' }}>Trading Ecosystem</span></h2>
             <p className="lead">Pre-built connectors for liquidity providers, MT4/MT5, payment processors, and compliance tools.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {['LMAX Exchange','Sucden Financial','IS Prime','Swissquote LP','B2C2','MetaTrader 4','MetaTrader 5','cTrader','TradingView','Sumsub KYC','Refinitiv FX','Bloomberg B-Pipe','SafeCharge','NUVEI Payments','Stripe','Twilio 2FA'].map(name => (
-              <div key={name} className="flex items-center gap-2.5 p-3 rounded-xl glass border border-[#0E1E34] hover:border-[#FFB800]/30 transition-colors">
+              <div key={name} className="flex items-center gap-2.5 p-3 rounded-xl glass border border-slate-200 hover:border-[#FFB800]/30 transition-colors">
                 <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: '#FFB800' }} />
-                <span className="text-[13px] text-[#7A8FA6]">{name}</span>
+                <span className="text-[13px] text-slate-500">{name}</span>
               </div>
             ))}
           </div>

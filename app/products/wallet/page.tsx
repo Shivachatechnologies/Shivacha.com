@@ -78,7 +78,7 @@ const COLOR = '#A855F7';
 
 export default function WalletProductPage() {
   return (
-    <div className="bg-[#000008]">
+    <div className="bg-white">
 
       {/* ── HERO ── */}
       <section className="section relative overflow-hidden grid-bg">
@@ -92,7 +92,7 @@ export default function WalletProductPage() {
                 <span className="badge" style={{ background: `${COLOR}18`, color: COLOR, border: `1px solid ${COLOR}40` }}>Enterprise Custody</span>
               </div>
               <div className="section-label mb-4">Enterprise Wallet Infrastructure</div>
-              <h1 className="h1 text-white mb-6">
+              <h1 className="h1 text-slate-900 mb-6">
                 Institutional-Grade Wallet
                 <br /><span style={{ color: COLOR }}>for Digital Assets</span>
               </h1>
@@ -111,7 +111,7 @@ export default function WalletProductPage() {
                 {METRICS.map(m => (
                   <div key={m.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: COLOR }}>{m.v}</p>
-                    <p className="text-[11px] text-[#3D5470] mt-1">{m.l}</p>
+                    <p className="text-[11px] text-slate-400 mt-1">{m.l}</p>
                   </div>
                 ))}
               </div>
@@ -125,16 +125,16 @@ export default function WalletProductPage() {
                   <span className="db-dot bg-red-500" />
                   <span className="db-dot bg-yellow-400" />
                   <span className="db-dot bg-green-400" />
-                  <span className="ml-3 text-[11px] text-[#3D5470]">custody.platform — Wallet Console</span>
+                  <span className="ml-3 text-[11px] text-slate-400">custody.platform — Wallet Console</span>
                 </div>
                 <div className="p-5 space-y-3">
-                  <div className="glass rounded-xl p-3 border border-[#0E1E34]">
-                    <p className="text-[10px] text-[#3D5470] uppercase tracking-wider mb-1">Total Assets Under Custody</p>
+                  <div className="glass rounded-xl p-3 border border-slate-200">
+                    <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-1">Total Assets Under Custody</p>
                     <p className="text-[22px] font-black" style={{ color: COLOR }}>$248,412,900</p>
                     <div className="flex gap-3 mt-1">
                       <span className="text-[10px] text-green-400">Hot: $12.4M</span>
-                      <span className="text-[10px] text-[#3D5470]">•</span>
-                      <span className="text-[10px] text-[#7A8FA6]">Cold: $235.9M</span>
+                      <span className="text-[10px] text-slate-400">•</span>
+                      <span className="text-[10px] text-slate-500">Cold: $235.9M</span>
                     </div>
                   </div>
                   <div className="space-y-1.5">
@@ -145,9 +145,9 @@ export default function WalletProductPage() {
                     ].map(([icon, chain, amt, usd, temp]) => (
                       <div key={String(chain)} className="flex items-center gap-2.5 glass rounded-lg px-3 py-2">
                         <span className="text-sm font-bold w-5 text-center" style={{ color: COLOR }}>{icon}</span>
-                        <span className="text-[11px] font-semibold text-white flex-1">{chain}</span>
-                        <span className="text-[10px] text-[#3D5470]">{amt}</span>
-                        <span className="text-[11px] font-bold text-white">{usd}</span>
+                        <span className="text-[11px] font-semibold text-slate-900 flex-1">{chain}</span>
+                        <span className="text-[10px] text-slate-400">{amt}</span>
+                        <span className="text-[11px] font-bold text-slate-900">{usd}</span>
                         <span className={`text-[9px] px-1.5 py-0.5 rounded-full font-medium ${temp === 'cold' ? 'bg-blue-900/40 text-blue-300' : 'bg-green-900/40 text-green-300'}`}>{temp}</span>
                       </div>
                     ))}
@@ -155,7 +155,7 @@ export default function WalletProductPage() {
                   <div className="grid grid-cols-3 gap-2">
                     {[['MPC Shards', '3/3 Active'],['HSM Status', 'Online'],['Policy Rules', '24 Active']].map(([l, v]) => (
                       <div key={l} className="metric-card">
-                        <p className="text-[10px] text-[#3D5470]">{l}</p>
+                        <p className="text-[10px] text-slate-400">{l}</p>
                         <p className="text-[11px] font-bold text-green-400">{v}</p>
                       </div>
                     ))}
@@ -172,19 +172,19 @@ export default function WalletProductPage() {
       </section>
 
       {/* ── FEATURES ── */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Platform Capabilities</div>
-            <h2 className="h2 text-white mb-4">Security-First <span style={{ color: COLOR }}>Custody Infrastructure</span></h2>
+            <h2 className="h2 text-slate-900 mb-4">Security-First <span style={{ color: COLOR }}>Custody Infrastructure</span></h2>
             <p className="lead">Every layer of the custody stack — from key generation to compliance reporting — built for institutional requirements.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURES.map(f => (
-              <div key={f.title} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#A855F7]/30 transition-colors group">
+              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#A855F7]/30 transition-colors group">
                 <div className="text-3xl mb-4">{f.icon}</div>
-                <h3 className="text-[15px] font-bold text-white mb-2 group-hover:text-[#C084FC] transition-colors">{f.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{f.desc}</p>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#C084FC] transition-colors">{f.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -192,32 +192,32 @@ export default function WalletProductPage() {
       </section>
 
       {/* ── TECH SPECS ── */}
-      <section className="section bg-[#000008]">
+      <section className="section bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-label mb-4">Technical Architecture</div>
-              <h2 className="h2 text-white mb-6">Zero Single Point <span style={{ color: COLOR }}>of Failure</span></h2>
+              <h2 className="h2 text-slate-900 mb-6">Zero Single Point <span style={{ color: COLOR }}>of Failure</span></h2>
               <p className="lead mb-8">MPC + HSM + threshold signatures in a defence-in-depth architecture — no entity can unilaterally access funds.</p>
               <div className="space-y-2">
                 {SPECS.map(s => (
-                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-[#0E1E34]">
-                    <span className="text-[12px] font-bold text-[#3D5470] uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
-                    <span className="text-[13px] text-[#7A8FA6]">{s.value}</span>
+                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-slate-200">
+                    <span className="text-[12px] font-bold text-slate-400 uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
+                    <span className="text-[13px] text-slate-500">{s.value}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <div className="section-label mb-4">Compliance & Certifications</div>
-              <h3 className="h3 text-white mb-6">Enterprise-Grade Security Standards</h3>
+              <h3 className="h3 text-slate-900 mb-6">Enterprise-Grade Security Standards</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {['MPC-TSS (GG18/GG20)','HSM FIPS 140-2 L3','Threshold ECDSA','Chainalysis KYT','TRM Labs','SOC2 Type II','ISO 27001','FATF Travel Rule','React Native','Go / Node.js','PostgreSQL','Kubernetes'].map(t => (
                   <span key={t} className="tech-pill">{t}</span>
                 ))}
               </div>
-              <div className="glass-lg rounded-2xl p-6 border border-[#0E1E34]">
-                <p className="text-[12px] text-[#3D5470] uppercase tracking-wider mb-4">Security Checklist</p>
+              <div className="glass-lg rounded-2xl p-6 border border-slate-200">
+                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Security Checklist</p>
                 <div className="space-y-2.5">
                   {[
                     'Air-gapped cold storage with HSM signing',
@@ -230,7 +230,7 @@ export default function WalletProductPage() {
                   ].map(sf => (
                     <div key={sf} className="flex items-center gap-3">
                       <Check size={13} style={{ color: COLOR }} className="flex-shrink-0" />
-                      <span className="text-[13px] text-[#7A8FA6]">{sf}</span>
+                      <span className="text-[13px] text-slate-500">{sf}</span>
                     </div>
                   ))}
                 </div>
@@ -241,11 +241,11 @@ export default function WalletProductPage() {
       </section>
 
       {/* ── USE CASES ── */}
-      <section className="section bg-[#020B18]">
+      <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Who Uses It</div>
-            <h2 className="h2 text-white mb-4">Built for <span style={{ color: COLOR }}>Institutional Operators</span></h2>
+            <h2 className="h2 text-slate-900 mb-4">Built for <span style={{ color: COLOR }}>Institutional Operators</span></h2>
           </div>
           <div className="grid md:grid-cols-4 gap-5">
             {[
@@ -254,10 +254,10 @@ export default function WalletProductPage() {
               { icon: '🏢', title: 'Corporate Treasuries', desc: 'Hold BTC/ETH in institutional-grade cold storage with board-level approval policies and insurance coverage.' },
               { icon: '🏗️', title: 'DeFi Protocols', desc: 'Secure protocol treasuries with multisig + timelock governance. Automate operational payouts with configurable policy rules.' },
             ].map(u => (
-              <div key={u.title} className="card rounded-2xl p-6 border border-[#0E1E34] hover:border-[#A855F7]/30 transition-colors">
+              <div key={u.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#A855F7]/30 transition-colors">
                 <div className="text-3xl mb-4">{u.icon}</div>
-                <h3 className="text-[15px] font-bold text-white mb-2">{u.title}</h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed">{u.desc}</p>
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2">{u.title}</h3>
+                <p className="text-[13px] text-slate-500 leading-relaxed">{u.desc}</p>
               </div>
             ))}
           </div>

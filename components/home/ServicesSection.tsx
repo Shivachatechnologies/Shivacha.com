@@ -60,14 +60,14 @@ const SERVICES = [
 
 export default function ServicesSection() {
   return (
-    <section className="section bg-[#020B18] relative overflow-hidden" id="services">
+    <section className="section bg-slate-50 relative overflow-hidden" id="services">
       <div className="orb w-96 h-96 bg-[#6644FF] opacity-[0.05] left-0 bottom-0" />
 
       <div className="container relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div className="max-w-2xl">
             <div className="section-label">Development Services</div>
-            <h2 className="h2 text-white">
+            <h2 className="h2 text-slate-900">
               Enterprise-Grade Development
               <br /><span className="gt-blue">Services & Solutions</span>
             </h2>
@@ -80,7 +80,7 @@ export default function ServicesSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {SERVICES.map((s) => (
             <Link key={s.href} href={s.href}
-              className="card rounded-2xl p-6 group border border-[#0E1E34] relative overflow-hidden"
+              className="card rounded-2xl p-6 group border border-slate-200 relative overflow-hidden"
               style={{ '--card-color': s.color } as React.CSSProperties}>
               {/* Hover gradient */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity"
@@ -91,10 +91,10 @@ export default function ServicesSection() {
 
               <div className="relative z-10">
                 <div className="text-4xl mb-4">{s.icon}</div>
-                <h3 className="text-[16px] font-bold text-white mb-2 group-hover:text-[#33B5E5] transition-colors">
+                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#33B5E5] transition-colors">
                   {s.title}
                 </h3>
-                <p className="text-[13px] text-[#7A8FA6] leading-relaxed mb-4 line-clamp-3">
+                <p className="text-[13px] text-slate-500 leading-relaxed mb-4 line-clamp-3">
                   {s.desc}
                 </p>
                 <div className="flex flex-wrap gap-1.5 mb-4">

@@ -49,7 +49,7 @@ function AnimatedNumber({ end, suffix, color }: { end: number; suffix: string; c
 
 export default function StatsSection() {
   return (
-    <section className="section-sm bg-[#020B18] border-y border-[#0E1E34] relative overflow-hidden">
+    <section className="section-sm bg-slate-50 border-y border-slate-200 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-[#0099E6]/3 via-transparent to-[#00D4FF]/3" />
 
       <div className="container relative z-10">
@@ -58,7 +58,7 @@ export default function StatsSection() {
           <div className="section-label justify-center">
             Infrastructure at Scale
           </div>
-          <h2 className="h3 text-white">
+          <h2 className="h3 text-slate-900">
             Numbers That Define Our <span className="gt-blue">Global Impact</span>
           </h2>
         </div>
@@ -67,17 +67,17 @@ export default function StatsSection() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {METRICS.map((m) => (
             <div key={m.label}
-              className="card rounded-2xl p-5 text-center group border border-[#0E1E34] hover:border-[#1E3A5A]">
+              className="card rounded-2xl p-5 text-center group border border-slate-200 hover:border-slate-300">
               <div className="text-3xl mb-3">{m.icon}</div>
               <AnimatedNumber end={m.value} suffix={m.suffix} color={m.color} />
-              <div className="text-[13px] font-semibold text-white mt-1 mb-1">{m.label}</div>
-              <div className="text-[11px] text-[#3D5470]">{m.sub}</div>
+              <div className="text-[13px] font-semibold text-slate-900 mt-1 mb-1">{m.label}</div>
+              <div className="text-[11px] text-slate-400">{m.sub}</div>
             </div>
           ))}
         </div>
 
         {/* Bottom bar — uptime / certifications */}
-        <div className="mt-10 glass rounded-2xl p-5 border border-[#0E1E34] flex flex-wrap items-center justify-center gap-8">
+        <div className="mt-10 glass rounded-2xl p-5 border border-slate-200 flex flex-wrap items-center justify-center gap-8">
           {[
             { label: 'ISO 27001 Certified', icon: '🔐' },
             { label: 'SOC 2 Type II', icon: '✅' },
@@ -86,7 +86,7 @@ export default function StatsSection() {
             { label: '24/7 Enterprise Support', icon: '📞' },
             { label: 'NDA-Protected Development', icon: '🤝' },
           ].map((c) => (
-            <div key={c.label} className="flex items-center gap-2 text-[13px] text-[#7A8FA6]">
+            <div key={c.label} className="flex items-center gap-2 text-[13px] text-slate-500">
               <span>{c.icon}</span>
               {c.label}
             </div>

@@ -58,14 +58,14 @@ const SOCIAL = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#020B18] border-t border-[#0E1E34]">
+    <footer className="bg-slate-50 border-t border-slate-200">
       {/* Newsletter */}
-      <div className="border-b border-[#0E1E34]">
+      <div className="border-b border-slate-200">
         <div className="container py-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="text-xl font-bold text-white mb-1">Stay Ahead of the Curve</h3>
-              <p className="text-[#3D5470] text-[14px]">Enterprise blockchain, AI & fintech insights — weekly digest, no spam.</p>
+              <h3 className="text-xl font-bold text-slate-900 mb-1">Stay Ahead of the Curve</h3>
+              <p className="text-slate-400 text-[14px]">Enterprise blockchain, AI & fintech insights — weekly digest, no spam.</p>
             </div>
             <div className="flex gap-3 w-full md:w-auto">
               <input type="email" placeholder="enterprise@company.com" className="input md:w-72" />
@@ -85,14 +85,14 @@ export default function Footer() {
             <div className="mb-5">
               <ShivachaLogo size="md" variant="full" href="/" />
             </div>
-            <p className="text-[13px] text-[#3D5470] leading-relaxed mb-5">
+            <p className="text-[13px] text-slate-400 leading-relaxed mb-5">
               Global enterprise infrastructure company delivering blockchain, AI, fintech, forex, and cloud ecosystems for the digital economy.
             </p>
             {/* Social */}
             <div className="flex gap-2 mb-6">
               {SOCIAL.map(({ Icon, href, label }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
-                  className="w-9 h-9 rounded-xl bg-[#060E1C] border border-[#0E1E34] flex items-center justify-center text-[#3D5470] hover:text-[#33B5E5] hover:border-[#0099E6]/40 transition-all">
+                  className="w-9 h-9 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-400 hover:text-[#33B5E5] hover:border-[#0099E6]/40 transition-all">
                   <Icon size={14} />
                 </a>
               ))}
@@ -100,7 +100,7 @@ export default function Footer() {
             {/* Certifications */}
             <div className="flex flex-wrap gap-2">
               {['ISO 27001', 'SOC 2', 'GDPR'].map((c) => (
-                <span key={c} className="text-[11px] px-2 py-1 rounded-lg bg-[#060E1C] border border-[#0E1E34] text-[#3D5470]">
+                <span key={c} className="text-[11px] px-2 py-1 rounded-lg bg-white border border-slate-200 text-slate-400">
                   ✓ {c}
                 </span>
               ))}
@@ -109,13 +109,13 @@ export default function Footer() {
 
           {/* Products */}
           <div>
-            <h4 className="text-white font-semibold text-[14px] mb-5 flex items-center gap-2">
+            <h4 className="text-slate-900 font-semibold text-[14px] mb-5 flex items-center gap-2">
               <span className="w-1 h-4 rounded-full bg-[#0099E6]" />Products
             </h4>
             <ul className="space-y-2.5">
               {PRODUCTS_LINKS.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-[13px] text-[#3D5470] hover:text-[#33B5E5] transition-colors flex items-center gap-1.5 group">
+                  <Link href={l.href} className="text-[13px] text-slate-400 hover:text-[#33B5E5] transition-colors flex items-center gap-1.5 group">
                     <ArrowRight size={10} className="opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
                     {l.name}
                   </Link>
@@ -126,13 +126,13 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-white font-semibold text-[14px] mb-5 flex items-center gap-2">
+            <h4 className="text-slate-900 font-semibold text-[14px] mb-5 flex items-center gap-2">
               <span className="w-1 h-4 rounded-full bg-[#6644FF]" />Services
             </h4>
             <ul className="space-y-2.5">
               {SERVICES_LINKS.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-[13px] text-[#3D5470] hover:text-[#A78BFA] transition-colors flex items-center gap-1.5 group">
+                  <Link href={l.href} className="text-[13px] text-slate-400 hover:text-[#A78BFA] transition-colors flex items-center gap-1.5 group">
                     <ArrowRight size={10} className="opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
                     {l.name}
                   </Link>
@@ -143,13 +143,13 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-white font-semibold text-[14px] mb-5 flex items-center gap-2">
+            <h4 className="text-slate-900 font-semibold text-[14px] mb-5 flex items-center gap-2">
               <span className="w-1 h-4 rounded-full bg-[#00D4FF]" />Company
             </h4>
             <ul className="space-y-2.5">
               {COMPANY_LINKS.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-[13px] text-[#3D5470] hover:text-[#33B5E5] transition-colors flex items-center gap-1.5 group">
+                  <Link href={l.href} className="text-[13px] text-slate-400 hover:text-[#33B5E5] transition-colors flex items-center gap-1.5 group">
                     <ArrowRight size={10} className="opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
                     {l.name}
                   </Link>
@@ -160,7 +160,7 @@ export default function Footer() {
 
           {/* Offices */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
-            <h4 className="text-white font-semibold text-[14px] mb-5 flex items-center gap-2">
+            <h4 className="text-slate-900 font-semibold text-[14px] mb-5 flex items-center gap-2">
               <span className="w-1 h-4 rounded-full bg-[#00FF87]" />Global Offices
             </h4>
             <div className="space-y-5">
@@ -168,15 +168,15 @@ export default function Footer() {
                 <div key={o.country}>
                   <div className="flex items-center gap-2 mb-1.5">
                     <span className="text-lg">{o.flag}</span>
-                    <span className="text-[13px] font-semibold text-white">{o.country}</span>
+                    <span className="text-[13px] font-semibold text-slate-900">{o.country}</span>
                   </div>
-                  <div className="flex items-start gap-1.5 text-[12px] text-[#3D5470] mb-1">
+                  <div className="flex items-start gap-1.5 text-[12px] text-slate-400 mb-1">
                     <MapPin size={11} className="mt-0.5 flex-shrink-0" />{o.address}
                   </div>
-                  <a href={`tel:${o.phone.replace(/\s/g,'')}`} className="flex items-center gap-1.5 text-[12px] text-[#3D5470] hover:text-[#33B5E5] transition-colors mb-0.5">
+                  <a href={`tel:${o.phone.replace(/\s/g,'')}`} className="flex items-center gap-1.5 text-[12px] text-slate-400 hover:text-[#33B5E5] transition-colors mb-0.5">
                     <Phone size={10} />{o.phone}
                   </a>
-                  <a href={`mailto:${o.email}`} className="flex items-center gap-1.5 text-[12px] text-[#3D5470] hover:text-[#33B5E5] transition-colors">
+                  <a href={`mailto:${o.email}`} className="flex items-center gap-1.5 text-[12px] text-slate-400 hover:text-[#33B5E5] transition-colors">
                     <Mail size={10} />{o.email}
                   </a>
                 </div>
@@ -187,12 +187,12 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-[#0E1E34]">
+      <div className="border-t border-slate-200">
         <div className="container py-5 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-[12px] text-[#3D5470]">
+          <p className="text-[12px] text-slate-400">
             © {new Date().getFullYear()} Shivacha Technologies Ltd. All rights reserved.
           </p>
-          <div className="flex items-center gap-5 text-[12px] text-[#3D5470]">
+          <div className="flex items-center gap-5 text-[12px] text-slate-400">
             {['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'Sitemap'].map((l) => (
               <Link key={l} href={`/${l.toLowerCase().replace(/ /g,'-')}`}
                 className="hover:text-[#33B5E5] transition-colors">
