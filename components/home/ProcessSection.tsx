@@ -1,95 +1,68 @@
 const STEPS = [
-  {
-    n: '01', title: 'Discovery & Strategy',
-    desc: 'Deep-dive into your business requirements, technical stack, and market. We create a detailed architecture blueprint and project roadmap.',
-    duration: 'Week 1–2',
-    deliverables: ['Technical Specification', 'Architecture Blueprint', 'Project Roadmap', 'Cost Estimate'],
-  },
-  {
-    n: '02', title: 'Architecture & Design',
-    desc: 'Enterprise-grade system architecture design with security, scalability, and compliance at the core. UI/UX prototypes for all interfaces.',
-    duration: 'Week 2–4',
-    deliverables: ['System Architecture', 'Database Design', 'UI/UX Prototypes', 'Security Framework'],
-  },
-  {
-    n: '03', title: 'Agile Development',
-    desc: 'Sprint-based development with weekly releases, daily standups, and full transparency via project management tools.',
-    duration: 'Week 4–16',
-    deliverables: ['Weekly Sprint Demos', 'Feature Releases', 'Code Reviews', 'Test Reports'],
-  },
-  {
-    n: '04', title: 'Security Audit',
-    desc: 'Third-party security audits for all smart contracts, penetration testing for APIs, and full compliance review before launch.',
-    duration: 'Week 16–18',
-    deliverables: ['Audit Reports', 'Pentest Results', 'Compliance Checklist', 'Risk Assessment'],
-  },
-  {
-    n: '05', title: 'Launch & Deploy',
-    desc: 'CI/CD-powered zero-downtime deployment to enterprise cloud infrastructure with full monitoring and alerting setup.',
-    duration: 'Week 18–20',
-    deliverables: ['Production Deploy', 'Monitoring Setup', 'Documentation', 'Training'],
-  },
-  {
-    n: '06', title: 'Support & Growth',
-    desc: 'SLA-backed 24/7 maintenance, proactive monitoring, performance optimization, and continuous feature development.',
-    duration: 'Ongoing',
-    deliverables: ['24/7 Monitoring', 'Incident Response', 'Feature Updates', 'Scaling Support'],
-  },
+  { n: '01', title: 'Discovery',        desc: 'Architecture blueprint, tech stack, project roadmap & cost estimate', duration: 'Week 1–2' },
+  { n: '02', title: 'Design',           desc: 'System architecture, database design, UI/UX prototypes & security framework', duration: 'Week 2–4' },
+  { n: '03', title: 'Development',      desc: 'Sprint-based builds with weekly demos, daily standups & full code transparency', duration: 'Week 4–16' },
+  { n: '04', title: 'Security Audit',   desc: 'Third-party smart contract audit, penetration testing & compliance review', duration: 'Week 16–18' },
+  { n: '05', title: 'Launch',           desc: 'Zero-downtime deploy to enterprise cloud with monitoring & alerting', duration: 'Week 18–20' },
+  { n: '06', title: 'Scale & Support',  desc: 'SLA-backed 24/7 maintenance, performance optimisation & feature roadmap', duration: 'Ongoing' },
 ];
 
 export default function ProcessSection() {
   return (
-    <section className="section bg-slate-50 relative overflow-hidden" id="process">
-      <div className="container relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="section-label justify-center">Our Process</div>
-          <h2 className="h2 text-slate-900 mb-4">
-            Enterprise Delivery
-            <br /><span className="gt-blue">Methodology</span>
+    <section className="section bg-white" id="process">
+      <div className="container">
+        <div className="text-center max-w-xl mx-auto mb-14">
+          <p className="overline mb-3">How We Work</p>
+          <h2 className="h2">
+            Delivered in Weeks,<br />
+            <span className="gt-blue">Built to Last Years</span>
           </h2>
-          <p className="lead">
-            A battle-tested delivery framework that ensures every project is delivered
-            on time, within budget, and to institutional-grade standards.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {STEPS.map((step, i) => (
-            <div key={step.n}
-              className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group relative overflow-hidden">
-              {/* Step number bg */}
-              <div className="absolute -right-4 -top-4 text-[80px] font-black opacity-[0.04] text-[#006FEE] leading-none select-none">
-                {step.n}
-              </div>
-              <div className="relative z-10">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#006FEE]/10 border border-[#006FEE]/20 flex items-center justify-center text-[14px] font-black text-[#338EF7]">
+        {/* Timeline */}
+        <div className="relative">
+          {/* Connecting line */}
+          <div className="hidden lg:block absolute top-8 left-0 right-0 h-px bg-slate-200 z-0" />
+
+          <div className="grid lg:grid-cols-6 gap-6 relative z-10">
+            {STEPS.map((step, i) => (
+              <div key={step.n} className="flex flex-col items-center lg:items-start text-center lg:text-left">
+                {/* Step circle */}
+                <div className="w-16 h-16 rounded-2xl bg-white border-2 border-slate-200 flex items-center justify-center mb-5 flex-shrink-0 shadow-sm relative z-10"
+                  style={{ borderColor: i === 0 ? '#006FEE' : undefined }}>
+                  <span className="text-[22px] font-black" style={{ color: i === 0 ? '#006FEE' : '#94A3B8' }}>
                     {step.n}
-                  </div>
-                  <span className="badge badge-blue text-[11px]">{step.duration}</span>
+                  </span>
                 </div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">
-                  {step.title}
-                </h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed mb-4">
-                  {step.desc}
-                </p>
-                <div className="space-y-1.5">
-                  {step.deliverables.map((d) => (
-                    <div key={d} className="flex items-center gap-2 text-[12px] text-slate-400">
-                      <div className="w-1 h-1 rounded-full bg-[#006FEE]" />
-                      {d}
-                    </div>
-                  ))}
-                </div>
+
+                {/* Badge */}
+                <span className="inline-flex items-center px-2.5 py-1 rounded-lg bg-slate-100 text-slate-500 text-[11px] font-semibold mb-3">
+                  {step.duration}
+                </span>
+
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2">{step.title}</h3>
+                <p className="text-[12.5px] text-slate-400 leading-relaxed">{step.desc}</p>
               </div>
-              {/* Connecting line for desktop */}
-              {i < STEPS.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-2.5 w-5 h-px bg-slate-200 z-20" />
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
+        {/* Bottom strip */}
+        <div className="mt-14 bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex flex-wrap items-center gap-6">
+            {[['8 weeks', 'Fastest launch'], ['500+', 'Projects delivered'], ['95%', 'On-time delivery']].map(([v, l]) => (
+              <div key={l} className="text-center sm:text-left">
+                <div className="text-[22px] font-black text-slate-900">{v}</div>
+                <div className="text-[11px] text-slate-400">{l}</div>
+              </div>
+            ))}
+          </div>
+          <a href="/contact#consultation"
+            className="btn btn-primary text-[13.5px] py-2.5 px-6 flex-shrink-0">
+            Start Your Project
+          </a>
+        </div>
+
       </div>
     </section>
   );

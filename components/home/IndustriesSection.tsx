@@ -2,95 +2,44 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 const INDUSTRIES = [
-  {
-    icon: '🏦', name: 'Banking & Finance', href: '/industries/banking',
-    desc: 'Core banking modernization, digital wallets, payment infrastructure, and regulatory compliance systems.',
-    solutions: ['Digital Banking', 'Payment Rails', 'Core Banking', 'RegTech'],
-  },
-  {
-    icon: '📈', name: 'Forex & Trading', href: '/industries/forex',
-    desc: 'Brokerage platforms, liquidity management, risk engines, MT4/MT5 infrastructure, and IB management.',
-    solutions: ['FX Platforms', 'Liquidity', 'Risk Engine', 'CRM'],
-  },
-  {
-    icon: '🏥', name: 'Healthcare', href: '/industries/healthcare',
-    desc: 'Patient data management, clinical trials on blockchain, supply chain integrity, and health data marketplaces.',
-    solutions: ['EHR Blockchain', 'Clinical Trials', 'Supply Chain', 'Telemedicine'],
-  },
-  {
-    icon: '🏠', name: 'Real Estate', href: '/industries/real-estate',
-    desc: 'Property tokenization, fractional ownership platforms, smart contract escrow, and title registry systems.',
-    solutions: ['Tokenization', 'Fractional', 'Smart Escrow', 'Title Registry'],
-  },
-  {
-    icon: '🎮', name: 'Gaming & Metaverse', href: '/industries/gaming',
-    desc: 'Play-to-earn economies, NFT gaming assets, metaverse infrastructure, and blockchain game engines.',
-    solutions: ['P2E Games', 'NFT Assets', 'Metaverse', 'Game Tokens'],
-  },
-  {
-    icon: '🏛️', name: 'Government & Public', href: '/industries/government',
-    desc: 'National digital ID, land registry, e-voting, public procurement transparency, and CBDC infrastructure.',
-    solutions: ['Digital ID', 'e-Voting', 'CBDC', 'Land Registry'],
-  },
-  {
-    icon: '🚚', name: 'Supply Chain', href: '/industries/supply-chain',
-    desc: 'End-to-end supply chain visibility, provenance tracking, document authentication, and IoT integration.',
-    solutions: ['Provenance', 'IoT', 'Track & Trace', 'Documents'],
-  },
-  {
-    icon: '🛡️', name: 'Insurance & Insurtech', href: '/industries/insurance',
-    desc: 'Parametric insurance platforms, claims automation, risk pooling, and fraud detection AI systems.',
-    solutions: ['Parametric', 'Claims AI', 'Risk Pools', 'Fraud Detection'],
-  },
-  {
-    icon: '🎓', name: 'Education & EdTech', href: '/industries/education',
-    desc: 'Credential verification, microlearning platforms, tokenized education rewards, and institutional systems.',
-    solutions: ['Credentials', 'Certification', 'EdTokens', 'Portals'],
-  },
+  { icon: '🏦', name: 'Banking & Finance',   href: '/industries/banking',     desc: 'Core banking, digital wallets, payment rails, RegTech',    color: '#006FEE', span: 'lg:col-span-2' },
+  { icon: '📈', name: 'Forex & Trading',      href: '/industries/forex',       desc: 'Brokerage platforms, liquidity, risk engine, IB management', color: '#F59E0B', span: '' },
+  { icon: '🏥', name: 'Healthcare',           href: '/industries/healthcare',  desc: 'Patient blockchain, clinical trials, supply chain integrity', color: '#10B981', span: '' },
+  { icon: '🏠', name: 'Real Estate',          href: '/industries/real-estate', desc: 'Property tokenization, fractional ownership, smart escrow',  color: '#8B5CF6', span: '' },
+  { icon: '🎮', name: 'Gaming & Metaverse',   href: '/industries/gaming',      desc: 'Play-to-earn, NFT assets, metaverse infrastructure',        color: '#EC4899', span: '' },
+  { icon: '🏛', name: 'Government & Public',  href: '/industries/government',  desc: 'Digital ID, e-voting, CBDC, land registry systems',         color: '#6366F1', span: 'lg:col-span-2' },
 ];
 
 export default function IndustriesSection() {
   return (
-    <section className="section bg-white relative overflow-hidden" id="industries">
-      <div className="orb w-96 h-96 bg-[#00FF87] opacity-[0.04] right-0 bottom-0" />
-
-      <div className="container relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="section-label justify-center">Industry Solutions</div>
-          <h2 className="h2 text-slate-900 mb-4">
-            Powering Innovation Across
-            <br /><span className="gt-blue">Every Major Industry</span>
-          </h2>
-          <p className="lead">
-            Deep domain expertise across verticals — we don&apos;t just build technology,
-            we understand your industry&apos;s regulatory landscape, challenges, and growth drivers.
-          </p>
+    <section className="section bg-slate-50 border-y border-slate-200" id="industries">
+      <div className="container">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-12">
+          <div>
+            <p className="overline mb-3">Industry Solutions</p>
+            <h2 className="h2">
+              Deep Expertise Across<br />
+              <span className="gt-blue">Every Major Vertical</span>
+            </h2>
+          </div>
+          <Link href="/industries"
+            className="flex items-center gap-2 text-[13.5px] font-semibold text-[#006FEE] border border-blue-200 hover:border-blue-400 hover:bg-blue-50 px-5 py-2.5 rounded-xl transition-all flex-shrink-0 self-start lg:self-auto">
+            All Industries <ArrowRight size={14} />
+          </Link>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {INDUSTRIES.map((ind) => (
             <Link key={ind.href} href={ind.href}
-              className="card rounded-2xl p-6 group border border-slate-200 flex flex-col">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="text-4xl flex-shrink-0">{ind.icon}</div>
-                <div>
-                  <h3 className="text-[16px] font-bold text-slate-900 group-hover:text-[#338EF7] transition-colors">
-                    {ind.name}
-                  </h3>
-                </div>
-              </div>
-              <p className="text-[13px] text-slate-500 leading-relaxed mb-4 flex-1 line-clamp-2">
-                {ind.desc}
-              </p>
-              <div className="flex flex-wrap gap-1.5 mb-4">
-                {ind.solutions.map((s) => (
-                  <span key={s} className="text-[11px] px-2 py-0.5 rounded-md bg-white border border-slate-200 text-slate-400 group-hover:border-slate-300 transition-colors">
-                    {s}
-                  </span>
-                ))}
-              </div>
-              <div className="flex items-center gap-1.5 text-[13px] text-[#338EF7] font-medium">
-                Explore Solutions <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+              className={`group bg-white border border-slate-200 hover:border-slate-300 rounded-2xl p-6 transition-all hover:shadow-[0_8px_28px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 flex flex-col relative overflow-hidden ${ind.span}`}>
+              {/* Colored left border accent */}
+              <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity"
+                style={{ background: ind.color }} />
+              <div className="text-4xl mb-5">{ind.icon}</div>
+              <h3 className="text-[15px] font-bold text-slate-900 group-hover:text-[#006FEE] transition-colors mb-2">{ind.name}</h3>
+              <p className="text-[13px] text-slate-400 leading-relaxed flex-1 mb-4">{ind.desc}</p>
+              <div className="flex items-center gap-1.5 text-[13px] font-semibold" style={{ color: ind.color }}>
+                Explore <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
           ))}
