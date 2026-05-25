@@ -87,7 +87,7 @@ export default function CloudProductPage() {
                 <span className="badge" style={{ background: `${COLOR}18`, color: COLOR, border: `1px solid ${COLOR}40` }}>Web3 Cloud</span>
               </div>
               <div className="section-label mb-4">Enterprise Blockchain Cloud & VPS</div>
-              <h1 className="h1 text-slate-900 mb-6">
+              <h1 className="h1 text-[#F0F6FF] mb-6">
                 Purpose-Built Cloud
                 <br /><span style={{ color: COLOR }}>Infrastructure for Web3</span>
               </h1>
@@ -106,7 +106,7 @@ export default function CloudProductPage() {
                 {METRICS.map(m => (
                   <div key={m.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: COLOR }}>{m.v}</p>
-                    <p className="text-[11px] text-slate-400 mt-1">{m.l}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)] mt-1">{m.l}</p>
                   </div>
                 ))}
               </div>
@@ -120,7 +120,7 @@ export default function CloudProductPage() {
                   <span className="db-dot bg-red-500" />
                   <span className="db-dot bg-yellow-400" />
                   <span className="db-dot bg-green-400" />
-                  <span className="ml-3 text-[11px] text-slate-400">cloud.shivacha.com — Node Console</span>
+                  <span className="ml-3 text-[11px] text-[rgba(240,246,255,0.35)]">cloud.shivacha.com — Node Console</span>
                 </div>
                 <div className="p-5 space-y-3">
                   {/* Node status list */}
@@ -133,10 +133,10 @@ export default function CloudProductPage() {
                     ].map(([chain, type, status, region]) => (
                       <div key={String(chain)} className="flex items-center gap-2 glass rounded-lg px-3 py-2">
                         <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
-                        <span className="text-[11px] font-semibold text-slate-900 w-24">{chain}</span>
-                        <span className="text-[10px] text-slate-400 flex-1">{type}</span>
+                        <span className="text-[11px] font-semibold text-[#F0F6FF] w-24">{chain}</span>
+                        <span className="text-[10px] text-[rgba(240,246,255,0.35)] flex-1">{type}</span>
                         <span className="text-[10px] text-green-400">{status}</span>
-                        <span className="text-[10px] text-slate-400">{region}</span>
+                        <span className="text-[10px] text-[rgba(240,246,255,0.35)]">{region}</span>
                       </div>
                     ))}
                   </div>
@@ -144,14 +144,14 @@ export default function CloudProductPage() {
                   <div className="grid grid-cols-3 gap-2">
                     {[['CPU Usage', '24%'],['RAM Used', '68%'],['IOPS', '42K/s']].map(([l, v]) => (
                       <div key={l} className="metric-card">
-                        <p className="text-[10px] text-slate-400">{l}</p>
+                        <p className="text-[10px] text-[rgba(240,246,255,0.35)]">{l}</p>
                         <p className="text-[13px] font-bold" style={{ color: COLOR }}>{v}</p>
                       </div>
                     ))}
                   </div>
                   {/* Uptime strip */}
                   <div className="glass rounded-xl p-3">
-                    <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-2">90-Day Uptime</p>
+                    <p className="text-[10px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-2">90-Day Uptime</p>
                     <div className="flex gap-0.5">
                       {Array.from({ length: 90 }, (_, i) => (
                         <div key={i} className="flex-1 h-4 rounded-sm" style={{ background: i % 30 === 14 ? '#EF4444' : `${COLOR}CC` }} />
@@ -167,19 +167,19 @@ export default function CloudProductPage() {
       </section>
 
       {/* ── FEATURES ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Infrastructure Capabilities</div>
-            <h2 className="h2 text-slate-900 mb-4">Every Layer Your <span style={{ color: COLOR }}>Web3 Stack Needs</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">Every Layer Your <span style={{ color: COLOR }}>Web3 Stack Needs</span></h2>
             <p className="lead">From bare-metal servers to fully managed node clusters — infrastructure designed around blockchain workloads.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {FEATURES.map(f => (
-              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#14B8A6]/30 transition-colors group">
+              <div key={f.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-[#14B8A6]/30 transition-colors group">
                 <div className="text-3xl mb-4">{f.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#5EEAD4] transition-colors">{f.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{f.desc}</p>
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#5EEAD4] transition-colors">{f.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -192,27 +192,27 @@ export default function CloudProductPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-label mb-4">Technical Specifications</div>
-              <h2 className="h2 text-slate-900 mb-6">Hardware Built for <span style={{ color: COLOR }}>Blockchain Workloads</span></h2>
+              <h2 className="h2 text-[#F0F6FF] mb-6">Hardware Built for <span style={{ color: COLOR }}>Blockchain Workloads</span></h2>
               <p className="lead mb-8">Standard VPS hardware is optimised for web workloads. Our infrastructure is tuned for the read-heavy, write-intensive I/O patterns of blockchain nodes.</p>
               <div className="space-y-2">
                 {SPECS.map(s => (
-                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-slate-200">
-                    <span className="text-[12px] font-bold text-slate-400 uppercase tracking-wider w-24 flex-shrink-0 pt-0.5">{s.label}</span>
-                    <span className="text-[13px] text-slate-500">{s.value}</span>
+                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-white/[0.06]">
+                    <span className="text-[12px] font-bold text-[rgba(240,246,255,0.35)] uppercase tracking-wider w-24 flex-shrink-0 pt-0.5">{s.label}</span>
+                    <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{s.value}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <div className="section-label mb-4">Node-as-a-Service</div>
-              <h3 className="h3 text-slate-900 mb-6">20+ Chains, Fully Managed</h3>
+              <h3 className="h3 text-[#F0F6FF] mb-6">20+ Chains, Fully Managed</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {['Ethereum','Solana','BNB Chain','Polygon','Avalanche','Arbitrum','Optimism','Base','Tron','TON','Fantom','Cronos','Celo','Gnosis','Moonbeam','zkSync','StarkNet','Hedera','Aptos','Sui'].map(t => (
                   <span key={t} className="tech-pill">{t}</span>
                 ))}
               </div>
-              <div className="glass-lg rounded-2xl p-6 border border-slate-200">
-                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Global Data Centre Locations</p>
+              <div className="glass-lg rounded-2xl p-6 border border-white/[0.06]">
+                <p className="text-[12px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-4">Global Data Centre Locations</p>
                 <div className="space-y-3">
                   {[
                     ['🇺🇸 USA', 'Ashburn, Virginia — Equinix DC10/11'],
@@ -224,8 +224,8 @@ export default function CloudProductPage() {
                     <div key={String(region)} className="flex items-start gap-3">
                       <CheckCircle size={14} style={{ color: COLOR }} className="flex-shrink-0 mt-0.5" />
                       <div>
-                        <span className="text-[13px] font-semibold text-slate-900">{region}</span>
-                        <span className="text-[12px] text-slate-400"> — {address}</span>
+                        <span className="text-[13px] font-semibold text-[#F0F6FF]">{region}</span>
+                        <span className="text-[12px] text-[rgba(240,246,255,0.35)]"> — {address}</span>
                       </div>
                     </div>
                   ))}
@@ -237,11 +237,11 @@ export default function CloudProductPage() {
       </section>
 
       {/* ── USE CASES ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Who Uses It</div>
-            <h2 className="h2 text-slate-900 mb-4">Built for <span style={{ color: COLOR }}>Every Web3 Workload</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">Built for <span style={{ color: COLOR }}>Every Web3 Workload</span></h2>
           </div>
           <div className="grid md:grid-cols-4 gap-5">
             {[
@@ -250,10 +250,10 @@ export default function CloudProductPage() {
               { icon: '🗃️', title: 'Indexers & Subgraphs', desc: 'Archive nodes and indexing infrastructure for The Graph, Goldsky, and custom indexers — with massive NVMe storage for blockchain history.' },
               { icon: '🏗️', title: 'DApp Infrastructure', desc: 'Dedicated infrastructure for production dApps — frontend, backend, and node — all on the same private network for minimal inter-component latency.' },
             ].map(u => (
-              <div key={u.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#14B8A6]/30 transition-colors">
+              <div key={u.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-[#14B8A6]/30 transition-colors">
                 <div className="text-3xl mb-4">{u.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2">{u.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{u.desc}</p>
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-2">{u.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{u.desc}</p>
               </div>
             ))}
           </div>

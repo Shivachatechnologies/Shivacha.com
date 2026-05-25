@@ -35,7 +35,7 @@ export default function CareersPage() {
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Join the Team</div>
-            <h1 className="h1 text-slate-900 mb-6">Build the Future of<br /><span className="gt-blue">Enterprise Infrastructure</span></h1>
+            <h1 className="h1 text-[#F0F6FF] mb-6">Build the Future of<br /><span className="gt-blue">Enterprise Infrastructure</span></h1>
             <p className="lead max-w-xl mb-8">
               Join 200+ engineers, researchers, and builders working on the most critical
               blockchain, AI, and fintech infrastructure used by enterprises worldwide.
@@ -49,17 +49,17 @@ export default function CareersPage() {
       </section>
 
       {/* Perks */}
-      <section className="section-sm bg-slate-50 border-y border-slate-200">
+      <section className="section-sm border-y border-white/[0.06]">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-slate-900">Why Engineers Love <span className="gt-blue">Shivacha</span></h2>
+            <h2 className="h3 text-[#F0F6FF]">Why Engineers Love <span className="gt-blue">Shivacha</span></h2>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
             {PERKS.map((p) => (
-              <div key={p.title} className="card rounded-2xl p-5 border border-slate-200">
+              <div key={p.title} className="card rounded-2xl p-5 border border-white/[0.06]">
                 <div className="text-3xl mb-3">{p.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-1">{p.title}</h3>
-                <p className="text-[13px] text-slate-500">{p.desc}</p>
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-1">{p.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)]">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -70,20 +70,20 @@ export default function CareersPage() {
       <section className="section bg-white" id="openings">
         <div className="container">
           <div className="mb-10">
-            <h2 className="h2 text-slate-900 mb-2">Open <span className="gt-blue">Positions</span></h2>
-            <p className="text-slate-500">{JOBS.length} openings across engineering, product, sales, and research</p>
+            <h2 className="h2 text-[#F0F6FF] mb-2">Open <span className="gt-blue">Positions</span></h2>
+            <p className="text-[rgba(240,246,255,0.40)]">{JOBS.length} openings across engineering, product, sales, and research</p>
           </div>
           <div className="space-y-4">
             {JOBS.map((job) => (
               <div key={job.href}
-                className="card rounded-2xl p-5 border border-slate-200 hover:border-slate-300 group flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                className="card rounded-2xl p-5 border border-white/[0.06] hover:border-slate-300 group flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex-1">
                   <div className="flex items-center gap-2 flex-wrap mb-1">
                     <span className="badge badge-blue text-[11px]">{job.dept}</span>
-                    <span className="badge text-[11px] bg-slate-200 border-slate-300 text-slate-400">{job.level}</span>
+                    <span className="badge text-[11px] bg-slate-200 border-slate-300 text-[rgba(240,246,255,0.35)]">{job.level}</span>
                   </div>
-                  <h3 className="text-[15px] font-bold text-slate-900 group-hover:text-[#338EF7] transition-colors mb-1">{job.title}</h3>
-                  <div className="flex items-center gap-4 text-[12px] text-slate-400">
+                  <h3 className="text-[15px] font-bold text-[#F0F6FF] group-hover:text-[#338EF7] transition-colors mb-1">{job.title}</h3>
+                  <div className="flex items-center gap-4 text-[12px] text-[rgba(240,246,255,0.35)]">
                     <span className="flex items-center gap-1"><MapPin size={11} />{job.location}</span>
                     <span className="flex items-center gap-1"><Clock size={11} />{job.type}</span>
                     <span className="flex items-center gap-1"><DollarSign size={11} />{job.salary}</span>
@@ -96,9 +96,9 @@ export default function CareersPage() {
             ))}
           </div>
 
-          <div className="mt-8 glass rounded-2xl p-6 border border-slate-200 text-center">
-            <p className="text-[15px] text-slate-900 font-medium mb-1">Don&apos;t see your role?</p>
-            <p className="text-slate-500 text-[13px] mb-4">We&apos;re always looking for exceptional talent. Send us your profile.</p>
+          <div className="mt-8 glass rounded-2xl p-6 border border-white/[0.06] text-center">
+            <p className="text-[15px] text-[#F0F6FF] font-medium mb-1">Don&apos;t see your role?</p>
+            <p className="text-[rgba(240,246,255,0.40)] text-[13px] mb-4">We&apos;re always looking for exceptional talent. Send us your profile.</p>
             <a href="mailto:careers@shivacha.com" className="btn btn-primary">
               Send Open Application <ArrowRight size={14} />
             </a>

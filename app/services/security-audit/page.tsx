@@ -102,7 +102,7 @@ export default function SecurityAuditPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Security Audits & Pen Testing</div>
-              <h1 className="h1 text-slate-900 mb-6">
+              <h1 className="h1 text-[#F0F6FF] mb-6">
                 Smart Contract Audits &<br />
                 <span className="gt-blue">Security That Holds</span>
               </h1>
@@ -121,7 +121,7 @@ export default function SecurityAuditPage() {
                 {STATS.map((s) => (
                   <div key={s.l} className="metric-card">
                     <p className="text-xl font-black gt-blue">{s.v}</p>
-                    <p className="text-[11px] text-slate-400 leading-tight mt-1">{s.l}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)] leading-tight mt-1">{s.l}</p>
                   </div>
                 ))}
               </div>
@@ -129,9 +129,9 @@ export default function SecurityAuditPage() {
 
             {/* Hero visual — security findings dashboard */}
             <div className="hidden lg:block">
-              <div className="glass rounded-3xl p-6 border border-slate-200 relative overflow-hidden">
+              <div className="glass rounded-3xl p-6 border border-white/[0.06] relative overflow-hidden">
                 <div className="flex items-center justify-between mb-4">
-                  <p className="text-[11px] text-slate-400 uppercase tracking-wider">Audit Report — Protocol XYZ</p>
+                  <p className="text-[11px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider">Audit Report — Protocol XYZ</p>
                   <span className="badge badge-green text-[10px]">Final</span>
                 </div>
                 <div className="space-y-2 mb-5">
@@ -142,9 +142,9 @@ export default function SecurityAuditPage() {
                     { severity: 'Low', count: 5, color: '#34D399' },
                     { severity: 'Informational', count: 8, color: '#7A8FA6' },
                   ].map((row) => (
-                    <div key={row.severity} className="flex items-center gap-3 p-2.5 rounded-lg bg-white border border-slate-200">
+                    <div key={row.severity} className="flex items-center gap-3 p-2.5 rounded-lg bg-[#0C1428] border border-white/[0.06]">
                       <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: row.color }} />
-                      <span className="text-[12px] text-slate-500 flex-1">{row.severity}</span>
+                      <span className="text-[12px] text-[rgba(240,246,255,0.40)] flex-1">{row.severity}</span>
                       <span className="text-[12px] font-bold" style={{ color: row.color }}>{row.count} {row.count === 1 ? 'finding' : 'findings'}</span>
                     </div>
                   ))}
@@ -160,19 +160,19 @@ export default function SecurityAuditPage() {
       </section>
 
       {/* ── OFFERINGS ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Services</div>
-            <h2 className="h2 text-slate-900">Security <span className="gt-blue">Capabilities</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Security <span className="gt-blue">Capabilities</span></h2>
             <p className="lead mt-4">From pre-launch smart contract audits to ongoing threat monitoring — complete security coverage.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {OFFERINGS.map((s) => (
-              <div key={s.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#34D399]/30 group">
+              <div key={s.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-[#34D399]/30 group">
                 <div className="text-4xl mb-4">{s.icon}</div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#34D399] transition-colors">{s.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{s.desc}</p>
+                <h3 className="text-[16px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#34D399] transition-colors">{s.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -183,13 +183,13 @@ export default function SecurityAuditPage() {
       <section className="section-sm bg-white">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-slate-900">Security Tools & <span className="gt-blue">Frameworks</span></h2>
+            <h2 className="h3 text-[#F0F6FF]">Security Tools & <span className="gt-blue">Frameworks</span></h2>
           </div>
           <div className="flex flex-wrap gap-3 justify-center">
             {TOOLS.map((t) => (
               <span key={t.name} className="tech-pill">
-                <span className="font-semibold text-slate-900">{t.name}</span>
-                <span className="text-slate-400"> · {t.cat}</span>
+                <span className="font-semibold text-[#F0F6FF]">{t.name}</span>
+                <span className="text-[rgba(240,246,255,0.35)]"> · {t.cat}</span>
               </span>
             ))}
           </div>
@@ -197,20 +197,20 @@ export default function SecurityAuditPage() {
       </section>
 
       {/* ── CERTIFICATIONS ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <div className="section-label justify-center">Credentials</div>
-            <h2 className="h3 text-slate-900">Team <span className="gt-blue">Certifications</span></h2>
+            <h2 className="h3 text-[#F0F6FF]">Team <span className="gt-blue">Certifications</span></h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
             {CERTS.map((c) => (
-              <div key={c.name} className="card rounded-2xl p-5 text-center border border-slate-200 hover:border-[#34D399]/30">
+              <div key={c.name} className="card rounded-2xl p-5 text-center border border-white/[0.06] hover:border-[#34D399]/30">
                 <div className="w-10 h-10 rounded-xl bg-[#34D399]/10 flex items-center justify-center mx-auto mb-3">
                   <CheckCircle size={18} className="text-[#34D399]" />
                 </div>
-                <p className="text-[14px] font-bold text-slate-900 mb-1">{c.name}</p>
-                <p className="text-[11px] text-slate-400 leading-snug">{c.desc}</p>
+                <p className="text-[14px] font-bold text-[#F0F6FF] mb-1">{c.name}</p>
+                <p className="text-[11px] text-[rgba(240,246,255,0.35)] leading-snug">{c.desc}</p>
               </div>
             ))}
           </div>
@@ -222,13 +222,13 @@ export default function SecurityAuditPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Use Cases</div>
-            <h2 className="h2 text-slate-900">Security Engagements <span className="gt-blue">We Deliver</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Security Engagements <span className="gt-blue">We Deliver</span></h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {USE_CASES.map((u) => (
-              <div key={u.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#34D399]/30">
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2">{u.title}</h3>
-                <p className="text-[13px] text-slate-500">{u.detail}</p>
+              <div key={u.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-[#34D399]/30">
+                <h3 className="text-[16px] font-bold text-[#F0F6FF] mb-2">{u.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)]">{u.detail}</p>
               </div>
             ))}
           </div>
@@ -236,18 +236,18 @@ export default function SecurityAuditPage() {
       </section>
 
       {/* ── PROCESS ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Methodology</div>
-            <h2 className="h2 text-slate-900">Our Audit <span className="gt-blue">Process</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Our Audit <span className="gt-blue">Process</span></h2>
           </div>
           <div className="grid md:grid-cols-5 gap-4">
             {PROCESS.map((p) => (
-              <div key={p.step} className="card rounded-2xl p-5 border border-slate-200 hover:border-[#34D399]/30">
+              <div key={p.step} className="card rounded-2xl p-5 border border-white/[0.06] hover:border-[#34D399]/30">
                 <div className="text-[11px] font-black text-[#34D399] tracking-widest mb-2">{p.step}</div>
-                <h3 className="text-[14px] font-bold text-slate-900 mb-2">{p.title}</h3>
-                <p className="text-[12px] text-slate-500 leading-relaxed">{p.desc}</p>
+                <h3 className="text-[14px] font-bold text-[#F0F6FF] mb-2">{p.title}</h3>
+                <p className="text-[12px] text-[rgba(240,246,255,0.40)] leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -260,19 +260,19 @@ export default function SecurityAuditPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Deliverables</div>
-              <h2 className="h2 text-slate-900 mb-4">What&apos;s <span className="gt-blue">Included</span></h2>
+              <h2 className="h2 text-[#F0F6FF] mb-4">What&apos;s <span className="gt-blue">Included</span></h2>
               <p className="lead mb-8">Every security engagement delivers a comprehensive report — not a list of tool outputs.</p>
               <div className="grid gap-3">
                 {CHECKLIST.map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <CheckCircle size={16} className="text-[#34D399] shrink-0 mt-0.5" />
-                    <span className="text-[14px] text-slate-500">{item}</span>
+                    <span className="text-[14px] text-[rgba(240,246,255,0.40)]">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="glass rounded-3xl p-8 border border-slate-200">
-              <h3 className="h4 text-slate-900 mb-6">Request a Security Audit</h3>
+            <div className="glass rounded-3xl p-8 border border-white/[0.06]">
+              <h3 className="h4 text-[#F0F6FF] mb-6">Request a Security Audit</h3>
               <div className="space-y-4 mb-6">
                 {[
                   { label: 'Audit Type', value: 'Smart Contract / Pentest / Compliance' },
@@ -280,9 +280,9 @@ export default function SecurityAuditPage() {
                   { label: 'Re-audit', value: 'Free for all resolved findings' },
                   { label: 'Timeline', value: '10–21 business days typical' },
                 ].map((f) => (
-                  <div key={f.label} className="flex items-center justify-between border-b border-slate-200 pb-3">
-                    <span className="text-[13px] text-slate-400">{f.label}</span>
-                    <span className="text-[13px] font-semibold text-slate-900">{f.value}</span>
+                  <div key={f.label} className="flex items-center justify-between border-b border-white/[0.06] pb-3">
+                    <span className="text-[13px] text-[rgba(240,246,255,0.35)]">{f.label}</span>
+                    <span className="text-[13px] font-semibold text-[#F0F6FF]">{f.value}</span>
                   </div>
                 ))}
               </div>
@@ -295,17 +295,17 @@ export default function SecurityAuditPage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container max-w-3xl">
           <div className="text-center mb-12">
             <div className="section-label justify-center">FAQ</div>
-            <h2 className="h2 text-slate-900">Common <span className="gt-blue">Questions</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Common <span className="gt-blue">Questions</span></h2>
           </div>
           <div className="space-y-4">
             {FAQS.map((faq) => (
-              <div key={faq.q} className="card rounded-2xl p-6 border border-slate-200">
-                <h3 className="text-[15px] font-bold text-slate-900 mb-3">{faq.q}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{faq.a}</p>
+              <div key={faq.q} className="card rounded-2xl p-6 border border-white/[0.06]">
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-3">{faq.q}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

@@ -119,29 +119,29 @@ export default function TechnologiesPage() {
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Technology Stack</div>
-            <h1 className="h1 text-slate-900 mb-6">Our Enterprise <br /><span className="gt-blue">Technology Stack</span></h1>
+            <h1 className="h1 text-[#F0F6FF] mb-6">Our Enterprise <br /><span className="gt-blue">Technology Stack</span></h1>
             <p className="lead max-w-2xl mx-auto">200+ technologies across blockchain, AI, cloud, frontend, backend, and security — always choosing the right tool for each specific use case.</p>
           </div>
         </div>
       </section>
 
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container space-y-12">
           {STACKS.map((stack) => (
             <div key={stack.category} id={stack.category.toLowerCase().replace(/\s+/g, '-')}>
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-3xl">{stack.icon}</span>
-                <h2 className="text-[20px] font-bold text-slate-900">{stack.category}</h2>
+                <h2 className="text-[20px] font-bold text-[#F0F6FF]">{stack.category}</h2>
               </div>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                 {stack.items.map((item) => (
                   <div key={item.name}
-                    className="card rounded-xl p-4 border border-slate-200 hover:border-slate-300 group cursor-default">
+                    className="card rounded-xl p-4 border border-white/[0.06] hover:border-slate-300 group cursor-default">
                     <div className="flex items-center gap-2 mb-1">
                       <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: stack.color }} />
-                      <p className="text-[14px] font-semibold text-slate-900 group-hover:text-[#338EF7] transition-colors">{item.name}</p>
+                      <p className="text-[14px] font-semibold text-[#F0F6FF] group-hover:text-[#338EF7] transition-colors">{item.name}</p>
                     </div>
-                    <p className="text-[12px] text-slate-400 pl-4">{item.desc}</p>
+                    <p className="text-[12px] text-[rgba(240,246,255,0.35)] pl-4">{item.desc}</p>
                   </div>
                 ))}
               </div>

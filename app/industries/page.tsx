@@ -61,36 +61,36 @@ export default function IndustriesPage() {
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Industries</div>
-            <h1 className="h1 text-slate-900 mb-6">Industry-Specific <br /><span className="gt-blue">Infrastructure Solutions</span></h1>
+            <h1 className="h1 text-[#F0F6FF] mb-6">Industry-Specific <br /><span className="gt-blue">Infrastructure Solutions</span></h1>
             <p className="lead max-w-2xl mx-auto">Deep domain expertise across every major industry. We understand the regulatory landscape, technical challenges, and growth drivers specific to your sector.</p>
           </div>
         </div>
       </section>
 
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container space-y-8">
           {INDUSTRIES.map((ind, i) => (
             <div key={ind.id} id={ind.id}
-              className="card rounded-3xl p-8 border border-slate-200 hover:border-slate-300 group"
+              className="card rounded-3xl p-8 border border-white/[0.06] hover:border-slate-300 group"
               style={{ background: `linear-gradient(135deg, ${ind.color}04 0%, transparent 50%)` }}>
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-5xl">{ind.icon}</span>
                     <div>
-                      <h2 className="text-[22px] font-bold text-slate-900 group-hover:text-[#338EF7] transition-colors">{ind.name}</h2>
+                      <h2 className="text-[22px] font-bold text-[#F0F6FF] group-hover:text-[#338EF7] transition-colors">{ind.name}</h2>
                       <p className="text-[14px] font-medium" style={{ color: ind.color }}>{ind.headline}</p>
                     </div>
                   </div>
-                  <p className="text-[14px] text-slate-500 leading-relaxed mb-4">{ind.desc}</p>
-                  <p className="text-[12px] text-slate-400 mb-4"><span className="font-medium text-slate-500">Clients:</span> {ind.clients}</p>
+                  <p className="text-[14px] text-[rgba(240,246,255,0.40)] leading-relaxed mb-4">{ind.desc}</p>
+                  <p className="text-[12px] text-[rgba(240,246,255,0.35)] mb-4"><span className="font-medium text-[rgba(240,246,255,0.40)]">Clients:</span> {ind.clients}</p>
                   <Link href={`/industries/${ind.id}`} className="btn btn-secondary text-sm py-2.5 px-5">
                     Explore Solutions <ArrowRight size={13} />
                   </Link>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   {ind.solutions.map(s => (
-                    <div key={s} className="flex items-center gap-2 p-3 rounded-xl bg-white border border-slate-200 text-[13px] text-slate-500">
+                    <div key={s} className="flex items-center gap-2 p-3 rounded-xl bg-[#0C1428] border border-white/[0.06] text-[13px] text-[rgba(240,246,255,0.40)]">
                       <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: ind.color }} />
                       {s}
                     </div>

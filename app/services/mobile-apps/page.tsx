@@ -96,7 +96,7 @@ export default function MobileAppsPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Mobile App Development</div>
-              <h1 className="h1 text-slate-900 mb-6">
+              <h1 className="h1 text-[#F0F6FF] mb-6">
                 Fintech & Blockchain<br />
                 <span className="gt-blue">Mobile Apps That Scale</span>
               </h1>
@@ -115,7 +115,7 @@ export default function MobileAppsPage() {
                 {STATS.map((s) => (
                   <div key={s.l} className="metric-card">
                     <p className="text-xl font-black gt-blue">{s.v}</p>
-                    <p className="text-[11px] text-slate-400 leading-tight mt-1">{s.l}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)] leading-tight mt-1">{s.l}</p>
                   </div>
                 ))}
               </div>
@@ -128,13 +128,13 @@ export default function MobileAppsPage() {
                   <span className="db-dot bg-[#F97316]" />
                   <span className="db-dot bg-[#FFB800]" />
                   <span className="db-dot bg-[#34D399]" />
-                  <span className="ml-2 text-[11px] text-slate-400">Crypto Wallet — iOS</span>
+                  <span className="ml-2 text-[11px] text-[rgba(240,246,255,0.35)]">Crypto Wallet — iOS</span>
                 </div>
                 <div className="p-5 space-y-3">
-                  <div className="flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200">
+                  <div className="flex items-center justify-between p-3 rounded-xl bg-[#0C1428] border border-white/[0.06]">
                     <div>
-                      <p className="text-[10px] text-slate-400">Total Balance</p>
-                      <p className="text-lg font-black text-slate-900">$84,219.40</p>
+                      <p className="text-[10px] text-[rgba(240,246,255,0.35)]">Total Balance</p>
+                      <p className="text-lg font-black text-[#F0F6FF]">$84,219.40</p>
                     </div>
                     <span className="badge badge-green text-[10px]">+3.2%</span>
                   </div>
@@ -143,20 +143,20 @@ export default function MobileAppsPage() {
                     { coin: 'BTC', val: '$31,400', chg: '+1.8%', color: '#F97316' },
                     { coin: 'SOL', val: '$10,719', chg: '+5.4%', color: '#A78BFA' },
                   ].map((r) => (
-                    <div key={r.coin} className="flex items-center justify-between px-3 py-2 rounded-lg bg-slate-50">
+                    <div key={r.coin} className="flex items-center justify-between px-3 py-2 rounded-lg bg-[#0C1428]">
                       <div className="flex items-center gap-2">
                         <div className="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold" style={{ background: `${r.color}20`, color: r.color }}>{r.coin[0]}</div>
-                        <span className="text-[12px] font-semibold text-slate-900">{r.coin}</span>
+                        <span className="text-[12px] font-semibold text-[#F0F6FF]">{r.coin}</span>
                       </div>
                       <div className="text-right">
-                        <p className="text-[11px] text-slate-900">{r.val}</p>
+                        <p className="text-[11px] text-[#F0F6FF]">{r.val}</p>
                         <p className="text-[10px] text-[#34D399]">{r.chg}</p>
                       </div>
                     </div>
                   ))}
                   <div className="grid grid-cols-3 gap-2 pt-1">
                     {['Send', 'Receive', 'Swap'].map((a) => (
-                      <div key={a} className="text-center py-2 rounded-lg border border-slate-200 text-[11px] text-[#338EF7] font-semibold">{a}</div>
+                      <div key={a} className="text-center py-2 rounded-lg border border-white/[0.06] text-[11px] text-[#338EF7] font-semibold">{a}</div>
                     ))}
                   </div>
                 </div>
@@ -167,19 +167,19 @@ export default function MobileAppsPage() {
       </section>
 
       {/* ── OFFERINGS ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Services</div>
-            <h2 className="h2 text-slate-900">Mobile Development <span className="gt-blue">Capabilities</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Mobile Development <span className="gt-blue">Capabilities</span></h2>
             <p className="lead mt-4">From DeFi wallets to enterprise dashboards — every platform, every paradigm.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {OFFERINGS.map((s) => (
-              <div key={s.title} className="card rounded-2xl p-5 border border-slate-200 hover:border-[#F97316]/30 group">
+              <div key={s.title} className="card rounded-2xl p-5 border border-white/[0.06] hover:border-[#F97316]/30 group">
                 <div className="text-4xl mb-3">{s.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#F97316] transition-colors">{s.title}</h3>
-                <p className="text-[12px] text-slate-500 leading-relaxed">{s.desc}</p>
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#F97316] transition-colors">{s.title}</h3>
+                <p className="text-[12px] text-[rgba(240,246,255,0.40)] leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -190,13 +190,13 @@ export default function MobileAppsPage() {
       <section className="section-sm bg-white">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-slate-900">Technologies & <span className="gt-blue">Frameworks</span></h2>
+            <h2 className="h3 text-[#F0F6FF]">Technologies & <span className="gt-blue">Frameworks</span></h2>
           </div>
           <div className="flex flex-wrap gap-3 justify-center">
             {TECH.map((t) => (
               <span key={t.name} className="tech-pill">
-                <span className="font-semibold text-slate-900">{t.name}</span>
-                <span className="text-slate-400"> · {t.cat}</span>
+                <span className="font-semibold text-[#F0F6FF]">{t.name}</span>
+                <span className="text-[rgba(240,246,255,0.35)]"> · {t.cat}</span>
               </span>
             ))}
           </div>
@@ -204,17 +204,17 @@ export default function MobileAppsPage() {
       </section>
 
       {/* ── USE CASES ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Use Cases</div>
-            <h2 className="h2 text-slate-900">Industries & <span className="gt-blue">Applications</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Industries & <span className="gt-blue">Applications</span></h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {USE_CASES.map((u) => (
-              <div key={u.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#F97316]/30">
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2">{u.title}</h3>
-                <p className="text-[13px] text-slate-500">{u.detail}</p>
+              <div key={u.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-[#F97316]/30">
+                <h3 className="text-[16px] font-bold text-[#F0F6FF] mb-2">{u.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)]">{u.detail}</p>
               </div>
             ))}
           </div>
@@ -226,14 +226,14 @@ export default function MobileAppsPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">How We Work</div>
-            <h2 className="h2 text-slate-900">Our Development <span className="gt-blue">Process</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Our Development <span className="gt-blue">Process</span></h2>
           </div>
           <div className="grid md:grid-cols-5 gap-4">
             {PROCESS.map((p) => (
-              <div key={p.step} className="card rounded-2xl p-5 border border-slate-200 hover:border-[#F97316]/30">
+              <div key={p.step} className="card rounded-2xl p-5 border border-white/[0.06] hover:border-[#F97316]/30">
                 <div className="text-[11px] font-black text-[#F97316] tracking-widest mb-2">{p.step}</div>
-                <h3 className="text-[14px] font-bold text-slate-900 mb-2">{p.title}</h3>
-                <p className="text-[12px] text-slate-500 leading-relaxed">{p.desc}</p>
+                <h3 className="text-[14px] font-bold text-[#F0F6FF] mb-2">{p.title}</h3>
+                <p className="text-[12px] text-[rgba(240,246,255,0.40)] leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -241,24 +241,24 @@ export default function MobileAppsPage() {
       </section>
 
       {/* ── WHAT'S INCLUDED ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Deliverables</div>
-              <h2 className="h2 text-slate-900 mb-4">What&apos;s <span className="gt-blue">Included</span></h2>
+              <h2 className="h2 text-[#F0F6FF] mb-4">What&apos;s <span className="gt-blue">Included</span></h2>
               <p className="lead mb-8">Every mobile engagement ships with a complete, production-ready package — not just an app binary.</p>
               <div className="grid gap-3">
                 {CHECKLIST.map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <CheckCircle size={16} className="text-[#F97316] shrink-0 mt-0.5" />
-                    <span className="text-[14px] text-slate-500">{item}</span>
+                    <span className="text-[14px] text-[rgba(240,246,255,0.40)]">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="glass rounded-3xl p-8 border border-slate-200">
-              <h3 className="h4 text-slate-900 mb-6">Start Your Mobile Project</h3>
+            <div className="glass rounded-3xl p-8 border border-white/[0.06]">
+              <h3 className="h4 text-[#F0F6FF] mb-6">Start Your Mobile Project</h3>
               <div className="space-y-4 mb-6">
                 {[
                   { label: 'App Type', value: 'DeFi / Trading / Enterprise' },
@@ -266,9 +266,9 @@ export default function MobileAppsPage() {
                   { label: 'Tech Stack', value: 'React Native / Flutter / Native' },
                   { label: 'Timeline', value: '8–16 weeks typical' },
                 ].map((f) => (
-                  <div key={f.label} className="flex items-center justify-between border-b border-slate-200 pb-3">
-                    <span className="text-[13px] text-slate-400">{f.label}</span>
-                    <span className="text-[13px] font-semibold text-slate-900">{f.value}</span>
+                  <div key={f.label} className="flex items-center justify-between border-b border-white/[0.06] pb-3">
+                    <span className="text-[13px] text-[rgba(240,246,255,0.35)]">{f.label}</span>
+                    <span className="text-[13px] font-semibold text-[#F0F6FF]">{f.value}</span>
                   </div>
                 ))}
               </div>
@@ -285,13 +285,13 @@ export default function MobileAppsPage() {
         <div className="container max-w-3xl">
           <div className="text-center mb-12">
             <div className="section-label justify-center">FAQ</div>
-            <h2 className="h2 text-slate-900">Common <span className="gt-blue">Questions</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Common <span className="gt-blue">Questions</span></h2>
           </div>
           <div className="space-y-4">
             {FAQS.map((faq) => (
-              <div key={faq.q} className="card rounded-2xl p-6 border border-slate-200">
-                <h3 className="text-[15px] font-bold text-slate-900 mb-3">{faq.q}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{faq.a}</p>
+              <div key={faq.q} className="card rounded-2xl p-6 border border-white/[0.06]">
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-3">{faq.q}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

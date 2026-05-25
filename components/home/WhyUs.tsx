@@ -1,12 +1,12 @@
-import { CheckCircle2 } from 'lucide-react';
+import { Check } from 'lucide-react';
 
 const PILLARS = [
-  { icon: '🏛', title: 'Institutional-Grade',  metric: '99.99% Uptime',      desc: 'Enterprise SLA on every platform we build' },
-  { icon: '🛡', title: 'Security-First',        metric: 'ISO 27001 + SOC 2',  desc: 'Third-party audits mandatory on all contracts' },
-  { icon: '⚡', title: 'Fast Delivery',          metric: '8-Week Launch',       desc: 'Sprint methodology, weekly releases' },
-  { icon: '🌍', title: '24/7 Global Team',       metric: 'USA · India · UK',   desc: 'Round-the-clock development & support' },
-  { icon: '🧪', title: 'R&D Driven',             metric: 'Dedicated Lab',      desc: 'Built for what\'s next, not just what exists' },
-  { icon: '🤝', title: 'Long-Term Partner',      metric: 'Post-Launch SLA',    desc: 'We don\'t disappear after deployment' },
+  { title: 'Institutional-Grade',  metric: '99.99% Uptime',     desc: 'Enterprise SLA on every platform we build',          color: '#3B82F6' },
+  { title: 'Security-First',       metric: 'ISO 27001 + SOC 2', desc: 'Third-party audits mandatory on all contracts',       color: '#8B5CF6' },
+  { title: 'Fast Delivery',        metric: '8-Week Launch',      desc: 'Sprint methodology, weekly releases',                color: '#10B981' },
+  { title: '24/7 Global Team',     metric: 'USA · India · UK',  desc: 'Round-the-clock development & support',              color: '#F59E0B' },
+  { title: 'R&D Driven',           metric: 'Dedicated Lab',     desc: 'Built for what\'s next, not just what exists',       color: '#06B6D4' },
+  { title: 'Long-Term Partner',    metric: 'Post-Launch SLA',   desc: 'We don\'t disappear after deployment',               color: '#EC4899' },
 ];
 
 const WHY = [
@@ -22,7 +22,7 @@ const WHY = [
 
 export default function WhyUs() {
   return (
-    <section className="section bg-slate-50 border-y border-slate-200" id="why-shivacha">
+    <section className="section border-y border-white/[0.06]" id="why-shivacha" style={{ background: '#0C1428' }}>
       <div className="container">
 
         <div className="text-center max-w-2xl mx-auto mb-14">
@@ -37,27 +37,31 @@ export default function WhyUs() {
         </div>
 
         {/* 6 pillars */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
           {PILLARS.map((p) => (
-            <div key={p.title} className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-slate-300 hover:shadow-[0_6px_24px_rgba(0,0,0,0.06)] transition-all hover:-translate-y-0.5">
-              <div className="text-3xl mb-4">{p.icon}</div>
-              <div className="inline-flex items-center px-2.5 py-1 rounded-lg bg-[#006FEE]/8 text-[#006FEE] text-[11px] font-bold mb-3">
+            <div key={p.title}
+              className="border border-white/[0.06] hover:border-white/[0.12] rounded-2xl p-6 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)] transition-all hover:-translate-y-0.5 group relative overflow-hidden"
+              style={{ background: '#060B18' }}>
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-2xl"
+                style={{ background: `radial-gradient(ellipse at top left, ${p.color}07, transparent 65%)` }} />
+              <div className="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] font-bold mb-4 relative z-10"
+                style={{ background: `${p.color}16`, color: p.color }}>
                 {p.metric}
               </div>
-              <h3 className="text-[15px] font-bold text-slate-900 mb-1.5">{p.title}</h3>
-              <p className="text-[13px] text-slate-400 leading-relaxed">{p.desc}</p>
+              <h3 className="text-[15px] font-bold text-[rgba(240,246,255,0.85)] group-hover:text-white transition-colors mb-1.5 relative z-10">{p.title}</h3>
+              <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed relative z-10">{p.desc}</p>
             </div>
           ))}
         </div>
 
-        {/* Checklist row */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-8">
-          <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-6">What Every Engagement Includes</p>
+        {/* Checklist */}
+        <div className="border border-white/[0.06] rounded-2xl p-8" style={{ background: '#060B18' }}>
+          <p className="text-[11px] font-bold uppercase tracking-widest text-[rgba(240,246,255,0.30)] mb-6">What Every Engagement Includes</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {WHY.map((item) => (
               <div key={item} className="flex items-start gap-2.5">
-                <CheckCircle2 size={15} className="text-[#006FEE] flex-shrink-0 mt-0.5" />
-                <span className="text-[13px] text-slate-600 leading-snug">{item}</span>
+                <Check size={14} className="flex-shrink-0 mt-0.5" style={{ color: '#3B82F6' }} />
+                <span className="text-[13px] text-[rgba(240,246,255,0.55)] leading-snug">{item}</span>
               </div>
             ))}
           </div>

@@ -84,7 +84,7 @@ export default function TokenizationProductPage() {
                 <span className="badge badge-green">Institutional</span>
               </div>
               <div className="section-label mb-4">Real-World Asset Tokenization Platform</div>
-              <h1 className="h1 text-slate-900 mb-6">
+              <h1 className="h1 text-[#F0F6FF] mb-6">
                 Tokenize Any Asset —
                 <br /><span style={{ color: '#00FF87' }}>Compliant, Scalable, Institutional</span>
               </h1>
@@ -102,7 +102,7 @@ export default function TokenizationProductPage() {
                 {METRICS.map(m => (
                   <div key={m.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: '#00FF87' }}>{m.v}</p>
-                    <p className="text-[11px] text-slate-400 mt-1">{m.l}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)] mt-1">{m.l}</p>
                   </div>
                 ))}
               </div>
@@ -116,15 +116,15 @@ export default function TokenizationProductPage() {
                   <span className="db-dot bg-red-500" />
                   <span className="db-dot bg-yellow-400" />
                   <span className="db-dot bg-green-400" />
-                  <span className="ml-3 text-[11px] text-slate-400">portal.yourbrand.com — Asset Registry</span>
+                  <span className="ml-3 text-[11px] text-[rgba(240,246,255,0.35)]">portal.yourbrand.com — Asset Registry</span>
                 </div>
                 <div className="p-5 space-y-3">
                   {/* Asset cards strip */}
                   <div className="flex gap-2 overflow-hidden">
                     {[['Manhattan RE','$24M','Real Estate'],['PrivEQ Fund III','$8M','Private Equity'],['Green Bond 2026','$5M','Fixed Income']].map(([name, val, type]) => (
                       <div key={name} className="glass rounded-lg px-3 py-2 flex-shrink-0 min-w-[110px]">
-                        <p className="text-[9px] text-slate-400">{type}</p>
-                        <p className="text-[12px] font-bold text-slate-900">{name}</p>
+                        <p className="text-[9px] text-[rgba(240,246,255,0.35)]">{type}</p>
+                        <p className="text-[12px] font-bold text-[#F0F6FF]">{name}</p>
                         <p className="text-[11px] font-bold" style={{ color: '#00FF87' }}>{val}</p>
                       </div>
                     ))}
@@ -132,12 +132,12 @@ export default function TokenizationProductPage() {
                   {/* Cap table + token supply panel */}
                   <div className="grid grid-cols-3 gap-3">
                     <div className="col-span-2 glass rounded-xl p-3 h-36">
-                      <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-2">Token Distribution — Manhattan RE</p>
+                      <p className="text-[10px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-2">Token Distribution — Manhattan RE</p>
                       <div className="space-y-1.5">
                         {[['Institutional LPs','45%',45],['Family Offices','28%',28],['HNWI Retail','18%',18],['Treasury Reserve','9%',9]].map(([tier, pct, w]) => (
                           <div key={tier}>
                             <div className="flex justify-between text-[9px] mb-0.5">
-                              <span className="text-slate-500">{tier}</span>
+                              <span className="text-[rgba(240,246,255,0.40)]">{tier}</span>
                               <span style={{ color: '#00FF87' }}>{pct}</span>
                             </div>
                             <div className="h-1 bg-slate-200 rounded-full">
@@ -148,11 +148,11 @@ export default function TokenizationProductPage() {
                       </div>
                     </div>
                     <div className="glass rounded-xl p-3 h-36 flex flex-col justify-between">
-                      <p className="text-[10px] text-slate-400 uppercase tracking-wider">Token Info</p>
+                      <p className="text-[10px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider">Token Info</p>
                       <div className="space-y-1.5">
-                        <div><p className="text-[9px] text-slate-400">Standard</p><p className="text-[11px] font-bold" style={{ color: '#00FF87' }}>ERC-3643</p></div>
-                        <div><p className="text-[9px] text-slate-400">Total Supply</p><p className="text-[11px] font-bold text-slate-900">24,000,000</p></div>
-                        <div><p className="text-[9px] text-slate-400">Investors</p><p className="text-[11px] font-bold text-slate-900">412 KYC'd</p></div>
+                        <div><p className="text-[9px] text-[rgba(240,246,255,0.35)]">Standard</p><p className="text-[11px] font-bold" style={{ color: '#00FF87' }}>ERC-3643</p></div>
+                        <div><p className="text-[9px] text-[rgba(240,246,255,0.35)]">Total Supply</p><p className="text-[11px] font-bold text-[#F0F6FF]">24,000,000</p></div>
+                        <div><p className="text-[9px] text-[rgba(240,246,255,0.35)]">Investors</p><p className="text-[11px] font-bold text-[#F0F6FF]">412 KYC'd</p></div>
                       </div>
                     </div>
                   </div>
@@ -160,7 +160,7 @@ export default function TokenizationProductPage() {
                   <div className="grid grid-cols-3 gap-2">
                     {[['Total AUM','$500M+'],['Next Dist.','Jun 30'],['Compliance','All Clear']].map(([l,v]) => (
                       <div key={l} className="metric-card">
-                        <p className="text-[10px] text-slate-400">{l}</p>
+                        <p className="text-[10px] text-[rgba(240,246,255,0.35)]">{l}</p>
                         <p className="text-[13px] font-bold" style={{ color: '#00FF87' }}>{v}</p>
                       </div>
                     ))}
@@ -173,19 +173,19 @@ export default function TokenizationProductPage() {
       </section>
 
       {/* ── KEY FEATURES ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Platform Capabilities</div>
-            <h2 className="h2 text-slate-900 mb-4">Everything to Tokenize, Distribute & <span style={{ color: '#00FF87' }}>Trade RWAs</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">Everything to Tokenize, Distribute & <span style={{ color: '#00FF87' }}>Trade RWAs</span></h2>
             <p className="lead">One compliant platform. From structuring to secondary liquidity — the complete RWA lifecycle.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURES.map(f => (
-              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#00FF87]/30 group">
+              <div key={f.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-[#00FF87]/30 group">
                 <div className="text-4xl mb-4">{f.icon}</div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#00FF87] transition-colors">{f.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{f.desc}</p>
+                <h3 className="text-[16px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#00FF87] transition-colors">{f.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -198,31 +198,31 @@ export default function TokenizationProductPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-label mb-4">Technical Architecture</div>
-              <h2 className="h2 text-slate-900 mb-6">Built for <span style={{ color: '#00FF87' }}>Institutional Standards</span></h2>
+              <h2 className="h2 text-[#F0F6FF] mb-6">Built for <span style={{ color: '#00FF87' }}>Institutional Standards</span></h2>
               <p className="lead mb-8">Every layer is engineered for the compliance, security, and auditability demands of regulated securities issuance and custody.</p>
               <div className="space-y-2">
                 {SPECS.map(s => (
-                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-slate-200">
-                    <span className="text-[12px] font-bold text-slate-400 uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
-                    <span className="text-[13px] text-slate-500">{s.value}</span>
+                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-white/[0.06]">
+                    <span className="text-[12px] font-bold text-[rgba(240,246,255,0.35)] uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
+                    <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{s.value}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <div className="section-label mb-4">Tech Stack</div>
-              <h3 className="h3 text-slate-900 mb-6">The Stack Behind the Tokens</h3>
+              <h3 className="h3 text-[#F0F6FF] mb-6">The Stack Behind the Tokens</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {['Solidity','ERC-3643 (T-REX)','Ethereum','Polygon','Avalanche','Fireblocks','BitGo','React','Sumsub','ISO 27001','SOC 2 Type II','AWS'].map(t => (
                   <span key={t} className="tech-pill">{t}</span>
                 ))}
               </div>
-              <div className="glass-lg rounded-2xl p-6 border border-slate-200">
-                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Compliance Coverage</p>
+              <div className="glass-lg rounded-2xl p-6 border border-white/[0.06]">
+                <p className="text-[12px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-4">Compliance Coverage</p>
                 <div className="space-y-3">
                   {[['Jurisdictions Supported','40+'],['Regulatory Frameworks','FATCA / CRS / MiFID II / Reg D'],['Smart Contract Audits','Trail of Bits + Certik'],['Data Residency','EU / US / APAC regions']].map(([lbl, val]) => (
                     <div key={lbl} className="flex justify-between items-start gap-4">
-                      <span className="text-[12px] text-slate-500">{lbl}</span>
+                      <span className="text-[12px] text-[rgba(240,246,255,0.40)]">{lbl}</span>
                       <span className="text-[12px] font-bold text-right" style={{ color: '#00FF87' }}>{val}</span>
                     </div>
                   ))}
@@ -234,22 +234,22 @@ export default function TokenizationProductPage() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Tokenization Process</div>
-            <h2 className="h2 text-slate-900 mb-4">From Asset to <span style={{ color: '#00FF87' }}>On-Chain Security</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">From Asset to <span style={{ color: '#00FF87' }}>On-Chain Security</span></h2>
             <p className="lead">A four-phase process that takes any real-world asset from legal structuring to live secondary market trading.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {STEPS.map((s, i) => (
-              <div key={s.n} className="card rounded-2xl p-6 border border-slate-200 relative group hover:border-[#00FF87]/30">
+              <div key={s.n} className="card rounded-2xl p-6 border border-white/[0.06] relative group hover:border-[#00FF87]/30">
                 <div className="text-[48px] font-black text-[#0E1E34] group-hover:text-[#00FF87]/15 transition-colors absolute top-4 right-4 leading-none">{s.n}</div>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{ background: '#00FF8718', border: '1px solid #00FF8730' }}>
                   <span className="font-bold text-sm" style={{ color: '#00FF87' }}>{i + 1}</span>
                 </div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#00FF87] transition-colors">{s.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{s.desc}</p>
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#00FF87] transition-colors">{s.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -262,7 +262,7 @@ export default function TokenizationProductPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="section-label mb-4">Client Results</div>
-              <h2 className="h2 text-slate-900 mb-6">
+              <h2 className="h2 text-[#F0F6FF] mb-6">
                 UAE Real Estate Fund
                 <br /><span style={{ color: '#00FF87' }}>Tokenized $120M Portfolio in 10 Weeks</span>
               </h2>
@@ -285,7 +285,7 @@ export default function TokenizationProductPage() {
                     <div className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: '#00FF8718' }}>
                       <Check size={11} style={{ color: '#00FF87' }} />
                     </div>
-                    <span className="text-[14px] text-slate-500">{item}</span>
+                    <span className="text-[14px] text-[rgba(240,246,255,0.40)]">{item}</span>
                   </div>
                 ))}
               </div>
@@ -295,9 +295,9 @@ export default function TokenizationProductPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[['$120M','Portfolio Tokenized in 10 Weeks'],['850+','Accredited Investors — 22 Countries'],['6 Wks','Time to Full Subscription'],['340+','Secondary Market Trades'],['4','Asset Types in Single Platform'],['100%','Automated Quarterly Distributions']].map(([v, l]) => (
-                <div key={l} className="glass-lg rounded-2xl p-6 border border-slate-200 hover:border-[#00FF87]/25 transition-colors">
+                <div key={l} className="glass-lg rounded-2xl p-6 border border-white/[0.06] hover:border-[#00FF87]/25 transition-colors">
                   <p className="text-2xl font-black mb-1" style={{ color: '#00FF87' }}>{v}</p>
-                  <p className="text-[13px] text-slate-500">{l}</p>
+                  <p className="text-[13px] text-[rgba(240,246,255,0.40)]">{l}</p>
                 </div>
               ))}
             </div>
@@ -306,18 +306,18 @@ export default function TokenizationProductPage() {
       </section>
 
       {/* ── INTEGRATIONS ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Integrations</div>
-            <h2 className="h2 text-slate-900 mb-4">Connects With Your <span style={{ color: '#00FF87' }}>Capital Markets Stack</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">Connects With Your <span style={{ color: '#00FF87' }}>Capital Markets Stack</span></h2>
             <p className="lead">Pre-built integrations with custody providers, KYC platforms, blockchains, and compliance data vendors.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {['Fireblocks Custody','BitGo Custody','Ethereum Mainnet','Polygon zkEVM','Avalanche C-Chain','Sumsub KYC','Jumio Verify','Refinitiv KYC','ComplyAdvantage','Chainalysis','Refinitiv FATCA','OECD CRS Format','DocuSign eSign','IPFS Document Store','The Graph Protocol','Chainlink Oracles'].map(name => (
-              <div key={name} className="flex items-center gap-2.5 p-3 rounded-xl glass border border-slate-200 hover:border-[#00FF87]/25 transition-colors">
+              <div key={name} className="flex items-center gap-2.5 p-3 rounded-xl glass border border-white/[0.06] hover:border-[#00FF87]/25 transition-colors">
                 <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: '#00FF87' }} />
-                <span className="text-[13px] text-slate-500">{name}</span>
+                <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{name}</span>
               </div>
             ))}
           </div>

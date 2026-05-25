@@ -103,7 +103,7 @@ export default function PortfolioPage() {
         <div className="container relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="section-label justify-center mb-4">Portfolio</div>
-            <h1 className="h1 text-slate-900 mb-6">500+ Enterprise Projects <br /><span className="gt-blue">Delivered Globally</span></h1>
+            <h1 className="h1 text-[#F0F6FF] mb-6">500+ Enterprise Projects <br /><span className="gt-blue">Delivered Globally</span></h1>
             <p className="lead max-w-2xl mx-auto">
               From crypto exchanges to neo banks, DeFi protocols to AI trading systems —
               explore how Shivacha has transformed enterprises across 50+ countries.
@@ -112,12 +112,12 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-7">
             {CASE_STUDIES.map((cs) => (
               <div key={cs.client}
-                className="card rounded-3xl border border-slate-200 hover:border-slate-300 overflow-hidden group">
+                className="card rounded-3xl border border-white/[0.06] hover:border-slate-300 overflow-hidden group">
                 {/* Header */}
                 <div className="p-6 pb-4" style={{ background: `linear-gradient(135deg, ${cs.color}08 0%, transparent 60%)` }}>
                   <div className="flex items-center justify-between mb-3">
@@ -125,22 +125,22 @@ export default function PortfolioPage() {
                       <span className="badge text-[11px]" style={{ background: `${cs.color}15`, borderColor: `${cs.color}30`, color: cs.color }}>
                         {cs.type}
                       </span>
-                      <span className="text-[12px] text-slate-400">{cs.country}</span>
+                      <span className="text-[12px] text-[rgba(240,246,255,0.35)]">{cs.country}</span>
                     </div>
-                    <span className="text-[12px] text-slate-400">⏱ {cs.duration}</span>
+                    <span className="text-[12px] text-[rgba(240,246,255,0.35)]">⏱ {cs.duration}</span>
                   </div>
-                  <h3 className="text-[16px] font-bold text-slate-900 leading-snug mb-2 group-hover:text-[#338EF7] transition-colors">
+                  <h3 className="text-[16px] font-bold text-[#F0F6FF] leading-snug mb-2 group-hover:text-[#338EF7] transition-colors">
                     {cs.client}: {cs.headline}
                   </h3>
-                  <p className="text-[13px] text-slate-500 leading-relaxed">{cs.description}</p>
+                  <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{cs.description}</p>
                 </div>
 
                 {/* Metrics */}
-                <div className="grid grid-cols-4 border-y border-slate-200">
+                <div className="grid grid-cols-4 border-y border-white/[0.06]">
                   {cs.metrics.map((m) => (
-                    <div key={m.l} className="text-center py-4 border-r border-slate-200 last:border-0">
+                    <div key={m.l} className="text-center py-4 border-r border-white/[0.06] last:border-0">
                       <div className="text-[16px] font-black" style={{ color: cs.color }}>{m.v}</div>
-                      <div className="text-[11px] text-slate-400">{m.l}</div>
+                      <div className="text-[11px] text-[rgba(240,246,255,0.35)]">{m.l}</div>
                     </div>
                   ))}
                 </div>
@@ -162,9 +162,9 @@ export default function PortfolioPage() {
           </div>
 
           {/* More projects CTA */}
-          <div className="mt-10 glass rounded-3xl p-8 border border-slate-200 text-center">
-            <h3 className="text-xl font-bold text-slate-900 mb-2">400+ More Projects in Our Portfolio</h3>
-            <p className="text-slate-500 mb-5">Request our full portfolio deck with detailed case studies for your industry.</p>
+          <div className="mt-10 glass rounded-3xl p-8 border border-white/[0.06] text-center">
+            <h3 className="text-xl font-bold text-[#F0F6FF] mb-2">400+ More Projects in Our Portfolio</h3>
+            <p className="text-[rgba(240,246,255,0.40)] mb-5">Request our full portfolio deck with detailed case studies for your industry.</p>
             <Link href="/contact" className="btn btn-primary">
               Request Full Portfolio <ArrowRight size={14} />
             </Link>

@@ -37,7 +37,7 @@ export default function AboutPage() {
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">About Shivacha</div>
-            <h1 className="h1 text-slate-900 mb-6">
+            <h1 className="h1 text-[#F0F6FF] mb-6">
               Building the Infrastructure
               <br /><span className="gt-blue">of the Digital Economy</span>
             </h1>
@@ -59,23 +59,23 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="section-sm bg-slate-50 border-y border-slate-200">
+      <section className="section-sm border-y border-white/[0.06]">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="card rounded-3xl p-8 border border-slate-200">
+            <div className="card rounded-3xl p-8 border border-white/[0.06]">
               <div className="text-4xl mb-4">🎯</div>
-              <h2 className="text-xl font-bold text-slate-900 mb-4">Our Mission</h2>
-              <p className="text-slate-500 leading-relaxed">
+              <h2 className="text-xl font-bold text-[#F0F6FF] mb-4">Our Mission</h2>
+              <p className="text-[rgba(240,246,255,0.40)] leading-relaxed">
                 To democratize access to institutional-grade financial and technology infrastructure —
                 enabling enterprises, startups, brokers, and institutions in every country to
                 build, launch, and scale digital businesses with the same infrastructure
                 previously available only to the world&apos;s largest corporations.
               </p>
             </div>
-            <div className="card rounded-3xl p-8 border border-slate-200">
+            <div className="card rounded-3xl p-8 border border-white/[0.06]">
               <div className="text-4xl mb-4">🔭</div>
-              <h2 className="text-xl font-bold text-slate-900 mb-4">Our Vision</h2>
-              <p className="text-slate-500 leading-relaxed">
+              <h2 className="text-xl font-bold text-[#F0F6FF] mb-4">Our Vision</h2>
+              <p className="text-[rgba(240,246,255,0.40)] leading-relaxed">
                 To become the definitive global infrastructure layer for the digital economy —
                 where every blockchain, AI, fintech, and trading platform built on Shivacha
                 infrastructure operates at the highest standards of security, scalability,
@@ -96,10 +96,10 @@ export default function AboutPage() {
               { v: '500+', l: 'Projects Delivered', i: '🚀' },
               { v: '50+', l: 'Countries Served', i: '🌍' },
             ].map(s => (
-              <div key={s.l} className="card rounded-2xl p-6 text-center border border-slate-200">
+              <div key={s.l} className="card rounded-2xl p-6 text-center border border-white/[0.06]">
                 <div className="text-3xl mb-3">{s.i}</div>
                 <div className="text-3xl font-black gt-blue mb-1">{s.v}</div>
-                <div className="text-[13px] text-slate-400">{s.l}</div>
+                <div className="text-[13px] text-[rgba(240,246,255,0.35)]">{s.l}</div>
               </div>
             ))}
           </div>
@@ -107,22 +107,22 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Our Journey</div>
-            <h2 className="h2 text-slate-900">8 Years of <span className="gt-blue">Innovation</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">8 Years of <span className="gt-blue">Innovation</span></h2>
           </div>
           <div className="max-w-3xl mx-auto">
             {MILESTONES.map((m, i) => (
               <div key={m.year} className={`timeline-item mb-8 ${i === MILESTONES.length - 1 ? 'pb-0 last' : ''}`}>
                 <div className="timeline-dot" />
-                <div className="card rounded-2xl p-5 border border-slate-200 ml-4">
+                <div className="card rounded-2xl p-5 border border-white/[0.06] ml-4">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="badge badge-blue text-[11px]">{m.year}</span>
-                    <h3 className="text-[15px] font-bold text-slate-900">{m.title}</h3>
+                    <h3 className="text-[15px] font-bold text-[#F0F6FF]">{m.title}</h3>
                   </div>
-                  <p className="text-[13px] text-slate-500">{m.desc}</p>
+                  <p className="text-[13px] text-[rgba(240,246,255,0.40)]">{m.desc}</p>
                 </div>
               </div>
             ))}
@@ -135,18 +135,18 @@ export default function AboutPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Leadership</div>
-            <h2 className="h2 text-slate-900">The Team Behind <span className="gt-blue">Shivacha</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">The Team Behind <span className="gt-blue">Shivacha</span></h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {TEAM.map((member) => (
-              <div key={member.name} className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#006FEE] to-[#00D4FF] flex items-center justify-center text-2xl font-black text-slate-900 mb-4">
+              <div key={member.name} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-slate-300 group">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#006FEE] to-[#00D4FF] flex items-center justify-center text-2xl font-black text-[#F0F6FF] mb-4">
                   {member.img}
                 </div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-0.5">{member.name}</h3>
+                <h3 className="text-[16px] font-bold text-[#F0F6FF] mb-0.5">{member.name}</h3>
                 <p className="text-[13px] text-[#338EF7] mb-3">{member.role}</p>
-                <p className="text-[13px] text-slate-500 leading-relaxed mb-4">{member.bio}</p>
-                <a href={member.linkedin} className="text-[12px] text-slate-400 hover:text-[#338EF7] transition-colors">
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed mb-4">{member.bio}</p>
+                <a href={member.linkedin} className="text-[12px] text-[rgba(240,246,255,0.35)] hover:text-[#338EF7] transition-colors">
                   LinkedIn →
                 </a>
               </div>

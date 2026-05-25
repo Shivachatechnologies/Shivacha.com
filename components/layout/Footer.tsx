@@ -65,9 +65,9 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="you@company.com"
-                className="bg-white/[0.06] border border-white/10 text-white placeholder:text-slate-600 px-4 py-2.5 rounded-xl text-[14px] outline-none focus:border-[#006FEE] transition-colors md:w-64"
+                className="bg-white/[0.06] border border-white/10 text-white placeholder:text-slate-600 px-4 py-2.5 rounded-xl text-[14px] outline-none focus:border-[#3B82F6] transition-colors md:w-64"
               />
-              <button type="submit" className="flex items-center gap-2 bg-[#006FEE] hover:bg-[#0059C2] text-white text-[13.5px] font-semibold px-4 py-2.5 rounded-xl transition-colors flex-shrink-0">
+              <button type="submit" className="flex items-center gap-2 bg-[#3B82F6] hover:bg-[#2563EB] text-white text-[13.5px] font-semibold px-4 py-2.5 rounded-xl transition-colors flex-shrink-0">
                 Subscribe <ArrowRight size={14} />
               </button>
             </form>

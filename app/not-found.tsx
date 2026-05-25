@@ -6,7 +6,7 @@ export default function NotFound() {
     <div className="bg-white min-h-screen flex items-center justify-center">
       <div className="container text-center max-w-2xl">
         <div className="text-[120px] font-black gt-blue leading-none mb-4">404</div>
-        <h1 className="h2 text-slate-900 mb-4">Page Not Found</h1>
+        <h1 className="h2 text-[#F0F6FF] mb-4">Page Not Found</h1>
         <p className="lead mb-8">
           The page you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>
@@ -22,7 +22,7 @@ export default function NotFound() {
             { label: 'About', href: '/about' },
           ].map(l => (
             <Link key={l.href} href={l.href}
-              className="p-3 rounded-xl bg-white border border-slate-200 hover:border-slate-300 text-[13px] text-slate-500 hover:text-[#338EF7] transition-colors">
+              className="p-3 rounded-xl bg-[#0C1428] border border-white/[0.06] hover:border-slate-300 text-[13px] text-[rgba(240,246,255,0.40)] hover:text-[#338EF7] transition-colors">
               {l.label}
             </Link>
           ))}

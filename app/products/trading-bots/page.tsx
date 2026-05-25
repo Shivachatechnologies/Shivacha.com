@@ -87,7 +87,7 @@ export default function TradingBotsProductPage() {
                 <span className="badge" style={{ background: `${COLOR}18`, color: COLOR, border: `1px solid ${COLOR}40` }}>Algo Trading</span>
               </div>
               <div className="section-label mb-4">Algorithmic Trading Infrastructure</div>
-              <h1 className="h1 text-slate-900 mb-6">
+              <h1 className="h1 text-[#F0F6FF] mb-6">
                 Build, Test & Deploy
                 <br /><span style={{ color: COLOR }}>Trading Strategies at Scale</span>
               </h1>
@@ -106,7 +106,7 @@ export default function TradingBotsProductPage() {
                 {METRICS.map(m => (
                   <div key={m.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: COLOR }}>{m.v}</p>
-                    <p className="text-[11px] text-slate-400 mt-1">{m.l}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)] mt-1">{m.l}</p>
                   </div>
                 ))}
               </div>
@@ -120,25 +120,25 @@ export default function TradingBotsProductPage() {
                   <span className="db-dot bg-red-500" />
                   <span className="db-dot bg-yellow-400" />
                   <span className="db-dot bg-green-400" />
-                  <span className="ml-3 text-[11px] text-slate-400">trading-bots.platform — Strategy Dashboard</span>
+                  <span className="ml-3 text-[11px] text-[rgba(240,246,255,0.35)]">trading-bots.platform — Strategy Dashboard</span>
                 </div>
                 <div className="p-5 space-y-3">
                   <div className="grid grid-cols-2 gap-2">
                     {[
                       ['Total P&L', '+$124,540', 'text-green-400'],
-                      ['Sharpe Ratio', '2.34', 'text-slate-900'],
+                      ['Sharpe Ratio', '2.34', 'text-[#F0F6FF]'],
                       ['Max Drawdown', '-4.2%', 'text-red-400'],
-                      ['Win Rate', '67.8%', 'text-slate-900'],
+                      ['Win Rate', '67.8%', 'text-[#F0F6FF]'],
                     ].map(([label, value, cls]) => (
-                      <div key={String(label)} className="p-3 rounded-xl bg-white border border-slate-200">
-                        <p className="text-[10px] text-slate-400 uppercase mb-1">{label}</p>
+                      <div key={String(label)} className="p-3 rounded-xl bg-[#0C1428] border border-white/[0.06]">
+                        <p className="text-[10px] text-[rgba(240,246,255,0.35)] uppercase mb-1">{label}</p>
                         <p className={`text-[15px] font-bold ${cls}`}>{value}</p>
                       </div>
                     ))}
                   </div>
                   {/* Equity curve mock */}
                   <div className="glass rounded-xl p-3">
-                    <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-2">30-Day Equity Curve</p>
+                    <p className="text-[10px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-2">30-Day Equity Curve</p>
                     <div className="flex items-end gap-0.5 h-14">
                       {[30,35,32,40,38,45,43,55,52,60,58,70,67,75,80,78,88,85,92,100].map((h, i) => (
                         <div key={i} className="flex-1 rounded-t-sm" style={{ height: `${h}%`, background: i > 12 ? `${COLOR}CC` : `${COLOR}44` }} />
@@ -152,9 +152,9 @@ export default function TradingBotsProductPage() {
                       ['ETH Grid Trader', 'running', '+$8,920'],
                       ['SOL Mean Reversion', 'paused', '+$3,100'],
                     ].map(([name, status, pnl]) => (
-                      <div key={String(name)} className="flex items-center gap-3 p-2.5 rounded-lg bg-white border border-slate-200">
+                      <div key={String(name)} className="flex items-center gap-3 p-2.5 rounded-lg bg-[#0C1428] border border-white/[0.06]">
                         <div className={`w-2 h-2 rounded-full flex-shrink-0 ${status === 'running' ? 'bg-green-400 animate-pulse' : 'bg-yellow-400'}`} />
-                        <span className="text-[11px] text-slate-500 flex-1">{name}</span>
+                        <span className="text-[11px] text-[rgba(240,246,255,0.40)] flex-1">{name}</span>
                         <span className="text-[11px] font-semibold text-green-400">{pnl}</span>
                       </div>
                     ))}
@@ -171,19 +171,19 @@ export default function TradingBotsProductPage() {
       </section>
 
       {/* ── FEATURES ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Platform Capabilities</div>
-            <h2 className="h2 text-slate-900 mb-4">Everything to Run <span style={{ color: COLOR }}>Algorithmic Trading</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">Everything to Run <span style={{ color: COLOR }}>Algorithmic Trading</span></h2>
             <p className="lead">From idea to live strategy — one platform for the entire algo trading lifecycle.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {FEATURES.map(f => (
-              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#EF4444]/30 transition-colors group">
+              <div key={f.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-[#EF4444]/30 transition-colors group">
                 <div className="text-3xl mb-4">{f.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#FCA5A5] transition-colors">{f.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{f.desc}</p>
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#FCA5A5] transition-colors">{f.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -196,27 +196,27 @@ export default function TradingBotsProductPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-label mb-4">Technical Architecture</div>
-              <h2 className="h2 text-slate-900 mb-6">Built for <span style={{ color: COLOR }}>Institutional Speed</span></h2>
+              <h2 className="h2 text-[#F0F6FF] mb-6">Built for <span style={{ color: COLOR }}>Institutional Speed</span></h2>
               <p className="lead mb-8">Sub-10ms order execution, multi-exchange failover, and a risk engine that never sleeps.</p>
               <div className="space-y-2">
                 {SPECS.map(s => (
-                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-slate-200">
-                    <span className="text-[12px] font-bold text-slate-400 uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
-                    <span className="text-[13px] text-slate-500">{s.value}</span>
+                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-white/[0.06]">
+                    <span className="text-[12px] font-bold text-[rgba(240,246,255,0.35)] uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
+                    <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{s.value}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <div className="section-label mb-4">Supported Exchanges</div>
-              <h3 className="h3 text-slate-900 mb-6">30+ Venues, One Unified API</h3>
+              <h3 className="h3 text-[#F0F6FF] mb-6">30+ Venues, One Unified API</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {['Binance','Coinbase','OKX','Bybit','Kraken','KuCoin','Bitget','Huobi','Gate.io','MEXC','dYdX','GMX','Uniswap V3','PancakeSwap','Hyperliquid','Vertex'].map(t => (
                   <span key={t} className="tech-pill">{t}</span>
                 ))}
               </div>
-              <div className="glass-lg rounded-2xl p-6 border border-slate-200">
-                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Built-In Risk Controls</p>
+              <div className="glass-lg rounded-2xl p-6 border border-white/[0.06]">
+                <p className="text-[12px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-4">Built-In Risk Controls</p>
                 <div className="space-y-2">
                   {[
                     'Per-trade stop-loss & take-profit',
@@ -228,7 +228,7 @@ export default function TradingBotsProductPage() {
                   ].map(rc => (
                     <div key={rc} className="flex items-center gap-3">
                       <Check size={13} style={{ color: COLOR }} className="flex-shrink-0" />
-                      <span className="text-[13px] text-slate-500">{rc}</span>
+                      <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{rc}</span>
                     </div>
                   ))}
                 </div>
@@ -239,11 +239,11 @@ export default function TradingBotsProductPage() {
       </section>
 
       {/* ── WHO USES IT ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Who Uses It</div>
-            <h2 className="h2 text-slate-900 mb-4">Built for <span style={{ color: COLOR }}>Every Trading Profile</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">Built for <span style={{ color: COLOR }}>Every Trading Profile</span></h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -251,10 +251,10 @@ export default function TradingBotsProductPage() {
               { icon: '🏢', title: 'Prop Trading Firms', desc: 'Deploy multiple strategy instances across desks. Centralised risk dashboard, drawdown controls, and P&L attribution per strategy and trader.' },
               { icon: '🏦', title: 'Brokers & Exchanges', desc: 'White-label the full platform under your brand. Offer algo trading as a value-added service — fully managed SaaS or self-hosted.' },
             ].map(u => (
-              <div key={u.title} className="card rounded-2xl p-7 border border-slate-200 hover:border-[#EF4444]/30 transition-colors">
+              <div key={u.title} className="card rounded-2xl p-7 border border-white/[0.06] hover:border-[#EF4444]/30 transition-colors">
                 <div className="text-4xl mb-4">{u.icon}</div>
-                <h3 className="text-[17px] font-bold text-slate-900 mb-3">{u.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{u.desc}</p>
+                <h3 className="text-[17px] font-bold text-[#F0F6FF] mb-3">{u.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{u.desc}</p>
               </div>
             ))}
           </div>

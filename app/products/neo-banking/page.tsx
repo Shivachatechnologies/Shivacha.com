@@ -84,7 +84,7 @@ export default function NeoBankingProductPage() {
                 <span className="badge badge-green">White-Label</span>
               </div>
               <div className="section-label mb-4">Neo Banking Platform OS</div>
-              <h1 className="h1 text-slate-900 mb-6">
+              <h1 className="h1 text-[#F0F6FF] mb-6">
                 Full-Stack Digital Banking
                 <br /><span style={{ color: '#8B66FF' }}>Infrastructure</span>
               </h1>
@@ -102,7 +102,7 @@ export default function NeoBankingProductPage() {
                 {METRICS.map(m => (
                   <div key={m.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: '#8B66FF' }}>{m.v}</p>
-                    <p className="text-[11px] text-slate-400 mt-1">{m.l}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)] mt-1">{m.l}</p>
                   </div>
                 ))}
               </div>
@@ -116,15 +116,15 @@ export default function NeoBankingProductPage() {
                   <span className="db-dot bg-red-500" />
                   <span className="db-dot bg-yellow-400" />
                   <span className="db-dot bg-green-400" />
-                  <span className="ml-3 text-[11px] text-slate-400">banking.yourbrand.com — Customer Portal</span>
+                  <span className="ml-3 text-[11px] text-[rgba(240,246,255,0.35)]">banking.yourbrand.com — Customer Portal</span>
                 </div>
                 <div className="p-5 space-y-3">
                   {/* Account summary strip */}
                   <div className="flex gap-3 overflow-hidden">
                     {[['EUR Account','€ 48,230.00','IBAN: DE89 3704'],['USD Account','$ 12,540.00','IBAN: US44 0000'],['GBP Account','£ 6,190.00','IBAN: GB29 NWBK']].map(([label, bal, iban]) => (
                       <div key={label} className="glass rounded-lg px-3 py-2 flex-shrink-0 min-w-[120px]">
-                        <p className="text-[9px] text-slate-400 uppercase tracking-wide">{label}</p>
-                        <p className="text-[13px] font-bold text-slate-900">{bal}</p>
+                        <p className="text-[9px] text-[rgba(240,246,255,0.35)] uppercase tracking-wide">{label}</p>
+                        <p className="text-[13px] font-bold text-[#F0F6FF]">{bal}</p>
                         <p className="text-[9px] text-[#6644FF] font-mono">{iban}</p>
                       </div>
                     ))}
@@ -132,21 +132,21 @@ export default function NeoBankingProductPage() {
                   {/* Transaction feed + card */}
                   <div className="grid grid-cols-3 gap-3">
                     <div className="col-span-2 glass rounded-xl p-3 h-36 flex flex-col gap-1 overflow-hidden">
-                      <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-1">Recent Transactions</p>
+                      <p className="text-[10px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-1">Recent Transactions</p>
                       {[['SEPA Inbound','+ €12,000','14:32'],['Card Purchase','- €89.50','13:15'],['SWIFT Wire Out','- $5,000','09:00'],['FX Conversion','€ → $','08:40'],['Card Refund','+ €45.00','Yesterday']].map(([desc, amt, time]) => (
                         <div key={desc+time} className="flex justify-between items-center text-[9px]">
-                          <span className="text-slate-500 truncate w-28">{desc}</span>
-                          <span className={`font-semibold ${amt.startsWith('+') ? 'text-green-400' : 'text-slate-500'}`}>{amt}</span>
-                          <span className="text-slate-400">{time}</span>
+                          <span className="text-[rgba(240,246,255,0.40)] truncate w-28">{desc}</span>
+                          <span className={`font-semibold ${amt.startsWith('+') ? 'text-green-400' : 'text-[rgba(240,246,255,0.40)]'}`}>{amt}</span>
+                          <span className="text-[rgba(240,246,255,0.35)]">{time}</span>
                         </div>
                       ))}
                     </div>
                     <div className="glass rounded-xl p-3 h-36 flex flex-col justify-between">
-                      <p className="text-[10px] text-slate-400 uppercase tracking-wider">Virtual Card</p>
+                      <p className="text-[10px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider">Virtual Card</p>
                       <div className="rounded-lg p-2" style={{ background: 'linear-gradient(135deg, #6644FF44, #338EF722)' }}>
                         <p className="text-[9px] text-[#6644FF] font-mono">•••• •••• •••• 4291</p>
-                        <p className="text-[9px] text-slate-500 mt-1">VISA DEBIT</p>
-                        <p className="text-[9px] text-slate-400">Exp 05/28</p>
+                        <p className="text-[9px] text-[rgba(240,246,255,0.40)] mt-1">VISA DEBIT</p>
+                        <p className="text-[9px] text-[rgba(240,246,255,0.35)]">Exp 05/28</p>
                       </div>
                       <p className="text-[9px] text-green-400 font-semibold">● Active</p>
                     </div>
@@ -155,7 +155,7 @@ export default function NeoBankingProductPage() {
                   <div className="grid grid-cols-3 gap-2">
                     {[['Active Accounts','94,812'],['Monthly Volume','$420M'],['KYC Pass Rate','98.2%']].map(([l,v]) => (
                       <div key={l} className="metric-card">
-                        <p className="text-[10px] text-slate-400">{l}</p>
+                        <p className="text-[10px] text-[rgba(240,246,255,0.35)]">{l}</p>
                         <p className="text-[13px] font-bold" style={{ color: '#8B66FF' }}>{v}</p>
                       </div>
                     ))}
@@ -168,19 +168,19 @@ export default function NeoBankingProductPage() {
       </section>
 
       {/* ── KEY FEATURES ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Platform Capabilities</div>
-            <h2 className="h2 text-slate-900 mb-4">Everything to Run a <span style={{ color: '#8B66FF' }}>Digital Bank</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">Everything to Run a <span style={{ color: '#8B66FF' }}>Digital Bank</span></h2>
             <p className="lead">One operating system. Every feature a compliant digital bank needs — from IBANs to card issuance.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURES.map(f => (
-              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#6644FF]/40 group">
+              <div key={f.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-[#6644FF]/40 group">
                 <div className="text-4xl mb-4">{f.icon}</div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#8B66FF] transition-colors">{f.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{f.desc}</p>
+                <h3 className="text-[16px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#8B66FF] transition-colors">{f.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -193,32 +193,32 @@ export default function NeoBankingProductPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-label mb-4">Technical Architecture</div>
-              <h2 className="h2 text-slate-900 mb-6">Built for <span style={{ color: '#8B66FF' }}>Regulatory Scale</span></h2>
+              <h2 className="h2 text-[#F0F6FF] mb-6">Built for <span style={{ color: '#8B66FF' }}>Regulatory Scale</span></h2>
               <p className="lead mb-8">Every component is engineered to meet the strictest banking regulations while delivering consumer-grade UX at millions-of-accounts scale.</p>
               <div className="space-y-2">
                 {SPECS.map(s => (
-                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-slate-200">
-                    <span className="text-[12px] font-bold text-slate-400 uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
-                    <span className="text-[13px] text-slate-500">{s.value}</span>
+                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-white/[0.06]">
+                    <span className="text-[12px] font-bold text-[rgba(240,246,255,0.35)] uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
+                    <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{s.value}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <div className="section-label mb-4">Tech Stack</div>
-              <h3 className="h3 text-slate-900 mb-6">The Stack Behind the Bank</h3>
+              <h3 className="h3 text-[#F0F6FF] mb-6">The Stack Behind the Bank</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {['ISO 20022','OAuth2 / PKCE','FIDO2','React Native','PostgreSQL','Redis','Kubernetes','SWIFT gpi','SEPA Instant','ACH','Visa DPS','Mastercard MDES'].map(t => (
                   <span key={t} className="tech-pill">{t}</span>
                 ))}
               </div>
-              <div className="glass-lg rounded-2xl p-6 border border-slate-200">
-                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Platform Performance</p>
+              <div className="glass-lg rounded-2xl p-6 border border-white/[0.06]">
+                <p className="text-[12px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-4">Platform Performance</p>
                 <div className="space-y-4">
                   {[['Payment Processing Time','< 2 sec','SEPA Instant'],['API Response (REST)','< 50ms','p99'],['Card Auth Latency','< 300ms','Global'],['Platform Uptime','99.99%','Annual SLA']].map(([lbl, val, ref]) => (
                     <div key={lbl}>
                       <div className="flex justify-between mb-1">
-                        <span className="text-[12px] text-slate-500">{lbl}</span>
+                        <span className="text-[12px] text-[rgba(240,246,255,0.40)]">{lbl}</span>
                         <span className="text-[12px] font-bold" style={{ color: '#8B66FF' }}>{val}</span>
                       </div>
                       <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
@@ -234,22 +234,22 @@ export default function NeoBankingProductPage() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Launch Process</div>
-            <h2 className="h2 text-slate-900 mb-4">From License to <span style={{ color: '#8B66FF' }}>Live Neobank</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">From License to <span style={{ color: '#8B66FF' }}>Live Neobank</span></h2>
             <p className="lead">A proven delivery framework used across 30+ neobank and e-money institution launches worldwide.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {STEPS.map((s, i) => (
-              <div key={s.n} className="card rounded-2xl p-6 border border-slate-200 relative group hover:border-[#6644FF]/40">
+              <div key={s.n} className="card rounded-2xl p-6 border border-white/[0.06] relative group hover:border-[#6644FF]/40">
                 <div className="text-[48px] font-black text-[#0E1E34] group-hover:text-[#6644FF]/20 transition-colors absolute top-4 right-4 leading-none">{s.n}</div>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{ background: '#6644FF18', border: '1px solid #6644FF33' }}>
                   <span className="font-bold text-sm" style={{ color: '#8B66FF' }}>{i + 1}</span>
                 </div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#8B66FF] transition-colors">{s.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{s.desc}</p>
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#8B66FF] transition-colors">{s.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -262,7 +262,7 @@ export default function NeoBankingProductPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="section-label mb-4">Client Results</div>
-              <h2 className="h2 text-slate-900 mb-6">
+              <h2 className="h2 text-[#F0F6FF] mb-6">
                 European Fintech Startup
                 <br /><span style={{ color: '#8B66FF' }}>Onboarded 500K Users in 90 Days</span>
               </h2>
@@ -284,7 +284,7 @@ export default function NeoBankingProductPage() {
                     <div className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: '#6644FF18' }}>
                       <Check size={11} style={{ color: '#8B66FF' }} />
                     </div>
-                    <span className="text-[14px] text-slate-500">{item}</span>
+                    <span className="text-[14px] text-[rgba(240,246,255,0.40)]">{item}</span>
                   </div>
                 ))}
               </div>
@@ -294,9 +294,9 @@ export default function NeoBankingProductPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[['500K','Accounts — First 90 Days'],['$1.2B','Volume — Launch Quarter'],['11 Wks','Contract to Production'],['99.7%','Automated KYC Pass Rate'],['99.99%','Uptime — First Year'],['Zero','Fraud Loss Events']].map(([v, l]) => (
-                <div key={l} className="glass-lg rounded-2xl p-6 border border-slate-200 hover:border-[#6644FF]/30 transition-colors">
+                <div key={l} className="glass-lg rounded-2xl p-6 border border-white/[0.06] hover:border-[#6644FF]/30 transition-colors">
                   <p className="text-2xl font-black mb-1" style={{ color: '#8B66FF' }}>{v}</p>
-                  <p className="text-[13px] text-slate-500">{l}</p>
+                  <p className="text-[13px] text-[rgba(240,246,255,0.40)]">{l}</p>
                 </div>
               ))}
             </div>
@@ -305,18 +305,18 @@ export default function NeoBankingProductPage() {
       </section>
 
       {/* ── INTEGRATIONS ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Integrations</div>
-            <h2 className="h2 text-slate-900 mb-4">Connects With Your <span style={{ color: '#8B66FF' }}>Banking Stack</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">Connects With Your <span style={{ color: '#8B66FF' }}>Banking Stack</span></h2>
             <p className="lead">Pre-built connectors for core banking systems, card processors, KYC providers, and payment networks.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {['Temenos Transact','Oracle FLEXCUBE','Finacle Core','Visa DPS','Mastercard MDES','Sumsub KYC','Jumio Verify','Onfido','ComplyAdvantage','Chainalysis AML','SWIFT gpi','SEPA Instant','Stripe Treasury','Modulr Payments','Railsr BaaS','Twilio Verify'].map(name => (
-              <div key={name} className="flex items-center gap-2.5 p-3 rounded-xl glass border border-slate-200 hover:border-[#6644FF]/30 transition-colors">
+              <div key={name} className="flex items-center gap-2.5 p-3 rounded-xl glass border border-white/[0.06] hover:border-[#6644FF]/30 transition-colors">
                 <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: '#6644FF' }} />
-                <span className="text-[13px] text-slate-500">{name}</span>
+                <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{name}</span>
               </div>
             ))}
           </div>

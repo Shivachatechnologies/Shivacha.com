@@ -101,7 +101,7 @@ export default function PartnersPage() {
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Partner Program</div>
-            <h1 className="h1 text-slate-900 mb-6">
+            <h1 className="h1 text-[#F0F6FF] mb-6">
               Grow Your Business
               <br /><span className="gt-blue">With Shivacha</span>
             </h1>
@@ -120,7 +120,7 @@ export default function PartnersPage() {
                 <div key={s.l} className="metric-card">
                   <div className="text-2xl mb-1">{s.icon}</div>
                   <p className="text-xl font-black gt-blue">{s.v}</p>
-                  <p className="text-[11px] text-slate-400">{s.l}</p>
+                  <p className="text-[11px] text-[rgba(240,246,255,0.35)]">{s.l}</p>
                 </div>
               ))}
             </div>
@@ -129,43 +129,43 @@ export default function PartnersPage() {
       </section>
 
       {/* Partnership Tiers */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Partnership Tiers</div>
-            <h2 className="h2 text-slate-900">Choose Your <span className="gt-blue">Partner Level</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Choose Your <span className="gt-blue">Partner Level</span></h2>
             <p className="lead mt-4">Three tiers designed to match where you are — from individual referrers to enterprise system integrators.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {TIERS.map((tier) => (
               <div key={tier.name}
-                className={`card rounded-3xl p-7 border flex flex-col ${tier.featured ? 'border-[#6644FF]/40 relative overflow-hidden' : 'border-slate-200'}`}
+                className={`card rounded-3xl p-7 border flex flex-col ${tier.featured ? 'border-[#6644FF]/40 relative overflow-hidden' : 'border-white/[0.06]'}`}
                 style={{ background: tier.featured ? `${tier.color}06` : undefined }}>
                 {tier.featured && (
-                  <div className="absolute top-0 right-0 px-4 py-1.5 text-[11px] font-bold text-slate-900 rounded-bl-2xl"
+                  <div className="absolute top-0 right-0 px-4 py-1.5 text-[11px] font-bold text-[#F0F6FF] rounded-bl-2xl"
                     style={{ background: tier.color }}>
                     MOST POPULAR
                   </div>
                 )}
                 <div className="text-4xl mb-3">{tier.icon}</div>
-                <h3 className="text-[20px] font-bold text-slate-900 mb-1">{tier.name}</h3>
+                <h3 className="text-[20px] font-bold text-[#F0F6FF] mb-1">{tier.name}</h3>
                 <div className="text-[32px] font-black mb-2" style={{ color: tier.color }}>{tier.commission}</div>
-                <p className="text-[12px] text-slate-400 mb-1">commission rate</p>
-                <p className="text-[13px] text-slate-500 leading-relaxed mb-5">{tier.desc}</p>
+                <p className="text-[12px] text-[rgba(240,246,255,0.35)] mb-1">commission rate</p>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed mb-5">{tier.desc}</p>
 
                 <div className="space-y-2 mb-5 flex-1">
                   {tier.benefits.map(b => (
                     <div key={b} className="flex items-center gap-2">
                       <CheckCircle size={13} style={{ color: tier.color }} className="flex-shrink-0" />
-                      <span className="text-[13px] text-slate-500">{b}</span>
+                      <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{b}</span>
                     </div>
                   ))}
                 </div>
 
-                <div className="pt-4 border-t border-slate-200 mb-5">
-                  <p className="text-[11px] text-slate-400 uppercase tracking-wider mb-2">Requirements</p>
+                <div className="pt-4 border-t border-white/[0.06] mb-5">
+                  <p className="text-[11px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-2">Requirements</p>
                   {tier.requirements.map(r => (
-                    <div key={r} className="flex items-center gap-2 text-[12px] text-slate-400">
+                    <div key={r} className="flex items-center gap-2 text-[12px] text-[rgba(240,246,255,0.35)]">
                       <div className="w-1 h-1 rounded-full flex-shrink-0" style={{ background: tier.color }} />
                       {r}
                     </div>
@@ -187,14 +187,14 @@ export default function PartnersPage() {
       <section className="section-sm bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <h2 className="h3 text-slate-900">Why Partners Choose <span className="gt-blue">Shivacha</span></h2>
+            <h2 className="h3 text-[#F0F6FF]">Why Partners Choose <span className="gt-blue">Shivacha</span></h2>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
             {PARTNER_BENEFITS.map((b) => (
-              <div key={b.title} className="card rounded-2xl p-5 border border-slate-200 hover:border-slate-300">
+              <div key={b.title} className="card rounded-2xl p-5 border border-white/[0.06] hover:border-slate-300">
                 <div className="text-3xl mb-3">{b.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2">{b.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{b.desc}</p>
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-2">{b.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{b.desc}</p>
               </div>
             ))}
           </div>
@@ -202,28 +202,28 @@ export default function PartnersPage() {
       </section>
 
       {/* Current Partners */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-slate-900">Our <span className="gt-blue">Partner Ecosystem</span></h2>
+            <h2 className="h3 text-[#F0F6FF]">Our <span className="gt-blue">Partner Ecosystem</span></h2>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 mb-10">
             {CURRENT_PARTNERS.map((p) => (
-              <div key={p.name} className="card rounded-xl p-4 border border-slate-200 hover:border-slate-300">
-                <p className="text-[14px] font-semibold text-slate-900 mb-1">{p.name}</p>
+              <div key={p.name} className="card rounded-xl p-4 border border-white/[0.06] hover:border-slate-300">
+                <p className="text-[14px] font-semibold text-[#F0F6FF] mb-1">{p.name}</p>
                 <div className="flex items-center justify-between">
                   <span className="badge badge-blue text-[10px]">{p.type}</span>
-                  <span className="text-[11px] text-slate-400">{p.region}</span>
+                  <span className="text-[11px] text-[rgba(240,246,255,0.35)]">{p.region}</span>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Apply CTA */}
-          <div className="glass rounded-3xl p-10 border border-slate-200 text-center max-w-2xl mx-auto">
+          <div className="glass rounded-3xl p-10 border border-white/[0.06] text-center max-w-2xl mx-auto">
             <div className="text-4xl mb-4">🚀</div>
-            <h3 className="text-[22px] font-bold text-slate-900 mb-3">Ready to Partner with Shivacha?</h3>
-            <p className="text-slate-500 mb-6 leading-relaxed">
+            <h3 className="text-[22px] font-bold text-[#F0F6FF] mb-3">Ready to Partner with Shivacha?</h3>
+            <p className="text-[rgba(240,246,255,0.40)] mb-6 leading-relaxed">
               Complete our partner application. Our team will review it within 48 hours and schedule an onboarding call.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">

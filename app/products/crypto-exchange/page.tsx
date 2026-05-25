@@ -84,7 +84,7 @@ export default function CryptoExchangeProductPage() {
                 <span className="badge badge-green">White-Label</span>
               </div>
               <div className="section-label mb-4">Crypto Exchange Infrastructure</div>
-              <h1 className="h1 text-slate-900 mb-6">
+              <h1 className="h1 text-[#F0F6FF] mb-6">
                 Launch a Tier-1 Exchange
                 <br /><span className="gt-blue">in 8 Weeks</span>
               </h1>
@@ -102,7 +102,7 @@ export default function CryptoExchangeProductPage() {
                 {METRICS.map(m => (
                   <div key={m.l} className="metric-card">
                     <p className="text-xl font-black gt-blue">{m.v}</p>
-                    <p className="text-[11px] text-slate-400 mt-1">{m.l}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)] mt-1">{m.l}</p>
                   </div>
                 ))}
               </div>
@@ -116,15 +116,15 @@ export default function CryptoExchangeProductPage() {
                   <span className="db-dot bg-red-500" />
                   <span className="db-dot bg-yellow-400" />
                   <span className="db-dot bg-green-400" />
-                  <span className="ml-3 text-[11px] text-slate-400">exchange.yourbrand.com — Live Trading</span>
+                  <span className="ml-3 text-[11px] text-[rgba(240,246,255,0.35)]">exchange.yourbrand.com — Live Trading</span>
                 </div>
                 <div className="p-5 space-y-3">
                   {/* Ticker strip */}
                   <div className="flex gap-3 overflow-hidden">
                     {[['BTC/USDT','$67,420','↑2.4%','text-green-400'],['ETH/USDT','$3,521','↑1.8%','text-green-400'],['BNB/USDT','$598','↓0.3%','text-red-400'],['SOL/USDT','$182','↑5.1%','text-green-400']].map(([pair,price,chg,cls]) => (
                       <div key={pair} className="glass rounded-lg px-3 py-1.5 flex-shrink-0">
-                        <p className="text-[10px] text-slate-400">{pair}</p>
-                        <p className="text-[13px] font-bold text-slate-900">{price}</p>
+                        <p className="text-[10px] text-[rgba(240,246,255,0.35)]">{pair}</p>
+                        <p className="text-[13px] font-bold text-[#F0F6FF]">{price}</p>
                         <p className={`text-[10px] font-semibold ${cls}`}>{chg}</p>
                       </div>
                     ))}
@@ -132,7 +132,7 @@ export default function CryptoExchangeProductPage() {
                   {/* Simulated order book + chart area */}
                   <div className="grid grid-cols-3 gap-3">
                     <div className="col-span-2 glass rounded-xl p-3 h-36 flex flex-col justify-between">
-                      <p className="text-[10px] text-slate-400 uppercase tracking-wider">Price Chart — BTC/USDT</p>
+                      <p className="text-[10px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider">Price Chart — BTC/USDT</p>
                       <div className="flex items-end gap-1 h-20">
                         {[40,55,45,70,60,80,65,90,75,95,85,100,88,72,92].map((h, i) => (
                           <div key={i} className="flex-1 rounded-t-sm" style={{ height: `${h}%`, background: h > 70 ? 'rgba(0,153,230,0.6)' : 'rgba(0,153,230,0.25)' }} />
@@ -141,9 +141,9 @@ export default function CryptoExchangeProductPage() {
                       <p className="text-[11px] text-[#338EF7] font-bold">$67,420.50 <span className="text-green-400 text-[10px]">+2.4%</span></p>
                     </div>
                     <div className="glass rounded-xl p-3 h-36 flex flex-col gap-1 overflow-hidden">
-                      <p className="text-[10px] text-slate-400 uppercase tracking-wider mb-1">Order Book</p>
+                      <p className="text-[10px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-1">Order Book</p>
                       {[['67,580','0.42','sell'],['67,560','1.10','sell'],['67,540','0.77','sell'],['—','—','mid'],['67,420','2.31','buy'],['67,400','0.98','buy'],['67,380','1.54','buy']].map(([p,a,s],i) => (
-                        <div key={i} className={`flex justify-between text-[9px] font-mono ${s==='sell'?'text-red-400':s==='buy'?'text-green-400':'text-slate-400'}`}>
+                        <div key={i} className={`flex justify-between text-[9px] font-mono ${s==='sell'?'text-red-400':s==='buy'?'text-green-400':'text-[rgba(240,246,255,0.35)]'}`}>
                           <span>{p}</span><span>{a}</span>
                         </div>
                       ))}
@@ -153,7 +153,7 @@ export default function CryptoExchangeProductPage() {
                   <div className="grid grid-cols-3 gap-2">
                     {[['24h Volume','$4.2B'],['Open Orders','18,204'],['Active Users','94,312']].map(([l,v]) => (
                       <div key={l} className="metric-card">
-                        <p className="text-[10px] text-slate-400">{l}</p>
+                        <p className="text-[10px] text-[rgba(240,246,255,0.35)]">{l}</p>
                         <p className="text-[13px] font-bold text-[#338EF7]">{v}</p>
                       </div>
                     ))}
@@ -166,19 +166,19 @@ export default function CryptoExchangeProductPage() {
       </section>
 
       {/* ── KEY FEATURES ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Platform Capabilities</div>
-            <h2 className="h2 text-slate-900 mb-4">Everything You Need to <span className="gt-blue">Run an Exchange</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">Everything You Need to <span className="gt-blue">Run an Exchange</span></h2>
             <p className="lead">One platform. Every feature a competitive exchange needs — from matching engine to mobile app.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURES.map(f => (
-              <div key={f.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#006FEE]/40 group">
+              <div key={f.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-[#006FEE]/40 group">
                 <div className="text-4xl mb-4">{f.icon}</div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">{f.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{f.desc}</p>
+                <h3 className="text-[16px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#338EF7] transition-colors">{f.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -191,32 +191,32 @@ export default function CryptoExchangeProductPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-label mb-4">Technical Architecture</div>
-              <h2 className="h2 text-slate-900 mb-6">Built for <span className="gt-blue">Institutional Scale</span></h2>
+              <h2 className="h2 text-[#F0F6FF] mb-6">Built for <span className="gt-blue">Institutional Scale</span></h2>
               <p className="lead mb-8">Every component is engineered for the most demanding trading environments — from retail exchanges to institutional dark pools.</p>
               <div className="space-y-2">
                 {SPECS.map(s => (
-                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-slate-200">
-                    <span className="text-[12px] font-bold text-slate-400 uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
-                    <span className="text-[13px] text-slate-500">{s.value}</span>
+                  <div key={s.label} className="flex items-start gap-4 p-4 glass rounded-xl border border-white/[0.06]">
+                    <span className="text-[12px] font-bold text-[rgba(240,246,255,0.35)] uppercase tracking-wider w-32 flex-shrink-0 pt-0.5">{s.label}</span>
+                    <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{s.value}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <div className="section-label mb-4">Tech Stack</div>
-              <h3 className="h3 text-slate-900 mb-6">The Stack Behind the Speed</h3>
+              <h3 className="h3 text-[#F0F6FF] mb-6">The Stack Behind the Speed</h3>
               <div className="flex flex-wrap gap-2 mb-8">
                 {['Rust','Apache Kafka','Redis','PostgreSQL','TimescaleDB','React','React Native','TypeScript','Kubernetes','AWS / GCP','Cloudflare','HSM Custody'].map(t => (
                   <span key={t} className="tech-pill">{t}</span>
                 ))}
               </div>
-              <div className="glass-lg rounded-2xl p-6 border border-slate-200">
-                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Performance Benchmarks</p>
+              <div className="glass-lg rounded-2xl p-6 border border-white/[0.06]">
+                <p className="text-[12px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-4">Performance Benchmarks</p>
                 <div className="space-y-4">
                   {[['Order Matching Latency','< 0.1ms','99%'],['API Response (REST)','< 5ms','99.9%'],['WebSocket Feed Delay','< 2ms','99.9%'],['System Uptime (SLA)','99.99%','Annual']].map(([lbl, val, ref]) => (
                     <div key={lbl}>
                       <div className="flex justify-between mb-1">
-                        <span className="text-[12px] text-slate-500">{lbl}</span>
+                        <span className="text-[12px] text-[rgba(240,246,255,0.40)]">{lbl}</span>
                         <span className="text-[12px] font-bold text-[#338EF7]">{val}</span>
                       </div>
                       <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
@@ -232,22 +232,22 @@ export default function CryptoExchangeProductPage() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="section-label justify-center">Launch Process</div>
-            <h2 className="h2 text-slate-900 mb-4">From Contract to <span className="gt-blue">Live Exchange</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">From Contract to <span className="gt-blue">Live Exchange</span></h2>
             <p className="lead">A proven 8-week delivery process used across 50+ exchange launches worldwide.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {STEPS.map((s, i) => (
-              <div key={s.n} className="card rounded-2xl p-6 border border-slate-200 relative group hover:border-[#006FEE]/40">
-                <div className="text-[48px] font-black text-[#0E1E34] group-hover:text-[#006FEE]/20 transition-colors absolute top-4 right-4 leading-none">{s.n}</div>
+              <div key={s.n} className="card rounded-2xl p-6 border border-white/[0.06] relative group hover:border-[#006FEE]/40">
+                <div className="text-[48px] font-black text-[#0E1E34] group-hover:text-[#60A5FA]/20 transition-colors absolute top-4 right-4 leading-none">{s.n}</div>
                 <div className="w-10 h-10 rounded-xl bg-[#006FEE]/10 border border-[#006FEE]/20 flex items-center justify-center mb-4">
                   <span className="text-[#338EF7] font-bold text-sm">{i + 1}</span>
                 </div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">{s.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{s.desc}</p>
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#338EF7] transition-colors">{s.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -260,7 +260,7 @@ export default function CryptoExchangeProductPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="section-label mb-4">Client Results</div>
-              <h2 className="h2 text-slate-900 mb-6">
+              <h2 className="h2 text-[#F0F6FF] mb-6">
                 Southeast Asian Exchange
                 <br /><span className="gt-blue">Reached $200M Daily Volume</span>
               </h2>
@@ -275,7 +275,7 @@ export default function CryptoExchangeProductPage() {
                     <div className="w-5 h-5 rounded-full bg-[#006FEE]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check size={11} className="text-[#338EF7]" />
                     </div>
-                    <span className="text-[14px] text-slate-500">{item}</span>
+                    <span className="text-[14px] text-[rgba(240,246,255,0.40)]">{item}</span>
                   </div>
                 ))}
               </div>
@@ -285,9 +285,9 @@ export default function CryptoExchangeProductPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[['$200M','Daily Trading Volume at Peak'],['180K','Registered Users — Month 6'],['7 Weeks','Time to Full Production Launch'],['45M+','Trades Processed — First Quarter'],['99.99%','Platform Uptime — Year One'],['3','Liquidity Providers Integrated']].map(([v, l]) => (
-                <div key={l} className="glass-lg rounded-2xl p-6 border border-slate-200 hover:border-[#006FEE]/30 transition-colors">
+                <div key={l} className="glass-lg rounded-2xl p-6 border border-white/[0.06] hover:border-[#006FEE]/30 transition-colors">
                   <p className="text-2xl font-black gt-blue mb-1">{v}</p>
-                  <p className="text-[13px] text-slate-500">{l}</p>
+                  <p className="text-[13px] text-[rgba(240,246,255,0.40)]">{l}</p>
                 </div>
               ))}
             </div>
@@ -296,18 +296,18 @@ export default function CryptoExchangeProductPage() {
       </section>
 
       {/* ── INTEGRATIONS ── */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Integrations</div>
-            <h2 className="h2 text-slate-900 mb-4">Connects With Your <span className="gt-blue">Entire Stack</span></h2>
+            <h2 className="h2 text-[#F0F6FF] mb-4">Connects With Your <span className="gt-blue">Entire Stack</span></h2>
             <p className="lead">Pre-built integrations with major liquidity providers, payment processors, KYC vendors, and custody solutions.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {['Binance Liquidity','Coinbase Prime','B2C2 Market Making','Fireblocks Custody','BitGo Custody','Chainalysis AML','Sumsub KYC','Jumio KYC','Stripe Fiat','Banxa On-Ramp','MoonPay','Simplex','TradingView Charts','CoinGecko Data','CoinMarketCap','Twilio 2FA'].map(name => (
-              <div key={name} className="flex items-center gap-2.5 p-3 rounded-xl glass border border-slate-200 hover:border-[#006FEE]/30 transition-colors">
+              <div key={name} className="flex items-center gap-2.5 p-3 rounded-xl glass border border-white/[0.06] hover:border-[#006FEE]/30 transition-colors">
                 <div className="w-2 h-2 rounded-full bg-[#006FEE] flex-shrink-0" />
-                <span className="text-[13px] text-slate-500">{name}</span>
+                <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{name}</span>
               </div>
             ))}
           </div>

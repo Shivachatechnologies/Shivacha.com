@@ -158,9 +158,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <Tag size={11} /> {post.tag}
             </span>
           </div>
-          <h1 className="h1 text-slate-900 mb-6 leading-snug">{post.title}</h1>
+          <h1 className="h1 text-[#F0F6FF] mb-6 leading-snug">{post.title}</h1>
           <p className="lead max-w-3xl mb-6">{post.excerpt}</p>
-          <div className="flex items-center gap-6 text-[13px] text-slate-400">
+          <div className="flex items-center gap-6 text-[13px] text-[rgba(240,246,255,0.35)]">
             <span className="flex items-center gap-1.5"><User size={13} /> {post.author}</span>
             <span className="flex items-center gap-1.5"><Calendar size={13} /> {post.date}</span>
             <span className="flex items-center gap-1.5"><Clock size={13} /> {post.readTime} read</span>
@@ -169,16 +169,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       </section>
 
       {/* Article */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="grid lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
 
             {/* Content */}
             <div className="lg:col-span-2 space-y-8">
               {post.content.map((section, i) => (
-                <div key={i} className="card rounded-2xl p-7 border border-slate-200">
-                  <h2 className="text-[19px] font-bold text-slate-900 mb-4">{section.heading}</h2>
-                  <p className="text-[14px] text-slate-500 leading-relaxed">{section.body}</p>
+                <div key={i} className="card rounded-2xl p-7 border border-white/[0.06]">
+                  <h2 className="text-[19px] font-bold text-[#F0F6FF] mb-4">{section.heading}</h2>
+                  <p className="text-[14px] text-[rgba(240,246,255,0.40)] leading-relaxed">{section.body}</p>
                 </div>
               ))}
 
@@ -197,8 +197,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <div className="space-y-5">
               {/* Related */}
               {relatedPosts.length > 0 && (
-                <div className="glass rounded-2xl p-5 border border-slate-200">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-4">Related Articles</p>
+                <div className="glass rounded-2xl p-5 border border-white/[0.06]">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-[rgba(240,246,255,0.35)] mb-4">Related Articles</p>
                   <div className="space-y-4">
                     {relatedPosts.map((related, i) => (
                       <Link key={i} href={`/blog/${post.related[i]}`}
@@ -207,10 +207,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                           style={{ background: `${related.color}15`, borderColor: `${related.color}30`, color: related.color }}>
                           {related.tag}
                         </span>
-                        <p className="text-[13px] font-semibold text-slate-900 group-hover:text-[#338EF7] transition-colors leading-snug line-clamp-2">
+                        <p className="text-[13px] font-semibold text-[#F0F6FF] group-hover:text-[#338EF7] transition-colors leading-snug line-clamp-2">
                           {related.title}
                         </p>
-                        <p className="text-[11px] text-slate-400 mt-1">{related.readTime} read</p>
+                        <p className="text-[11px] text-[rgba(240,246,255,0.35)] mt-1">{related.readTime} read</p>
                       </Link>
                     ))}
                   </div>
@@ -218,10 +218,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               )}
 
               {/* CTA card */}
-              <div className="glass rounded-2xl p-5 border border-slate-200">
+              <div className="glass rounded-2xl p-5 border border-white/[0.06]">
                 <div className="text-3xl mb-3">💼</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2">Need Help Building?</h3>
-                <p className="text-[12px] text-slate-500 mb-4 leading-relaxed">
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-2">Need Help Building?</h3>
+                <p className="text-[12px] text-[rgba(240,246,255,0.40)] mb-4 leading-relaxed">
                   Get a free consultation with our experts on your blockchain or AI project.
                 </p>
                 <Link href="/contact#consultation" className="btn btn-primary w-full text-center text-sm py-2.5">
@@ -230,15 +230,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               </div>
 
               {/* Author */}
-              <div className="glass rounded-2xl p-5 border border-slate-200">
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-3">Author</p>
+              <div className="glass rounded-2xl p-5 border border-white/[0.06]">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-[rgba(240,246,255,0.35)] mb-3">Author</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#006FEE] to-[#00D4FF] flex items-center justify-center text-[13px] font-black text-slate-900 flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#006FEE] to-[#00D4FF] flex items-center justify-center text-[13px] font-black text-[#F0F6FF] flex-shrink-0">
                     {post.author.split(' ').map(w => w[0]).join('').slice(0, 2)}
                   </div>
                   <div>
-                    <p className="text-[13px] font-semibold text-slate-900">{post.author}</p>
-                    <p className="text-[11px] text-slate-400">Shivacha Technologies</p>
+                    <p className="text-[13px] font-semibold text-[#F0F6FF]">{post.author}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)]">Shivacha Technologies</p>
                   </div>
                 </div>
               </div>

@@ -77,7 +77,7 @@ export default function MetaverseDevelopmentPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Metaverse Development</div>
-              <h1 className="h1 text-slate-900 mb-6">
+              <h1 className="h1 text-[#F0F6FF] mb-6">
                 Metaverse Platform
                 <br /><span style={{ color: '#A855F7' }}>Development Company</span>
               </h1>
@@ -100,7 +100,7 @@ export default function MetaverseDevelopmentPage() {
                 ].map(s => (
                   <div key={s.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: '#A855F7' }}>{s.v}</p>
-                    <p className="text-[11px] text-slate-400">{s.l}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)]">{s.l}</p>
                   </div>
                 ))}
               </div>
@@ -108,9 +108,9 @@ export default function MetaverseDevelopmentPage() {
 
             {/* Hero visual — metaverse platform stack */}
             <div className="hidden lg:block">
-              <div className="glass rounded-3xl p-7 border border-slate-200 relative overflow-hidden">
+              <div className="glass rounded-3xl p-7 border border-white/[0.06] relative overflow-hidden">
                 <div className="scan-line" />
-                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Metaverse Platform Architecture</p>
+                <p className="text-[12px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-4">Metaverse Platform Architecture</p>
                 <div className="space-y-3">
                   {[
                     { layer: 'Rendering Layer', sub: 'Unity 6 / Unreal 5 — WebGL + Native', badge: 'ENGINE' },
@@ -120,12 +120,12 @@ export default function MetaverseDevelopmentPage() {
                     { layer: 'Virtual Land Registry', sub: 'ERC-721 land NFTs + map indexer', badge: 'LAND' },
                     { layer: 'VR / AR Layer', sub: 'WebXR browser + Quest native', badge: 'XR' },
                   ].map(({ layer, sub, badge }) => (
-                    <div key={layer} className="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200">
+                    <div key={layer} className="flex items-center gap-3 p-3 rounded-xl bg-[#0C1428] border border-white/[0.06]">
                       <span className="text-[9px] font-bold px-1.5 py-0.5 rounded flex-shrink-0"
                         style={{ background: '#A855F722', color: '#A855F7' }}>{badge}</span>
                       <div className="flex-1 min-w-0">
-                        <p className="text-[13px] font-semibold text-slate-900">{layer}</p>
-                        <p className="text-[10px] text-slate-400 truncate">{sub}</p>
+                        <p className="text-[13px] font-semibold text-[#F0F6FF]">{layer}</p>
+                        <p className="text-[10px] text-[rgba(240,246,255,0.35)] truncate">{sub}</p>
                       </div>
                       <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
                     </div>
@@ -138,19 +138,19 @@ export default function MetaverseDevelopmentPage() {
       </section>
 
       {/* Offerings */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">What We Build</div>
-            <h2 className="h2 text-slate-900">Metaverse <span style={{ color: '#A855F7' }}>Development Services</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Metaverse <span style={{ color: '#A855F7' }}>Development Services</span></h2>
             <p className="lead mt-4">Every component of a production metaverse — from 3D world to on-chain economy — engineered and integrated by one team.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {OFFERINGS.map((o) => (
-              <div key={o.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group">
+              <div key={o.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-slate-300 group">
                 <div className="text-4xl mb-4">{o.icon}</div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2">{o.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{o.desc}</p>
+                <h3 className="text-[16px] font-bold text-[#F0F6FF] mb-2">{o.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{o.desc}</p>
               </div>
             ))}
           </div>
@@ -161,13 +161,13 @@ export default function MetaverseDevelopmentPage() {
       <section className="section bg-white">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-slate-900">Metaverse <span style={{ color: '#A855F7' }}>Tech Stack</span></h2>
-            <p className="text-slate-500 mt-2 max-w-lg mx-auto text-[14px]">Certified in the leading game engines plus every Web3 integration layer.</p>
+            <h2 className="h3 text-[#F0F6FF]">Metaverse <span style={{ color: '#A855F7' }}>Tech Stack</span></h2>
+            <p className="text-[rgba(240,246,255,0.40)] mt-2 max-w-lg mx-auto text-[14px]">Certified in the leading game engines plus every Web3 integration layer.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {TECH.map((t) => (
-              <div key={t.name} className="card rounded-xl p-3 border border-slate-200 hover:border-[#A855F7]/40 text-center">
-                <p className="text-[13px] font-bold text-slate-900 mb-1">{t.name}</p>
+              <div key={t.name} className="card rounded-xl p-3 border border-white/[0.06] hover:border-[#A855F7]/40 text-center">
+                <p className="text-[13px] font-bold text-[#F0F6FF] mb-1">{t.name}</p>
                 <span className="badge badge-blue text-[10px]">{t.tag}</span>
               </div>
             ))}
@@ -176,26 +176,26 @@ export default function MetaverseDevelopmentPage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="h3 text-slate-900">Shivacha vs <span style={{ color: '#A855F7' }}>Typical Metaverse Studio</span></h2>
+            <h2 className="h3 text-[#F0F6FF]">Shivacha vs <span style={{ color: '#A855F7' }}>Typical Metaverse Studio</span></h2>
           </div>
-          <div className="card rounded-2xl border border-slate-200 overflow-hidden">
+          <div className="card rounded-2xl border border-white/[0.06] overflow-hidden">
             <table className="w-full text-[13px]">
               <thead>
-                <tr className="border-b border-slate-200">
-                  <th className="text-left p-4 text-slate-400 font-semibold">Feature</th>
+                <tr className="border-b border-white/[0.06]">
+                  <th className="text-left p-4 text-[rgba(240,246,255,0.35)] font-semibold">Feature</th>
                   <th className="p-4 text-center font-bold" style={{ color: '#A855F7' }}>Shivacha</th>
-                  <th className="p-4 text-center text-slate-400 font-semibold">Typical Studio</th>
+                  <th className="p-4 text-center text-[rgba(240,246,255,0.35)] font-semibold">Typical Studio</th>
                 </tr>
               </thead>
               <tbody>
                 {COMPARISON.map((row, i) => (
                   <tr key={row.feature} className={i % 2 === 0 ? 'bg-white' : ''}>
-                    <td className="p-4 text-slate-500">{row.feature}</td>
+                    <td className="p-4 text-[rgba(240,246,255,0.40)]">{row.feature}</td>
                     <td className="p-4 text-center font-semibold" style={{ color: '#A855F7' }}>{row.shivacha}</td>
-                    <td className="p-4 text-center text-slate-400">{row.typical}</td>
+                    <td className="p-4 text-center text-[rgba(240,246,255,0.35)]">{row.typical}</td>
                   </tr>
                 ))}
               </tbody>
@@ -208,13 +208,13 @@ export default function MetaverseDevelopmentPage() {
       <section className="section bg-white">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-slate-900">Metaverse <span style={{ color: '#A855F7' }}>Use Cases</span> We've Shipped</h2>
+            <h2 className="h3 text-[#F0F6FF]">Metaverse <span style={{ color: '#A855F7' }}>Use Cases</span> We've Shipped</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {USE_CASES.map((uc) => (
-              <div key={uc} className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200">
+              <div key={uc} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#0C1428] border border-white/[0.06]">
                 <CheckCircle size={14} style={{ color: '#A855F7' }} className="flex-shrink-0" />
-                <span className="text-[13px] text-slate-500">{uc}</span>
+                <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{uc}</span>
               </div>
             ))}
           </div>
@@ -222,16 +222,16 @@ export default function MetaverseDevelopmentPage() {
       </section>
 
       {/* FAQ */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="h3 text-slate-900">Frequently Asked <span style={{ color: '#A855F7' }}>Questions</span></h2>
+            <h2 className="h3 text-[#F0F6FF]">Frequently Asked <span style={{ color: '#A855F7' }}>Questions</span></h2>
           </div>
           <div className="space-y-4">
             {FAQS.map((faq) => (
-              <div key={faq.q} className="card rounded-2xl p-6 border border-slate-200">
-                <h4 className="text-[15px] font-bold text-slate-900 mb-3">{faq.q}</h4>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{faq.a}</p>
+              <div key={faq.q} className="card rounded-2xl p-6 border border-white/[0.06]">
+                <h4 className="text-[15px] font-bold text-[#F0F6FF] mb-3">{faq.q}</h4>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

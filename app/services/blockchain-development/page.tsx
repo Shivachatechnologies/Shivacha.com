@@ -49,7 +49,7 @@ export default function BlockchainDevelopmentPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Blockchain Development</div>
-              <h1 className="h1 text-slate-900 mb-6">
+              <h1 className="h1 text-[#F0F6FF] mb-6">
                 Enterprise Blockchain
                 <br /><span className="gt-blue">Development Company</span>
               </h1>
@@ -72,7 +72,7 @@ export default function BlockchainDevelopmentPage() {
                 ].map(s => (
                   <div key={s.l} className="metric-card">
                     <p className="text-xl font-black gt-blue">{s.v}</p>
-                    <p className="text-[11px] text-slate-400">{s.l}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)]">{s.l}</p>
                   </div>
                 ))}
               </div>
@@ -80,17 +80,17 @@ export default function BlockchainDevelopmentPage() {
 
             {/* Right visual */}
             <div className="hidden lg:block">
-              <div className="glass-lg rounded-3xl p-7 border border-slate-200 relative overflow-hidden">
+              <div className="glass-lg rounded-3xl p-7 border border-white/[0.06] relative overflow-hidden">
                 <div className="scan-line" />
-                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Blockchain Infrastructure Overview</p>
+                <p className="text-[12px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-4">Blockchain Infrastructure Overview</p>
                 {/* Simulated chain diagram */}
                 <div className="space-y-3">
                   {['Layer 1: Custom Blockchain', 'Layer 2: Scaling & ZK-Proofs', 'Application Layer: dApps & APIs', 'Cross-Chain Bridge', 'Developer SDK & Tools'].map((layer, i) => (
-                    <div key={layer} className="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200">
+                    <div key={layer} className="flex items-center gap-3 p-3 rounded-xl bg-[#0C1428] border border-white/[0.06]">
                       <div className="w-8 h-8 rounded-lg bg-[#006FEE]/15 flex items-center justify-center text-[12px] font-bold text-[#338EF7]">
                         L{i + 1}
                       </div>
-                      <span className="text-[13px] text-slate-500">{layer}</span>
+                      <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{layer}</span>
                       <div className="ml-auto w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                     </div>
                   ))}
@@ -102,18 +102,18 @@ export default function BlockchainDevelopmentPage() {
       </section>
 
       {/* Offerings */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">What We Build</div>
-            <h2 className="h2 text-slate-900">Blockchain Development <span className="gt-blue">Services</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Blockchain Development <span className="gt-blue">Services</span></h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {OFFERINGS.map((o) => (
-              <div key={o.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 group">
+              <div key={o.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-slate-300 group">
                 <div className="text-4xl mb-4">{o.icon}</div>
-                <h3 className="text-[16px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">{o.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed">{o.desc}</p>
+                <h3 className="text-[16px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#338EF7] transition-colors">{o.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed">{o.desc}</p>
               </div>
             ))}
           </div>
@@ -124,14 +124,14 @@ export default function BlockchainDevelopmentPage() {
       <section className="section-sm bg-white">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-slate-900">Blockchains We <span className="gt-blue">Build On</span></h2>
+            <h2 className="h3 text-[#F0F6FF]">Blockchains We <span className="gt-blue">Build On</span></h2>
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
             {CHAINS.map((c) => (
-              <div key={c.name} className="card rounded-xl p-4 text-center border border-slate-200 hover:border-[#006FEE]/40 group cursor-default">
+              <div key={c.name} className="card rounded-xl p-4 text-center border border-white/[0.06] hover:border-[#006FEE]/40 group cursor-default">
                 <div className="text-3xl mb-2">{c.icon}</div>
-                <p className="text-[13px] font-semibold text-slate-900">{c.name}</p>
-                <p className="text-[11px] text-slate-400 mt-0.5">{c.desc}</p>
+                <p className="text-[13px] font-semibold text-[#F0F6FF]">{c.name}</p>
+                <p className="text-[11px] text-[rgba(240,246,255,0.35)] mt-0.5">{c.desc}</p>
               </div>
             ))}
           </div>
@@ -139,16 +139,16 @@ export default function BlockchainDevelopmentPage() {
       </section>
 
       {/* Use cases */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="h3 text-slate-900">Blockchain <span className="gt-blue">Use Cases</span> We've Built</h2>
+            <h2 className="h3 text-[#F0F6FF]">Blockchain <span className="gt-blue">Use Cases</span> We've Built</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {USE_CASES.map((uc) => (
-              <div key={uc} className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200">
+              <div key={uc} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#0C1428] border border-white/[0.06]">
                 <CheckCircle size={14} className="text-[#338EF7] flex-shrink-0" />
-                <span className="text-[13px] text-slate-500">{uc}</span>
+                <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{uc}</span>
               </div>
             ))}
           </div>

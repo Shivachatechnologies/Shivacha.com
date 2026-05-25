@@ -60,7 +60,7 @@ export default function ContactPage() {
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="section-label mb-4">Contact Us</div>
-            <h1 className="h1 text-slate-900 mb-6">
+            <h1 className="h1 text-[#F0F6FF] mb-6">
               Let&apos;s Build Your
               <br /><span className="gt-blue">Enterprise Infrastructure</span>
             </h1>
@@ -73,19 +73,19 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form + Offices */}
-      <section className="section-sm bg-slate-50 border-y border-slate-200">
+      <section className="section-sm border-y border-white/[0.06]">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Form */}
             <div>
-              <h2 className="h3 text-slate-900 mb-6">Send a Project Brief</h2>
+              <h2 className="h3 text-[#F0F6FF] mb-6">Send a Project Brief</h2>
               {submitted ? (
-                <div className="glass rounded-3xl p-10 border border-slate-200 text-center">
+                <div className="glass rounded-3xl p-10 border border-white/[0.06] text-center">
                   <div className="w-16 h-16 rounded-full bg-green-500/10 flex items-center justify-center mx-auto mb-4">
                     <CheckCircle size={32} className="text-green-400" />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Message Received!</h3>
-                  <p className="text-slate-500 mb-4">
+                  <h3 className="text-xl font-bold text-[#F0F6FF] mb-2">Message Received!</h3>
+                  <p className="text-[rgba(240,246,255,0.40)] mb-4">
                     Thank you for reaching out. Our enterprise team will contact you within 4 business hours.
                   </p>
                   <button onClick={() => setSubmitted(false)} className="btn btn-secondary">
@@ -96,36 +96,36 @@ export default function ContactPage() {
                 <form onSubmit={submit} className="space-y-4">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-[13px] text-slate-500 mb-1.5">Full Name *</label>
+                      <label className="block text-[13px] text-[rgba(240,246,255,0.40)] mb-1.5">Full Name *</label>
                       <input name="name" value={form.name} onChange={handle} required
                         className="input" placeholder="John Smith" />
                     </div>
                     <div>
-                      <label className="block text-[13px] text-slate-500 mb-1.5">Company *</label>
+                      <label className="block text-[13px] text-[rgba(240,246,255,0.40)] mb-1.5">Company *</label>
                       <input name="company" value={form.company} onChange={handle} required
                         className="input" placeholder="Your Company Inc." />
                     </div>
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-[13px] text-slate-500 mb-1.5">Work Email *</label>
+                      <label className="block text-[13px] text-[rgba(240,246,255,0.40)] mb-1.5">Work Email *</label>
                       <input type="email" name="email" value={form.email} onChange={handle} required
                         className="input" placeholder="john@company.com" />
                     </div>
                     <div>
-                      <label className="block text-[13px] text-slate-500 mb-1.5">Phone Number</label>
+                      <label className="block text-[13px] text-[rgba(240,246,255,0.40)] mb-1.5">Phone Number</label>
                       <input type="tel" name="phone" value={form.phone} onChange={handle}
                         className="input" placeholder="+1 234 567 8900" />
                     </div>
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-[13px] text-slate-500 mb-1.5">Country</label>
+                      <label className="block text-[13px] text-[rgba(240,246,255,0.40)] mb-1.5">Country</label>
                       <input name="country" value={form.country} onChange={handle}
                         className="input" placeholder="United States" />
                     </div>
                     <div>
-                      <label className="block text-[13px] text-slate-500 mb-1.5">Service Needed *</label>
+                      <label className="block text-[13px] text-[rgba(240,246,255,0.40)] mb-1.5">Service Needed *</label>
                       <select name="service" value={form.service} onChange={handle} required className="input">
                         <option value="">Select Service</option>
                         {SERVICES.map(s => <option key={s}>{s}</option>)}
@@ -133,7 +133,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div>
-                    <label className="block text-[13px] text-slate-500 mb-1.5">Estimated Budget</label>
+                    <label className="block text-[13px] text-[rgba(240,246,255,0.40)] mb-1.5">Estimated Budget</label>
                     <select name="budget" value={form.budget} onChange={handle} className="input">
                       <option value="">Select Budget Range</option>
                       {['Under $25K', '$25K–$50K', '$50K–$100K', '$100K–$250K', '$250K–$500K', '$500K+', 'Ongoing Partnership'].map(b => (
@@ -142,7 +142,7 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-[13px] text-slate-500 mb-1.5">Project Details *</label>
+                    <label className="block text-[13px] text-[rgba(240,246,255,0.40)] mb-1.5">Project Details *</label>
                     <textarea name="message" value={form.message} onChange={handle} required rows={4}
                       className="input resize-none"
                       placeholder="Describe your project, goals, timeline, and any specific requirements..." />
@@ -159,7 +159,7 @@ export default function ContactPage() {
                       </span>
                     )}
                   </button>
-                  <p className="text-[12px] text-slate-400 text-center">
+                  <p className="text-[12px] text-[rgba(240,246,255,0.35)] text-center">
                     🔒 NDA available upon request. We respond within 4 business hours.
                   </p>
                 </form>
@@ -168,32 +168,32 @@ export default function ContactPage() {
 
             {/* Office info */}
             <div>
-              <h2 className="h3 text-slate-900 mb-6">Global Offices</h2>
+              <h2 className="h3 text-[#F0F6FF] mb-6">Global Offices</h2>
               <div className="space-y-5">
                 {OFFICES.map((o) => (
-                  <div key={o.country} className="card rounded-2xl p-6 border border-slate-200 hover:border-slate-300 transition-colors">
+                  <div key={o.country} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-slate-300 transition-colors">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="text-3xl">{o.flag}</span>
                       <div>
-                        <p className="text-[16px] font-bold text-slate-900">{o.country}</p>
+                        <p className="text-[16px] font-bold text-[#F0F6FF]">{o.country}</p>
                         <p className="text-[13px] text-[#338EF7]">{o.city}</p>
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <div className="flex items-start gap-2 text-[13px] text-slate-500">
-                        <MapPin size={14} className="text-[#006FEE] mt-0.5 flex-shrink-0" />
+                      <div className="flex items-start gap-2 text-[13px] text-[rgba(240,246,255,0.40)]">
+                        <MapPin size={14} className="text-[#60A5FA] mt-0.5 flex-shrink-0" />
                         <span className="whitespace-pre-line">{o.address}</span>
                       </div>
                       <a href={`tel:${o.phone.replace(/\s/g,'')}`}
-                        className="flex items-center gap-2 text-[13px] text-slate-500 hover:text-[#338EF7] transition-colors">
-                        <Phone size={13} className="text-[#006FEE]" />{o.phone}
+                        className="flex items-center gap-2 text-[13px] text-[rgba(240,246,255,0.40)] hover:text-[#338EF7] transition-colors">
+                        <Phone size={13} className="text-[#60A5FA]" />{o.phone}
                       </a>
                       <a href={`mailto:${o.email}`}
-                        className="flex items-center gap-2 text-[13px] text-slate-500 hover:text-[#338EF7] transition-colors">
-                        <Mail size={13} className="text-[#006FEE]" />{o.email}
+                        className="flex items-center gap-2 text-[13px] text-[rgba(240,246,255,0.40)] hover:text-[#338EF7] transition-colors">
+                        <Mail size={13} className="text-[#60A5FA]" />{o.email}
                       </a>
-                      <div className="flex items-center gap-2 text-[13px] text-slate-500">
-                        <Clock size={13} className="text-[#006FEE]" />{o.hours}
+                      <div className="flex items-center gap-2 text-[13px] text-[rgba(240,246,255,0.40)]">
+                        <Clock size={13} className="text-[#60A5FA]" />{o.hours}
                       </div>
                     </div>
                   </div>
@@ -201,8 +201,8 @@ export default function ContactPage() {
               </div>
 
               {/* Social links */}
-              <div className="mt-6 card rounded-2xl p-5 border border-slate-200">
-                <p className="text-[14px] font-semibold text-slate-900 mb-3">Follow @Shivachatech</p>
+              <div className="mt-6 card rounded-2xl p-5 border border-white/[0.06]">
+                <p className="text-[14px] font-semibold text-[#F0F6FF] mb-3">Follow @Shivachatech</p>
                 <div className="flex flex-wrap gap-3">
                   {[
                     { name: 'Twitter / X', href: 'https://twitter.com/Shivachatech', icon: '𝕏' },
@@ -212,7 +212,7 @@ export default function ContactPage() {
                     { name: 'Facebook', href: 'https://facebook.com/Shivachatech', icon: 'f' },
                   ].map(s => (
                     <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-slate-200 text-[12px] text-slate-500 hover:text-slate-900 hover:border-slate-300 transition-all">
+                      className="flex items-center gap-2 px-3 py-2 rounded-xl bg-[#0C1428] border border-white/[0.06] text-[12px] text-[rgba(240,246,255,0.40)] hover:text-[#F0F6FF] hover:border-slate-300 transition-all">
                       <span>{s.icon}</span>{s.name}
                     </a>
                   ))}

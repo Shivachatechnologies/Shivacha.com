@@ -49,7 +49,7 @@ export default function TokenDevelopmentPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Token Development</div>
-              <h1 className="h1 text-slate-900 mb-6">
+              <h1 className="h1 text-[#F0F6FF] mb-6">
                 Crypto Token
                 <br /><span className="gt-blue">Development & Launch</span>
               </h1>
@@ -72,16 +72,16 @@ export default function TokenDevelopmentPage() {
                 ].map(s => (
                   <div key={s.l} className="metric-card">
                     <p className="text-xl font-black" style={{ color: '#00FF87' }}>{s.v}</p>
-                    <p className="text-[11px] text-slate-400">{s.l}</p>
+                    <p className="text-[11px] text-[rgba(240,246,255,0.35)]">{s.l}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="hidden lg:block">
-              <div className="glass-lg rounded-3xl p-7 border border-slate-200 relative overflow-hidden">
+              <div className="glass-lg rounded-3xl p-7 border border-white/[0.06] relative overflow-hidden">
                 <div className="scan-line" />
-                <p className="text-[12px] text-slate-400 uppercase tracking-wider mb-4">Token Launch Overview</p>
+                <p className="text-[12px] text-[rgba(240,246,255,0.35)] uppercase tracking-wider mb-4">Token Launch Overview</p>
                 <div className="space-y-3">
                   {[
                     { label: 'Total Supply', value: '1,000,000,000', icon: '🪙' },
@@ -90,12 +90,12 @@ export default function TokenDevelopmentPage() {
                     { label: 'DEX Liquidity Locked', value: '$1.8M · 2 years', icon: '🔒' },
                     { label: 'Audit Status', value: 'Passed (0 Critical)', icon: '✅' },
                   ].map(r => (
-                    <div key={r.label} className="flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200">
+                    <div key={r.label} className="flex items-center justify-between p-3 rounded-xl bg-[#0C1428] border border-white/[0.06]">
                       <div className="flex items-center gap-2">
                         <span>{r.icon}</span>
-                        <span className="text-[12px] text-slate-400">{r.label}</span>
+                        <span className="text-[12px] text-[rgba(240,246,255,0.35)]">{r.label}</span>
                       </div>
-                      <span className="text-[13px] font-semibold text-slate-900">{r.value}</span>
+                      <span className="text-[13px] font-semibold text-[#F0F6FF]">{r.value}</span>
                     </div>
                   ))}
                 </div>
@@ -106,18 +106,18 @@ export default function TokenDevelopmentPage() {
       </section>
 
       {/* Token Types */}
-      <section className="section bg-slate-50">
+      <section className="section bg-[#0C1428]">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="section-label justify-center">Token Types</div>
-            <h2 className="h2 text-slate-900">Tokens We <span className="gt-blue">Design & Build</span></h2>
+            <h2 className="h2 text-[#F0F6FF]">Tokens We <span className="gt-blue">Design & Build</span></h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {TOKEN_TYPES.map(t => (
-              <div key={t.title} className="card rounded-2xl p-6 border border-slate-200 hover:border-[#00FF87]/30 group">
+              <div key={t.title} className="card rounded-2xl p-6 border border-white/[0.06] hover:border-[#00FF87]/30 group">
                 <div className="text-4xl mb-4">{t.icon}</div>
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2 group-hover:text-[#338EF7] transition-colors">{t.title}</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed mb-3">{t.desc}</p>
+                <h3 className="text-[15px] font-bold text-[#F0F6FF] mb-2 group-hover:text-[#338EF7] transition-colors">{t.title}</h3>
+                <p className="text-[13px] text-[rgba(240,246,255,0.40)] leading-relaxed mb-3">{t.desc}</p>
                 <span className="text-[11px] px-2 py-1 rounded-lg bg-[#00FF87]/08 border border-[#00FF87]/20 text-[#00FF87]">{t.chain}</span>
               </div>
             ))}
@@ -131,15 +131,15 @@ export default function TokenDevelopmentPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-label mb-4">Full-Service Launch</div>
-              <h2 className="h2 text-slate-900 mb-4">Everything Included in <span className="gt-blue">Your Token Launch</span></h2>
+              <h2 className="h2 text-[#F0F6FF] mb-4">Everything Included in <span className="gt-blue">Your Token Launch</span></h2>
               <p className="lead mb-6">We handle every step from idea to exchange listing — so you can focus on building your community and product.</p>
               <Link href="/contact" className="btn btn-primary">Start Your Launch <ArrowRight size={14} /></Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {CHECKLIST.map(c => (
-                <div key={c} className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200">
+                <div key={c} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#0C1428] border border-white/[0.06]">
                   <CheckCircle size={14} className="text-[#00FF87] flex-shrink-0" />
-                  <span className="text-[13px] text-slate-500">{c}</span>
+                  <span className="text-[13px] text-[rgba(240,246,255,0.40)]">{c}</span>
                 </div>
               ))}
             </div>
@@ -148,16 +148,16 @@ export default function TokenDevelopmentPage() {
       </section>
 
       {/* Chains */}
-      <section className="section-sm bg-slate-50">
+      <section className="section-sm bg-[#0C1428]">
         <div className="container">
           <div className="text-center mb-8">
-            <h2 className="h3 text-slate-900">Chains We <span className="gt-blue">Deploy On</span></h2>
+            <h2 className="h3 text-[#F0F6FF]">Chains We <span className="gt-blue">Deploy On</span></h2>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {CHAINS.map(c => (
-              <div key={c.name} className="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-white border border-slate-200 hover:border-slate-300">
+              <div key={c.name} className="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-[#0C1428] border border-white/[0.06] hover:border-slate-300">
                 <span className="text-xl">{c.icon}</span>
-                <span className="text-[14px] font-medium text-slate-900">{c.name}</span>
+                <span className="text-[14px] font-medium text-[#F0F6FF]">{c.name}</span>
               </div>
             ))}
           </div>
